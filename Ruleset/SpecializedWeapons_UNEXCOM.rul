@@ -9,107 +9,101 @@ items:
 # Groza Electromagnetic Heavy Rifle
   - type: STR_GAUSS_HEAVY_RIFLE
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES]
-    size: 0.2
-    costSell: 240000
-    weight: 38 #If you're issued this, you're in some form of PA
     bigSprite: 2424
     floorSprite: 2424
     handSprite: 2424
     bulletSprite: 33
     fireSound: [3004, 3005, 3006]
     reloadSound: 3000
+    costSell: 240000
+    size: 0.2
+    weight: 38 #If you're issued this, you're in some form of PA
     compatibleAmmo:
       - STR_GAUSS_RIFLE_MAG
-    costAuto:
-      time: 85 #75
-    autoRange: 90 #60
-    accuracyAuto: 300 #250
     confAuto:
       shots: 1
       name: STR_HEADSHOT
       shortName: STR_HEADSHOT_SHORT
       ammoSlot: 0
       arcing: false
-    costAimed:
-      time: 75 #60
     confAimed:
       shots: 3
       name: STR_BURST
-    aimRange: 60 #50
+    accuracyAuto: 300 #250
     accuracyAimed: 150
-    costSnap:
-      time: 50 #60
-    snapRange: 90 #55
     accuracySnap: 200 #110
     accuracyCloseQuarters: 10
+    tuAuto: 85 #75
+    tuAimed: 75 #60
+    tuSnap: 50 #60
     tuLoad: 30
+    autoRange: 90 #60
+    aimRange: 60 #50
+    snapRange: 90 #55
     maxRange: 200 #60
     dropoff: 1
-    kneelBonus: 150
     battleType: 1
+    armor: 200
+    twoHanded: true
+    kneelBonus: 150
     invWidth: 1
     invHeight: 3
-    twoHanded: true
-    armor: 200
     #listOrder: 239
 
 # Grad Electromagnetic Carbine
   - type: STR_GAUSS_CARBINE
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_CARBINES, STR_SNIPER_RIFLES]
-    size: 0.2
-    costSell: 240000
-    weight: 20 #Alternative to Plasma for anti-armor
     bigSprite: 2408
     floorSprite: 2408
     handSprite: 2408
     bulletSprite: 33
     fireSound: [3007, 3008, 3009]
     reloadSound: 3000
+    costSell: 240000
+    size: 0.2
+    weight: 20 #Alternative to Plasma for anti-armor
     compatibleAmmo:
       - STR_GAUSS_RIFLE_MAG
-    costAuto:
-      time: 85
-    autoRange: 40
-    accuracyAuto: 200 #250
     confAuto:
       shots: 1
       name: STR_HEADSHOT
       shortName: STR_HEADSHOT_SHORT
       ammoSlot: 0
       arcing: false
-    costAimed:
-      time: 75
-    aimRange: 20 #60?
-    accuracyAimed: 90 #150
     confAimed:
       shots: 2
       name: STR_DOUBLE_TAP
-    costSnap:
-      time: 60
-    snapRange: 20 #20
+    accuracyAuto: 200 #250
+    accuracyAimed: 90 #150
     accuracySnap: 90 #110
     accuracyCloseQuarters: 10
+    tuAuto: 85
+    tuAimed: 75
+    tuSnap: 60
     tuLoad: 30
+    autoRange: 40
+    aimRange: 20 #60?
+    snapRange: 20 #20
     maxRange: 40 #60
     dropoff: 1
-    kneelBonus: 150
     battleType: 1
+    armor: 200
+    twoHanded: true
+    kneelBonus: 150
     invWidth: 1
     invHeight: 3
-    twoHanded: true
-    armor: 200
     #listOrder: 239
 
   - type: STR_GAUSS_RIFLE_MAG
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES, STR_CARBINES, STR_CLIPS]
-    size: 0.1
-    costSell: 42000
-    weight: 4
     bigSprite: 2400
     floorSprite: 2400
     #handSprite: 2400
     hitSound: 13
     hitAnimation: 120
+    costSell: 42000
+    size: 0.1
+    weight: 4
     power: 165
     damageAlter:
       RandomType: 7
@@ -130,18 +124,19 @@ items:
 # Taifun Heavy Electric Rifle
   - type: STR_ELECTRIC_HEAVY_RIFLE
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS]
-
-    size: 0.25
-    costBuy: 90000
-    costSell: 30000
-    transferTime: 96
-    weight: 19
     bigSprite: 2448
     floorSprite: 2448
     handSprite: 2448
     bulletSprite: 34
     fireSound: 3012
+    costBuy: 90000
+    costSell: 30000
+    size: 0.25
+    transferTime: 96
+    weight: 19
     reloadSound: 3010
+    powerRangeThreshold: 10
+    powerRangeReduction: 6
     compatibleAmmo:
       - STR_ELECTRIC_HEAVY_RIFLE_MAG
     accuracySnap: 85
@@ -149,9 +144,12 @@ items:
     accuracyCloseQuarters: 100
     accuracyMultiplier:
       firing: 0.5
-
     tuSnap: 35
     tuAimed: 55
+    snapRange: 12
+    aimRange: 18
+    maxRange: 30
+    dropoff: 6
     costThrow:
       energy: 20
       time: 30
@@ -160,27 +158,21 @@ items:
     oneHandedPenalty: 50
     invWidth: 2
     invHeight: 3
-    snapRange: 12
-    aimRange: 18
-    dropoff: 6
-    powerRangeThreshold: 10
-    powerRangeReduction: 6
-    maxRange: 30
     recoveryPoints: 3
     attraction: 12
     #listOrder: 12390
 
   - type: STR_ELECTRIC_HEAVY_RIFLE_MAG
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS, STR_CLIPS]
-    size: 0.05
-    costBuy: 3000
-    costSell: 1200
-    transferTime: 96
-    weight: 4
     bigSprite: 2456
     floorSprite: 2456
     hitSound: 0
     hitAnimation: 130
+    costBuy: 3000
+    costSell: 1200
+    transferTime: 96
+    size: 0.05
+    weight: 4
     power: 105
     damageType: 11
     shotgunBehavior: 1
@@ -213,49 +205,48 @@ items:
 # Zyklon Electric Handgun
   - type: STR_ELECTRIC_PISTOL
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_PISTOLS, STR_SHOTGUNS]
-    size: 0.2
-    costSell: 180000
-    weight: 22
     bigSprite: 2464
     floorSprite: 2464
     handSprite: 2464
     bulletSprite: 34
     fireSound: 3012
     reloadSound: 3010
+    costSell: 180000
+    size: 0.2
+    weight: 22
     compatibleAmmo:
       - STR_ELECTRIC_PISTOL_MAG
     confAuto:
       shots: 8
       name: STR_RAGE_FIRE
-    costAimed:
-      time: 30
-    aimRange: 18
-    accuracyAimed: 110
-    costSnap:
-      time: 20
     confAimed:
       shots: 3
       name: STR_BURST
-    snapRange: 12
+    tuAimed: 30
+    tuSnap: 20
+    tuLoad: 30
+    accuracyAimed: 110
     accuracySnap: 90
     accuracyCloseQuarters: 90
+    aimRange: 18
+    snapRange: 12
     dropoff: 4
-    tuLoad: 30
     battleType: 1
+    armor: 200
     twoHanded: false
     invWidth: 1
     invHeight: 3
-    armor: 200
     #listOrder: 237
+
   - type: STR_ELECTRIC_PISTOL_MAG
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_PISTOLS, STR_SHOTGUNS]
-    size: 0.1
-    costSell: 35000
-    weight: 3
     bigSprite: 2472
     floorSprite: 2472
     #handSprite: 2472
     hitAnimation: 130
+    costSell: 35000
+    size: 0.1
+    weight: 3
     power: 40
     shotgunBehavior: 1
     shotgunPellets: 8

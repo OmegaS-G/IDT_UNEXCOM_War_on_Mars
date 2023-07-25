@@ -1,15 +1,15 @@
 items:
 
   - type: STR_ALIEN_HEAVY_LASER
-    size: 0.2
-    costSell: 171600
-    weight: 8
     bigSprite: 305
     floorSprite: 305
     handSprite: 316
     bulletSprite: 29
     bulletSpeed: 10
     fireSound: 11
+    costSell: 171600
+    size: 0.2
+    weight: 8
     compatibleAmmo:
       - STR_ALIEN_HEAVY_LASER_BATTERY
     accuracyAuto: 50
@@ -19,19 +19,20 @@ items:
     tuSnap: 30 #4 mana
     tuAimed: 60 #4 mana
     battleType: 1
+    armor: 50
     twoHanded: true
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
-    armor: 50
+
   - type: STR_ALIEN_HEAVY_LASER_BATTERY
-    size: 0.3
-    costSell: 9590
-    weight: 3
     bigSprite: 306
     floorSprite: 306
     hitSound: 19
     hitAnimation: 100
+    costSell: 9590
+    size: 0.3
+    weight: 3
     power: 115
     damageType: 4
     damageAlter:
@@ -42,15 +43,15 @@ items:
     recoveryPoints: 1
 
   - type: STR_ALIEN_LASER_RIFLE
-    size: 0.2
-    costSell: 126500
-    weight: 5
     bigSprite: 303
     floorSprite: 303
     handSprite: 308
     bulletSprite: 29
     bulletSpeed: 10
     fireSound: 11
+    costSell: 126500
+    size: 0.2
+    weight: 5
     compatibleAmmo:
       - STR_ALIEN_LASER_RIFLE_BATTERY
     accuracyAuto: 60 #55
@@ -60,19 +61,20 @@ items:
     tuSnap: 30 #2 mana?
     tuAimed: 60 #2 mana?
     battleType: 1
+    armor: 50
     twoHanded: true
     invWidth: 1
     invHeight: 3
     recoveryPoints: 4
-    armor: 50
+
   - type: STR_ALIEN_LASER_RIFLE_BATTERY
-    size: 0.1
-    costSell: 6290
-    weight: 3
     bigSprite: 304
     floorSprite: 304
     hitSound: 19
     hitAnimation: 100
+    costSell: 6290
+    size: 0.1
+    weight: 3
     power: 80
     damageType: 4
     damageAlter:
@@ -83,15 +85,15 @@ items:
     recoveryPoints: 1
 
   - type: STR_ALIEN_LASER_PISTOL
-    size: 0.1
-    costSell: 84000
-    weight: 3
     bigSprite: 301
     floorSprite: 301
     handSprite: 300
     bulletSprite: 29
     bulletSpeed: 10
     fireSound: 11
+    costSell: 84000
+    size: 0.1
+    weight: 3
     compatibleAmmo:
       - STR_ALIEN_LASER_PISTOL_BATTERY
     accuracyAuto: 50
@@ -101,10 +103,11 @@ items:
     tuSnap: 30 #1 mana
     tuAimed: 60 #1 mana
     battleType: 1
+    armor: 45
     invWidth: 1
     invHeight: 2
     recoveryPoints: 3
-    armor: 45
+
   - type: STR_ALIEN_LASER_PISTOL_BATTERY
     size: 0.1
     costSell: 4440
@@ -185,12 +188,12 @@ items:
     blastRadius: 5
 
   - type: STR_DEVIL_AXE
-    size: 0.2
-    weight: 10
     bigSprite: 310
     floorSprite: 310
     handSprite: 340
     meleeSound: 49
+    size: 0.2
+    weight: 10
     power: 100
     damageType: 4
     damageBonus:
@@ -208,12 +211,12 @@ items:
       energy: 8
     flatRate: true
     battleType: 3
+    armor: 999
     clipSize: -1
     invWidth: 2
     invHeight: 3
     experienceTrainingMode: 13
     attraction: 7
-    armor: 999
 
   - type: STR_ALIEN_CRYSTAL
     size: 0.3

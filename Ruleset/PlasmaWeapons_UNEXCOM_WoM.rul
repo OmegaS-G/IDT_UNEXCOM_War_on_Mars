@@ -560,7 +560,6 @@ items:
 #### USA #####
 ##############
 
-
   - type: STR_US_PLASMA_RIFLE
     categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
     requiresBuyCountry: STR_NATO_SECTOR_A
@@ -583,9 +582,9 @@ items:
     confAuto:
       shots: 5
       name: STR_CONTROL_AUTO
-    accuracyAuto: 30
-    accuracySnap: 100
-    accuracyAimed: 65
+    accuracyAuto: 40 #30
+    accuracySnap: 120 #100
+    accuracyAimed: 80 #65
     costSnap:
       time: 60
     costAimed:
@@ -599,9 +598,9 @@ items:
     oneHandedPenalty: 30
     kneelBonus: 125
     maxRange: 60
-    aimRange: 32
+    aimRange: 40 #32
     snapRange: 28
-    autoRange: 16
+    autoRange: 20 #16
     dropoff: 5
     invWidth: 1
     invHeight: 3
@@ -722,7 +721,7 @@ items:
       ToWound: 0.5
       RandomWound: true
       ToTile: 1.8
-    damageType: 10
+    damageType: 3 #10
     clipSize: 1
     blastRadius: 4
     battleType: 2
@@ -845,6 +844,24 @@ items:
     battleType: 1
     tuLoad: 30
     tuUnload: 15
+    # melee segment
+    meleeHitSound: 198
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 30
+    meleeBonus:
+      strength: 0.6
+      melee: 0.2
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.2
+      melee: 0.5
+    costMelee:
+      time: 15
+      energy: 10
+    flatMelee:
+      time: true
+    # melee segment end
     twoHanded: true
     oneHandedPenalty: 40
     kneelBonus: 120
@@ -1170,7 +1187,7 @@ items:
     ##listOrder: 5177
     requiresBuyCountry: STR_WARSAW_PACT_SECTOR_4
     costBuy: 170000
-    costSell: 15000
+    costSell: 150000
     hitAnimation: 110
     power: 75 # 115
     clipSize: 50 # 35
@@ -1194,9 +1211,9 @@ items:
     categories: [STR_PLASMA, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
     requiresBuyCountry: STR_WARSAW_PACT_SECTOR_5
     size: 0.2
-    costBuy: 27000
-    costSell: 22000
-    weight: 20
+    costBuy: 25000 #2700
+    costSell: 20000 #2200
+    weight: 18 #20
     bigSprite: 3272
     floorSprite: 3272
     handSprite: 3272
@@ -1229,9 +1246,9 @@ items:
     tuLoad: 25
     tuUnload: 12
     maxRange: 25
-    aimRange: 7
-    snapRange: 10
-    autoRange: 5
+    aimRange: 8 #7
+    snapRange: 12 #10
+    autoRange: 6 #5
     twoHanded: false
     dropoff: 5
     invWidth: 1

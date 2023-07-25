@@ -15,10 +15,6 @@ items:
 #################################
   - type: STR_PEACEMAKER
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
-    size: 0.3
-    costBuy: 75000
-    costSell: 60000
-    weight: 6
     bigSprite: 1999
     floorSprite: 1999
     handSprite: 1992
@@ -26,6 +22,10 @@ items:
     hitAnimation: 100
     bulletSprite: 29
     fireSound: 2963
+    costBuy: 75000
+    costSell: 60000
+    size: 0.3
+    weight: 6
     power: 95
     damageType: 4
     damageAlter:
@@ -64,12 +64,6 @@ items:
 #################################
   - type: STR_M1972_LASER_PISTOL
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
-    requiresBuy:
-      - STR_USA_LASER_HANDGUNS
-    size: 0.1
-    costBuy: 30000
-    costSell: 20000
-    weight: 4
     bigSprite: 2000
     floorSprite: 2000
     handSprite: 2000
@@ -77,6 +71,12 @@ items:
     fireSound: 2960
     hitSound: 19
     hitAnimation: 36
+    requiresBuy:
+      - STR_USA_LASER_HANDGUNS
+    costBuy: 30000
+    costSell: 20000
+    size: 0.1
+    weight: 4
     power: 55
     damageType: 4
     damageAlter:
@@ -108,12 +108,6 @@ items:
 
   - type: STR_38_LASER_MAGNUM
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_US_TECH]
-    requiresBuy:
-      - STR_USA_LASER_HANDGUNS
-    size: 0.2
-    costBuy: 40000
-    costSell: 30000
-    weight: 6
     bigSprite: 2001
     floorSprite: 2001
     handSprite: 2008
@@ -121,6 +115,12 @@ items:
     fireSound: 2961
     hitSound: 19
     hitAnimation: 36
+    requiresBuy:
+      - STR_USA_LASER_HANDGUNS
+    costBuy: 40000
+    costSell: 30000
+    size: 0.2
+    weight: 6
     power: 70
     damageType: 4
     damageAlter:
@@ -153,12 +153,6 @@ items:
 
   - type: STR_CALBR
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
-    requiresBuy:
-      - STR_USA_LASER_RIFLES
-    size: 0.3
-    costBuy: 50000
-    costSell: 40000
-    weight: 6
     bigSprite: 2002
     floorSprite: 2002
     handSprite: 2016
@@ -166,6 +160,12 @@ items:
     fireSound: 2963
     hitSound: 19
     hitAnimation: 36
+    requiresBuy:
+      - STR_USA_LASER_RIFLES
+    costBuy: 50000
+    costSell: 40000
+    size: 0.3
+    weight: 6
     power: 65
     damageType: 4
     damageAlter:
@@ -201,12 +201,6 @@ items:
 
   - type: STR_M20_M203_LASER_CARBINE
     categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_US_TECH]
-    requiresBuy:
-      - STR_USA_LASER_CARBINES
-    size: 0.3
-    costBuy: 45000
-    costSell: 40000
-    weight: 6
     bigSprite: 2003
     floorSprite: 2003
     handSprite: 2024
@@ -214,6 +208,12 @@ items:
     fireSound: 2963
     hitSound: 19
     hitAnimation: 36
+    requiresBuy:
+      - STR_USA_LASER_CARBINES
+    size: 0.3
+    weight: 6
+    costBuy: 45000
+    costSell: 40000
     power: 60
     damageType: 4
     damageAlter:
@@ -253,12 +253,6 @@ items:
 
   - type: STR_M5_LASER_SMG
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_US_TECH]
-    requiresBuy:
-      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
-    size: 0.2
-    costBuy: 40000
-    costSell: 32000
-    weight: 4
     bigSprite: 2004
     floorSprite: 2004
     handSprite: 2032
@@ -266,6 +260,12 @@ items:
     fireSound: 2962
     hitSound: 19
     hitAnimation: -1
+    requiresBuy:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    costBuy: 40000
+    costSell: 32000
+    size: 0.2
+    weight: 4
     power: 45
     damageType: 4
     damageAlter:
@@ -305,12 +305,6 @@ items:
 
   - type: STR_ULYSSES_LASER_SNIPER_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_US_TECH]
-    requiresBuy:
-      - STR_USA_LASER_RIFLES
-    size: 0.3
-    costBuy: 65000
-    costSell: 55000
-    weight: 10
     bigSprite: 2005
     floorSprite: 2005
     handSprite: 2040
@@ -318,6 +312,12 @@ items:
     fireSound: 2964
     hitSound: 19
     hitAnimation: 36
+    requiresBuy:
+      - STR_USA_LASER_RIFLES
+    costBuy: 65000
+    costSell: 55000
+    size: 0.3
+    weight: 10
     power: 80
     damageType: 4
     damageAlter:
@@ -325,7 +325,6 @@ items:
     confAuto:
       shots: 1
       name: STR_HEADSHOT
-    twoHanded: true
     accuracySnap: 70
     accuracyAimed: 105
     accuracyAuto: 200
@@ -344,6 +343,7 @@ items:
     autoRange: 50
     minRange: 5
     dropoff: 1
+    twoHanded: true
     clipSize: -1
     battleType: 1
     invWidth: 2
@@ -351,12 +351,6 @@ items:
 
   - type: STR_X4_LASER_SHOTGUN
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
-    requiresBuy:
-      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
-    size: 0.3
-    costBuy: 38000
-    costSell: 32000
-    weight: 7
     bigSprite: 2006
     floorSprite: 2006
     handSprite: 2048
@@ -364,6 +358,12 @@ items:
     fireSound: 2964
     hitSound: 19
     hitAnimation: 36
+    requiresBuy:
+      - STR_USA_LASER_CLOSE_RANGE_WEAPONS
+    costBuy: 38000
+    costSell: 32000
+    size: 0.3
+    weight: 7
     power: 60
     damageType: 4
     damageAlter:
@@ -389,21 +389,15 @@ items:
     shotgunBehavior: 1
     shotgunPellets: 9
     shotgunSpread: 50
-    invHeight: 3
-    invWidth: 1
     clipSize: -1
     battleType: 1
-    twoHanded: true
     armor: 250
+    twoHanded: true
+    invHeight: 3
+    invWidth: 1
 
   - type: STR_M4_LASER_LMG
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_US_TECH]
-    requiresBuy:
-      - STR_USA_LASER_HEAVY_WEAPONS
-    size: 0.3
-    costBuy: 50000
-    costSell: 40000
-    weight: 15
     bigSprite: 2007
     floorSprite: 2007
     handSprite: 2056
@@ -411,6 +405,12 @@ items:
     fireSound: 2966
     hitSound: 19
     hitAnimation: -1
+    requiresBuy:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    costBuy: 50000
+    costSell: 40000
+    size: 0.3
+    weight: 15
     power: 60
     damageType: 4
     damageAlter:
@@ -435,26 +435,26 @@ items:
     autoRange: 30
     minRange: 3
     dropoff: 1
+    sprayWaypoints: 2
     clipSize: -1
     battleType: 1
-    sprayWaypoints: 2
     invWidth: 2
     invHeight: 3
 
   - type: STR_ELERIUM_FLAMETHROWER
     categories: [STR_ARTILLERY, STR_US_TECH, STR_LASER]
-    requiresBuy:
-      - STR_USA_LASER_HEAVY_WEAPONS
-    size: 0.2
-    costBuy: 42000
-    costSell: 36500
-    weight: 10
     bigSprite: 2008
     floorSprite: 2008
     handSprite: 2064
     bulletSprite: 30
     fireSound: 2967
     hitAnimation: 0
+    requiresBuy:
+      - STR_USA_LASER_HEAVY_WEAPONS
+    costBuy: 42000
+    costSell: 36500
+    size: 0.2
+    weight: 10
     power: 120
     damageType: 2
     damageAlter:
@@ -487,9 +487,6 @@ items:
 
   - type: STR_CHINA_LAKE_LASER_PROJECTOR #likely needs rebalancing
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_US_TECH]
-    size: 0.2
-    costSell: 22500 #Old heavy clunker that's trash against armor
-    weight: 20
     bigSprite: 688 #Likely needs to be imported
     floorSprite: 688 #Likely needs to be imported
     handSprite: 688 #Likely needs to be imported
@@ -497,6 +494,9 @@ items:
     bulletSprite: 27 #From M20
     hitAnimation: -1
     fireSound: 2963 #From M20
+    costSell: 22500 #Old heavy clunker that's trash against armor
+    size: 0.2
+    weight: 20
     power: 80
     damageType: 4
     damageAlter:
@@ -528,11 +528,11 @@ items:
     sprayWaypoints: 2
     clipSize: -1
     battleType: 1
+    armor: 200
     twoHanded: true
     kneelBonus: 200
     invWidth: 1
     invHeight: 3
-    armor: 200
     listOrder: 236
 
 ###################################
@@ -541,12 +541,6 @@ items:
 
   - type: STR_P71_LASER_PISTOL
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_NATO_TECH]
-    requiresBuy:
-      - STR_NATO_LASER_HANDGUNS
-    size: 0.1
-    costBuy: 27000
-    costSell: 19000
-    weight: 2.5
     bigSprite: 2009
     floorSprite: 2009
     handSprite: 2072
@@ -554,6 +548,12 @@ items:
     hitSound: 19
     hitAnimation: 90
     bulletSprite: 28
+    requiresBuy:
+      - STR_NATO_LASER_HANDGUNS
+    costBuy: 27000
+    costSell: 19000
+    size: 0.1
+    weight: 2.5
     power: 50
     damageType: 4
     damageAlter:
@@ -585,12 +585,6 @@ items:
 
   - type: STR_FN_FLA_LASER_BATTLE_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_NATO_TECH]
-    requiresBuy:
-      - STR_NATO_LASER_RIFLES
-    size: 0.3
-    costBuy: 52000
-    costSell: 44000
-    weight: 5
     bigSprite: 2010
     floorSprite: 2010
     handSprite: 2080
@@ -598,6 +592,12 @@ items:
     hitSound: 19
     hitAnimation: 90
     bulletSprite: 28
+    requiresBuy:
+      - STR_NATO_LASER_RIFLES
+    costBuy: 52000
+    costSell: 44000
+    size: 0.3
+    weight: 5
     power: 60
     damageType: 4
     damageAlter:
@@ -634,12 +634,6 @@ items:
 
   - type: STR_FN_FLA_LASER_CARBINE
     categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_NATO_TECH]
-    requiresBuy:
-      - STR_NATO_LASER_CARBINES
-    size: 0.3
-    costBuy: 50000
-    costSell: 44000
-    weight: 4
     bigSprite: 2011
     floorSprite: 2011
     handSprite: 2088
@@ -647,6 +641,12 @@ items:
     hitSound: 19
     hitAnimation: -1
     bulletSprite: 28
+    requiresBuy:
+      - STR_NATO_LASER_CARBINES
+    costBuy: 50000
+    costSell: 44000
+    size: 0.3
+    weight: 4
     power: 60
     damageType: 4
     damageAlter:
@@ -682,12 +682,6 @@ items:
 
   - type: STR_L4_ASSAULT_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_NATO_TECH]
-    requiresBuy:
-      - STR_NATO_LASER_RIFLES
-    size: 0.3
-    costBuy: 50000
-    costSell: 40000
-    weight: 6
     bigSprite: 2012
     floorSprite: 2012
     handSprite: 2096
@@ -695,6 +689,12 @@ items:
     hitSound: 19
     hitAnimation: 90
     bulletSprite: 28
+    requiresBuy:
+      - STR_NATO_LASER_RIFLES
+    costBuy: 50000
+    costSell: 40000
+    size: 0.3
+    weight: 6
     power: 70
     damageType: 4
     damageAlter:
@@ -730,11 +730,6 @@ items:
 
   - type: STR_MAT72_SUBMACHINE_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_NATO_TECH]
-    requiresBuy:
-      - STR_NATO_LASER_CLOSE_RANGE_WEAPONS
-    costBuy: 30000
-    costSell: 22000
-    weight: 3
     bigSprite: 2013
     floorSprite: 2013
     handSprite: 2104
@@ -742,6 +737,11 @@ items:
     hitSound: 19
     hitAnimation: -1
     bulletSprite: 28
+    requiresBuy:
+      - STR_NATO_LASER_CLOSE_RANGE_WEAPONS
+    costBuy: 30000
+    costSell: 22000
+    weight: 3
     power: 50
     damageType: 4
     damageAlter:
@@ -781,12 +781,6 @@ items:
 
   - type: STR_CHURCHILL_MARKSMAN_LASER_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
-    requiresBuy:
-      - STR_NATO_LASER_RIFLES
-    size: 0.3
-    costBuy: 66000
-    costSell: 55000
-    weight: 7
     bigSprite: 2014
     floorSprite: 2014
     handSprite: 2112
@@ -794,6 +788,12 @@ items:
     hitSound: 19
     hitAnimation: 90
     bulletSprite: 28
+    requiresBuy:
+      - STR_NATO_LASER_RIFLES
+    costBuy: 66000
+    costSell: 55000
+    size: 0.3
+    weight: 7
     power: 90
     damageType: 4
     damageAlter:
@@ -828,12 +828,6 @@ items:
 
   - type: STR_ML73_LASER_MACHINE_GUN
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_NATO_TECH]
-    requiresBuy:
-      - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.3
-    costBuy: 65000
-    costSell: 54000
-    weight: 8
     bigSprite: 2015
     floorSprite: 2015
     handSprite: 2120
@@ -841,6 +835,12 @@ items:
     hitSound: 19
     hitAnimation: -1
     bulletSprite: 28
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    costBuy: 65000
+    costSell: 54000
+    size: 0.3
+    weight: 8
     power: 60
     damageType: 4
     damageAlter:
@@ -873,17 +873,17 @@ items:
 
   - type: STR_M72_AUTOMATIC_RECOILLESS_RIFLE
     categories: [STR_BALLISTIC, STR_FIREARMS, STR_NATO_TECH, STR_ARTILLERY, STR_FUSION]
-    requiresBuy:
-      - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.4
-    costBuy: 36000
-    costSell: 30000
-    weight: 9
     bigSprite: 2016
     floorSprite: 2016
     handSprite: 2184
     bulletSprite: 0
     fireSound: 152
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    costBuy: 36000
+    costSell: 30000
+    size: 0.4
+    weight: 9
     confSnap:
       shots: 1
       name: STR_AIMED_SHOT
@@ -915,15 +915,15 @@ items:
 
   - type: STR_M72_ARR_HEAT_MAG
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
-    requiresBuy:
-      - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.2
-    costBuy: 2600
-    costSell: 1200
-    weight: 6
     bigSprite: 2017
     hitSound: 0
     hitAnimation: 0
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    costBuy: 2600
+    costSell: 1200
+    size: 0.2
+    weight: 6
     power: 80
     damageType: 5
     damageAlter:
@@ -940,15 +940,15 @@ items:
 
   - type: STR_M72_ARR_HE_MAG
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
-    requiresBuy:
-      - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.2
-    costBuy: 2600
-    costSell: 1200
-    weight: 6
     bigSprite: 2018
     hitSound: 0
     hitAnimation: 0
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    costBuy: 2600
+    costSell: 1200
+    size: 0.2
+    weight: 6
     power: 80
     damageType: 3
     damageAlter:
@@ -967,15 +967,15 @@ items:
 
   - type: STR_M72_ARR_SMOKE_MAG
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
-    requiresBuy:
-      - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.2
-    costBuy: 2200
-    costSell: 1000
-    weight: 6
     bigSprite: 2019
     hitSound: 0
     hitAnimation: 0
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    costBuy: 2200
+    costSell: 1000
+    size: 0.2
+    weight: 6
     power: 95
     damageType: 9
     damageAlter:
@@ -993,15 +993,15 @@ items:
 
   - type: STR_M72_ARR_ELERIUM_MAG
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS, STR_FUSION]
-    requiresBuy:
-      - STR_NATO_LASER_HEAVY_WEAPONS
-    size: 0.2
-    costBuy: 10000
-    costSell: 8000
-    weight: 6
     bigSprite: 2020
     hitSound: 0
     hitAnimation: 0
+    requiresBuy:
+      - STR_NATO_LASER_HEAVY_WEAPONS
+    costBuy: 10000
+    costSell: 8000
+    size: 0.2
+    weight: 6
     power: 130
     damageType: 10
     damageAlter:
@@ -1024,12 +1024,6 @@ items:
 #################################
   - type: STR_P72_COMPACT_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_SOVIET_TECH]
-    requiresBuy:
-      - STR_USSR_LASER_HANDGUNS
-    size: 0.1
-    costBuy: 25000
-    costSell: 20000
-    weight: 6
     bigSprite: 2021
     floorSprite: 2021
     handSprite: 2128
@@ -1037,6 +1031,12 @@ items:
     hitSound: 19
     hitAnimation: 100
     bulletSprite: 29
+    requiresBuy:
+      - STR_USSR_LASER_HANDGUNS
+    costBuy: 25000
+    costSell: 20000
+    size: 0.1
+    weight: 6
     power: 70
     damageType: 4
     damageAlter:
@@ -1068,12 +1068,6 @@ items:
 
   - type: STR_ALK72_LASER_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
-    requiresBuy:
-      - STR_USSR_LASER_RIFLES
-    size: 0.3
-    costBuy: 48000
-    costSell: 42000
-    weight: 7
     bigSprite: 2022
     floorSprite: 2022
     handSprite: 2136
@@ -1081,6 +1075,12 @@ items:
     hitSound: 19
     hitAnimation: 100
     bulletSprite: 29
+    requiresBuy:
+      - STR_USSR_LASER_RIFLES
+    costBuy: 48000
+    costSell: 42000
+    size: 0.3
+    weight: 7
     power: 75
     damageType: 4
     damageAlter:
@@ -1119,12 +1119,6 @@ items:
 
   - type: STR_KHARITONOV_LASER_BATTLE_RIFLE
     categories: [STR_LASER, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
-    requiresBuy:
-      - STR_USSR_LASER_RIFLES
-    size: 0.3
-    costBuy: 38000
-    costSell: 32000
-    weight: 10
     bigSprite: 2023
     floorSprite: 2023
     handSprite: 2144
@@ -1132,6 +1126,12 @@ items:
     hitSound: 19
     hitAnimation: 100
     bulletSprite: 29
+    requiresBuy:
+      - STR_USSR_LASER_RIFLES
+    costBuy: 38000
+    costSell: 32000
+    size: 0.3
+    weight: 10
     power: 85
     damageType: 4
     damageAlter:
@@ -1165,12 +1165,6 @@ items:
 
   - type: STR_ALP_SUBMACHINE_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
-    requiresBuy:
-      - STR_USSR_LASER_CLOSE_RANGE_WEAPONS
-    size: 0.2
-    costBuy: 27000
-    costSell: 22000
-    weight: 6
     bigSprite: 2024
     floorSprite: 2024
     handSprite: 2152
@@ -1178,6 +1172,12 @@ items:
     hitSound: 19
     hitAnimation: -1
     bulletSprite: 29
+    requiresBuy:
+      - STR_USSR_LASER_CLOSE_RANGE_WEAPONS
+    costBuy: 27000
+    costSell: 22000
+    size: 0.2
+    weight: 6
     power: 55
     damageType: 4
     damageAlter:
@@ -1216,12 +1216,6 @@ items:
 
   - type: STR_MIRINOV_LASER_SNIPER
     categories: [STR_LASER, STR_FIREARMS, STR_SNIPER_RIFLES, STR_SOVIET_TECH]
-    requiresBuy:
-      - STR_USSR_LASER_RIFLES
-    size: 0.3
-    costBuy: 68000
-    costSell: 59000
-    weight: 15
     bigSprite: 2025
     floorSprite: 2025
     handSprite: 2160
@@ -1229,6 +1223,12 @@ items:
     hitSound: 19
     hitAnimation: 100
     bulletSprite: 29
+    requiresBuy:
+      - STR_USSR_LASER_RIFLES
+    costBuy: 68000
+    costSell: 59000
+    size: 0.3
+    weight: 15
     power: 95
     damageType: 4
     damageAlter:
@@ -1263,12 +1263,6 @@ items:
 
   - type: STR_AN_MACHINE_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
-    requiresBuy:
-      - STR_USSR_LASER_HEAVY_WEAPONS
-    size: 0.3
-    costBuy: 75000
-    costSell: 69000
-    weight: 18
     bigSprite: 2026
     floorSprite: 2026
     handSprite: 2168
@@ -1276,6 +1270,12 @@ items:
     hitSound: 19
     hitAnimation: -1
     bulletSprite: 29
+    requiresBuy:
+      - STR_USSR_LASER_HEAVY_WEAPONS
+    costBuy: 75000
+    costSell: 69000
+    size: 0.3
+    weight: 18
     power: 75
     damageType: 4
     damageAlter:
@@ -1321,12 +1321,6 @@ items:
 
   - type: STR_AFINA_ANTITANK_LASER
     categories: [STR_LASER, STR_FIREARMS, STR_ARTILLERY, STR_SOVIET_TECH]
-    requiresBuy:
-      - STR_USSR_LASER_HEAVY_WEAPONS
-    size: 0.3
-    costBuy: 100000
-    costSell: 89000
-    weight: 20
     bigSprite: 2027
     floorSprite: 2027
     handSprite: 2176
@@ -1334,6 +1328,12 @@ items:
     hitSound: 19
     hitAnimation: 100
     bulletSprite: 29
+    requiresBuy:
+      - STR_USSR_LASER_HEAVY_WEAPONS
+    costBuy: 100000
+    costSell: 89000
+    size: 0.3
+    weight: 20
     power: 110
     damageType: 4
     damageAlter:
@@ -1362,11 +1362,11 @@ items:
 
   - type: STR_BATTERY
     categories: [STR_LIGHT_EQUIPMENT, STR_LASER]
-    size: 0.1
-    costBuy: 1000
-    weight: 10
     bigSprite: 2028
     floorSprite: 2028
+    costBuy: 1000
+    size: 0.1
+    weight: 10
     battleType: 6
     invWidth: 1
     invHeight: 1
@@ -1384,10 +1384,10 @@ items:
 
   - type: STR_ELERIUM_BATTERY
     categories: [ STR_LIGHT_EQUIPMENT]
-    size: 0.1
-    weight: 10
     bigSprite: 1105
     floorSprite: 1105
+    size: 0.1
+    weight: 10
     battleType: 6
     invWidth: 1
     invHeight: 1

@@ -296,17 +296,3 @@ extraSprites:
       324: Resources/AlienLasers/Alien Reactive Grenade/HandReactiveGrenade.png
       332: Resources/AlienLasers/Alien Siege Launcher/HandSiegeLauncher.png
       340: Resources/AlienLasers/Alien Energy Axe/Energy_Axe_Hand.png
-
-
-extraStrings:
-  - type: en-US
-    strings:
-      STR_ALIEN_LASER_PISTOL: "Alien Laser Pistol"
-      STR_ALIEN_LASER_PISTOL_BATTERY: "Alien Light Battery"
-      STR_ALIEN_LASER_PISTOL_UFOPEDIA: "This 'hand weapon' (named by our technicians, judging by the size and use of this weapon by the enemy) uses novel technology to emit a powerful beam of light. When passing a Geiger counter, we can see that it emits a small amount of radiation, so it is not recommended for analysis without adequate protection."
-      STR_ALIEN_LASER_RIFLE: "Alien Laser Rifle"
-      STR_ALIEN_LASER_RIFLE_BATTERY: "Alien Medium Battery"
-      STR_ALIEN_LASER_RIFLE_UFOPEDIA: "Our studies and field reports point to this weapon as the standard weaponry of the enemy infantry (similar to our doctrines). This 'rifle', if you can call it that, has a compact power generator, which emits a light beam powered by a crystal of unknown origin. The beam is capable of penetrating armor without problems."
-      STR_ALIEN_HEAVY_LASER: "Alien Heavy Laser"
-      STR_ALIEN_HEAVY_LASER_BATTERY: "Alien Heavy Battery"
-      STR_ALIEN_HEAVY_LASER_UFOPEDIA: "A really heavy weapon, but extremely powerful. This cannon uses the same concept of an energy source that emits a laser, amplified by an alien crystal. This crystal is quite large, more than in other enemy devices, which we believe contributes to give it a greater range. We have noticed that it has a tendency to overheat."

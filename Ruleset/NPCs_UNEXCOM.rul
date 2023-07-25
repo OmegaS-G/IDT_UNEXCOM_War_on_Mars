@@ -655,15 +655,15 @@ units:
     energyRecovery: 40
     builtInWeaponSets:
       -
-        - STR_M17_CARBINE
-        - STR_5_56MM_NATO_RIFLE_X30
-        - STR_5_56MM_NATO_RIFLE_X30
+        - STR_TKB1980_CASELESS_RIFLE #Because fluff
+        - STR_TKB1980_CASELESS_RIFLE_MAG
+        - STR_TKB1980_CASELESS_RIFLE_MAG
       -
         - STR_AK79_RIFLE
         - STR_7_62MM_SOVIET_RIFLE_X40
         - STR_7_62MM_SOVIET_RIFLE_X40
       -
-        - STR_P72_COMPACT_LASER
+        - STR_CHINA_LAKE_LASER_PROJECTOR #Its there for a reason..
         - STR_BATTERY
         - STR_BATTERY
 
@@ -694,9 +694,9 @@ units:
         - STR_5_56MM_NATO_RIFLE_X30
         - STR_5_56MM_NATO_RIFLE_X30
       -
-        - STR_AK79_RIFLE
-        - STR_7_62MM_SOVIET_RIFLE_X40
-        - STR_7_62MM_SOVIET_RIFLE_X40
+        - STR_G11_CASELESS_RIFLE
+        - STR_G11_CASELESS_RIFLE_MAG
+        - STR_BIO_FOAM
       -
         - STR_P72_COMPACT_LASER
         - STR_BATTERY

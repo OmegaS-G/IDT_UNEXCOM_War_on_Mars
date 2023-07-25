@@ -488,15 +488,15 @@ items:
   - type: STR_CHINA_LAKE_LASER_PROJECTOR #likely needs rebalancing
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_US_TECH]
     size: 0.2
-    costSell: 22500 #Old clunker that has compatability problems
+    costSell: 22500 #Old heavy clunker that's trash against armor
     weight: 20
     bigSprite: 688 #Likely needs to be imported
     floorSprite: 688 #Likely needs to be imported
     handSprite: 688 #Likely needs to be imported
     bulletSpeed: 30
-    bulletSprite: 29 #Likely needs to be imported
+    bulletSprite: 27 #From M20
     hitAnimation: -1
-    fireSound: 242 #Likely needs to be imported
+    fireSound: 2963 #From M20
     power: 80
     damageType: 4
     damageAlter:
@@ -1441,6 +1441,7 @@ extraSprites:
       2006: Resources/LaserWeapons/USA/BigX44LaserShotgun.png
       2007: Resources/LaserWeapons/USA/BigM4LaserLMG.png
       2008: Resources/LaserWeapons/USA/BigEleriumFlamethrower.png
+      688: Resources/LaserWeapons/USA/China Lake Laser Projector/Loaded_0_Big.png #NEED TO IMPORT
 #####################
       2009: Resources/LaserWeapons/NATO/BigP71Handgun.png
       2010: Resources/LaserWeapons/NATO/BigFNFLABattleRifle.png
@@ -1479,6 +1480,7 @@ extraSprites:
       2006: Resources/LaserWeapons/USA/FloorX44LaserShotgun.png
       2007: Resources/LaserWeapons/USA/FloorM4LaserLMG.png
       2008: Resources/LaserWeapons/USA/FloorEleriumFlamethrower.png
+      688: Resources/LaserWeapons/USA/China Lake Laser Projector/Loaded_0_Floor.png #NEED TO IMPORT
 ######################
       2009: Resources/LaserWeapons/NATO/FloorP71Handgun.png
       2010: Resources/LaserWeapons/NATO/FloorFNFLABattleRifle.png
@@ -1520,6 +1522,7 @@ extraSprites:
       2048: Resources/LaserWeapons/USA/HandX44LaserShotgun.png
       2056: Resources/LaserWeapons/USA/HandM4LaserLMG.png
       2064: Resources/LaserWeapons/USA/HandEleriumFlamethrower.png
+      688: Resources/LaserWeapons/USA/China Lake Laser Projector/Loaded_0_Hand.png #NEED TO IMPORT
 ######################
       2072: Resources/LaserWeapons/NATO/HandP71Handgun.png
       2080: Resources/LaserWeapons/NATO/HandFNFLABattleRifle.png
@@ -1555,4 +1558,3 @@ extraSprites:
       980: Resources/BulletSprites/WideBlueLaser_Bullet.png # 28
       1015: Resources/BulletSprites/WideRedLaser_Bullet.png # 29
       1050: Resources/BulletSprites/FlameProjectile.png # 30
-

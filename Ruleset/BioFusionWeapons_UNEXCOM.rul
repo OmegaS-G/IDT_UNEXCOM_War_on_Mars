@@ -1,17 +1,18 @@
 items:
   - type: STR_FUSION_HANDGUN
-    requires:
-      - STR_ALIENS_ONLY
     listOrder: 100
-    size: 2
-    costSell: 65000
     categories: [STR_FUSION, STR_PISTOLS, STR_ALIEN_TECH]
-    weight: 8
     floorSprite: 1100
     bigSprite: 1100
     handSprite: 2500
     fireSound: 1939
     bulletSprite: 21
+    bulletSpeed: 5
+    requires:
+      - STR_ALIENS_ONLY
+    costSell: 65000
+    size: 2
+    weight: 8
     compatibleAmmo:
       - STR_FUSION_POWER_CELL_LIGHT
     accuracyAuto: 0
@@ -21,6 +22,7 @@ items:
     tuAuto: 0
     tuSnap: 38
     tuAimed: 66
+    tuLoad: 12
     autoRange: 0
     snapRange: 14
     aimRange: 26
@@ -39,28 +41,29 @@ items:
       energy: 8
     flatMelee:
       time: true
-    bulletSpeed: 5
-    tuLoad: 12
     battleType: 1
     invWidth: 1
     invHeight: 2
     armor: 135
     experienceTrainingMode: 0
+
   - type: STR_FUSION_SMG
-    requires:
-      - STR_ALIENS_ONLY
     listOrder: 101
-    size: 1
-    costSell: 70000
     categories: [STR_FUSION, STR_SMGS, STR_ALIEN_TECH]
-    weight: 14
     floorSprite: 1101
     bigSprite: 1101
     handSprite: 2508
-    bulletSprite: 21
     fireSound: 1940
+    bulletSprite: 21
+    bulletSpeed: 5
+    requires:
+      - STR_ALIENS_ONLY
+    costSell: 70000
+    size: 1
+    weight: 14
     compatibleAmmo:
       - STR_FUSION_POWER_CELL_LIGHT
+    autoShots: 3
     accuracyAuto: 57
     accuracySnap: 48
     accuracyAimed: 0
@@ -68,6 +71,7 @@ items:
     tuAuto: 62
     tuSnap: 31
     tuAimed: 0
+    tuLoad: 9
     autoRange: 10
     snapRange: 18
     aimRange: 0
@@ -86,28 +90,26 @@ items:
       energy: 8
     flatMelee:
       time: true
-    bulletSpeed: 5
-    autoShots: 3
-    tuLoad: 9
     battleType: 1
     twoHanded: true
     invWidth: 1
     invHeight: 3
     armor: 135
     experienceTrainingMode: 0
+
   - type: STR_FUSION_POWER_CELL_LIGHT
-    requiresBuy:
-      - STR_ALIENS_ONLY
     listOrder: 102
-    size: 1
-    costSell: 75000
     categories: [STR_FUSION, STR_PISTOLS, STR_SMGS, STR_ALIEN_TECH]
-    weight: 4
     floorSprite: 1102
     bigSprite: 1102
     explosionSpeed: 4
     vaporColorSurface: 1
     vaporDensitySurface: 10
+    requiresBuy:
+      - STR_ALIENS_ONLY
+    costSell: 75000
+    size: 1
+    weight: 4
     power: 75
     damageType: 10
     damageAlter:
@@ -122,27 +124,30 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 60
+
   - type: STR_FUSION_RIFLE
-    requires:
-      - STR_ALIENS_ONLY
     listOrder: 103
-    size: 2
-    costSell: 78000
     categories: [STR_FUSION, STR_RIFLES, STR_ALIEN_TECH]
-    weight: 16
     bigSprite: 1103
     floorSprite: 1103
     handSprite: 2516
     bulletSprite: 21
+    bulletSpeed: 5
     fireSound: 1941
+    requires:
+      - STR_ALIENS_ONLY
+    costSell: 78000
+    size: 2
+    weight: 16
     compatibleAmmo:
       - STR_FUSION_POWER_CELL_HEAVY
+    autoShots: 2
     accuracySnap: 78
     accuracyAimed: 109
     accuracyMelee: 65
     tuSnap: 45
     tuAimed: 78
-    #autoRange: 8
+    tuLoad: 11
     snapRange: 16
     aimRange: 32
     dropoff: 1
@@ -160,28 +165,27 @@ items:
       energy: 10
     flatMelee:
       time: true
-    bulletSpeed: 5
-    autoShots: 2
-    tuLoad: 11
     battleType: 1
+    armor: 135
     twoHanded: true
     invWidth: 1
     invHeight: 3
-    armor: 135
     experienceTrainingMode: 0
+
   - type: STR_FUSION_SNIPER
-    requires:
-      - STR_ALIENS_ONLY
     listOrder: 104
-    size: 1
-    costSell: 8000
     categories: [STR_FUSION, STR_SNIPER_RIFLES, STR_ALIEN_TECH]
-    weight: 18
     bigSprite: 1104
     floorSprite: 1104
     handSprite: 2524
     bulletSprite: 21
+    bulletSpeed: 5
     fireSound: 1942
+    requires:
+      - STR_ALIENS_ONLY
+    costSell: 8000
+    size: 1
+    weight: 18
     compatibleAmmo:
       - STR_FUSION_POWER_CELL_HEAVY
     accuracyAuto: 0
@@ -191,6 +195,7 @@ items:
     tuAuto: 0
     tuSnap: 68
     tuAimed: 84
+    tuLoad: 13
     autoRange: 0
     snapRange: 22
     aimRange: 40
@@ -209,25 +214,29 @@ items:
       energy: 15
     flatMelee:
       time: true
-    bulletSpeed: 5
-    tuLoad: 13
     battleType: 1
+    armor: 135
     twoHanded: true
     invWidth: 2
     invHeight: 3
-    armor: 135
     experienceTrainingMode: 0
+
   - type: STR_HUMAN_FUSION_RIFLE
     listOrder: 105
-    size: 2
-    costSell: 100000
     categories: [STR_FUSION, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
     weight: 10
     bigSprite: 1112
     floorSprite: 1112
     handSprite: 2564
     bulletSprite: 21
+    bulletSpeed: 5
     fireSound: 1946
+    costSell: 100000
+    size: 2
+    damageAlter:
+      ToArmorPre: 2.0
+      RandomType: 3
+    autoShots: 2
     compatibleAmmo:
       - STR_FUSION_POWER_CELL_HEAVY
     accuracySnap: 90
@@ -236,15 +245,11 @@ items:
     tuSnap: 45
     tuAimed: 70
     tuAuto: 50
+    tuLoad: 11
     autoRange: 12
     snapRange: 16
     aimRange: 32
     dropoff: 1
-    bulletSpeed: 5
-    damageAlter:
-      ToArmorPre: 2.0
-      RandomType: 3
-    autoShots: 2
     meleeAnimation: 0
     meleeType: 7
     meleePower: 65
@@ -260,28 +265,28 @@ items:
       energy: 8
     flatMelee:
       time: true
-    tuLoad: 11
     battleType: 1
+    armor: 135
     twoHanded: true
     invWidth: 1
     invHeight: 3
-    armor: 135
     experienceTrainingMode: 0
+
   - type: STR_FUSION_POWER_CELL_HEAVY
-    requiresBuy:
-      - STR_ALIENS_ONLY
     listOrder: 106
-    size: 1
-    costSell: 10000
     categories: [STR_FUSION, STR_RIFLES, STR_SNIPER_RIFLES, STR_ALIEN_TECH]
-    weight: 8
     bigSprite: 1105
     floorSprite: 1105
     explosionSpeed: 4
-    power: 80
-    damageType: 10
     vaporColorSurface: 1
     vaporDensitySurface: 10
+    requiresBuy:
+      - STR_ALIENS_ONLY
+    costSell: 10000
+    size: 1
+    weight: 8
+    power: 80
+    damageType: 10
     damageAlter:
       RadiusReduction: 50
       IgnoreOverKill: false
@@ -291,23 +296,24 @@ items:
     clipSize: 6
     blastRadius: 3
     battleType: 2
+    armor: 60
     invWidth: 1
     invHeight: 1
-    armor: 60
 
   - type: STR_FUSION_SPLITTER
-    requires:
-      - STR_ALIENS_ONLY
     listOrder: 107
-    size: 1
-    costSell: 8000
     categories: [STR_FUSION, STR_SHOTGUNS, STR_ALIEN_TECH]
-    weight: 18
     bigSprite: 1106
     floorSprite: 1106
     handSprite: 2532
     bulletSprite: 21
+    bulletSpeed: 5
     fireSound: 1943
+    requires:
+      - STR_ALIENS_ONLY
+    costSell: 8000
+    size: 1
+    weight: 18
     compatibleAmmo:
       - STR_FUSION_POWER_CELL_HUGE
     accuracyAuto: 0
@@ -317,6 +323,7 @@ items:
     tuAuto: 0
     tuSnap: 40
     tuAimed: 70
+    tuLoad: 13
     autoRange: 0
     snapRange: 15
     aimRange: 20
@@ -335,22 +342,16 @@ items:
       energy: 8
     flatMelee:
       time: true
-    bulletSpeed: 5
-    tuLoad: 13
     battleType: 1
+    armor: 135
     twoHanded: true
     invWidth: 2
     invHeight: 3
-    armor: 135
     experienceTrainingMode: 0
+
   - type: STR_FUSION_POWER_CELL_HUGE
-    requiresBuy:
-      - STR_ALIENS_ONLY
     listOrder: 108
-    size: 1
-    costSell: 10000
     categories: [STR_FUSION, STR_SHOTGUNS, STR_ALIEN_TECH]
-    weight: 8
     bigSprite: 1107
     floorSprite: 1107
     shotgunBehavior: 0
@@ -358,10 +359,15 @@ items:
     shotgunSpread: 50
     hitSound: 19
     hitAnimation: 36
-    power: 50
-    damageType: 10
     vaporColorSurface: 1
     vaporDensitySurface: 10
+    requiresBuy:
+      - STR_ALIENS_ONLY
+    costSell: 10000
+    size: 1
+    weight: 8
+    power: 50
+    damageType: 10
     damageAlter:
       RadiusReduction: 50
       IgnoreOverKill: false
@@ -374,20 +380,30 @@ items:
     invWidth: 2
     invHeight: 1
     armor: 60
+
   - type: STR_FUSION_LANCE
-    requires:
-      - STR_ALIENS_ONLY
     listOrder: 109
-    size: 1
-    costSell: 8000
     categories: [STR_FUSION, STR_ARTILLERY, STR_ALIEN_TECH]
-    weight: 18
     bigSprite: 1108
     floorSprite: 1108
     handSprite: 2540
     bulletSprite: 27
+    bulletSpeed: 5
     fireSound: 1944
-    clipSize: 10
+    vaporColorSurface: 1
+    vaporDensitySurface: 10
+    requires:
+      - STR_ALIENS_ONLY
+    costSell: 8000
+    size: 1
+    weight: 18
+    damageType: 10
+    damageAlter:
+      RadiusReduction: 50
+      IgnoreOverKill: false
+      #ToWound: 5
+      ToArmorPre: 1.1
+      #ToTile: 0.73
     accuracyAuto: 0
     accuracySnap: 95
     accuracyAimed: 145
@@ -396,60 +412,30 @@ items:
     tuAuto: 0
     tuSnap: 68
     tuAimed: 84
+    tuLoad: 13
     autoRange: 0
     snapRange: 22
     aimRange: 40
     dropoff: 1
-    bulletSpeed: 5
-    tuLoad: 13
+    clipSize: 10
     battleType: 1
+    armor: 135
     twoHanded: true
     invWidth: 2
     invHeight: 3
-    armor: 135
     experienceTrainingMode: 0
     power: 120
-    damageType: 10
-    vaporColorSurface: 1
-    vaporDensitySurface: 10
-    damageAlter:
-      RadiusReduction: 50
-      IgnoreOverKill: false
-      #ToWound: 5
-      ToArmorPre: 1.1
-      #ToTile: 0.73
 
   - type: STR_ETHEREAL_NOBLE_SWORD
     categories: [STR_FUSION, STR_MELEE, STR_ALIEN_TECH]
-    size: 0.2
-    costSell: 35000
-    weight: 6
     bigSprite: 1109
     floorSprite: 1109
     handSprite: 2548
     fireSound: 1947
-    accuracySnap: 50
-    accuracyAimed: 100
-    tuSnap: 15
-    tuAimed: 30
-    confAimed:
-      shots: 1
-      spendPerShot: 10
-      name: STR_THRUST
-    confSnap:
-      shots: 1
-      spendPerShot: 10
-      name: STR_CUT
-    battleType: 1
-    twoHanded: false
-    clipSize: -1
-    invWidth: 1
-    invHeight: 3
-    maxRange: 2
-    aimRange: 2
-    snapRange: 1
+    costSell: 35000
+    size: 0.2
+    weight: 6
     damageType: 4
-    #hitAnimation: 150
     power: 150
     damageBonus:
       psiSkill:
@@ -462,20 +448,42 @@ items:
       ToArmor: 0.5
       ToMorale: 1.2
       #ToMana: 2.0
+    confAimed:
+      shots: 1
+      spendPerShot: 10
+      name: STR_THRUST
+    confSnap:
+      shots: 1
+      spendPerShot: 10
+      name: STR_CUT
+    accuracySnap: 50
+    accuracyAimed: 100
+    tuSnap: 15
+    tuAimed: 30
+    maxRange: 2
+    aimRange: 2
+    snapRange: 1
+    battleType: 1
+    twoHanded: false
+    clipSize: -1
+    invWidth: 1
+    invHeight: 3
+    #hitAnimation: 150
 
   - type: STR_THERMONUCLEAR_PROJECTILE_LAUNCHER
-    requires:
-      - STR_ALIENS_ONLY
     listOrder: 110
-    size: 1
-    costSell: 8000
     categories: [STR_FUSION, STR_ARTILLERY, STR_ALIEN_TECH]
-    weight: 18
     bigSprite: 1110
     floorSprite: 1110
     handSprite: 2556
     bulletSprite: 21
+    bulletSpeed: 5
     fireSound: 1945
+    requires:
+      - STR_ALIENS_ONLY
+    costSell: 8000
+    size: 1
+    weight: 18
     compatibleAmmo:
       - STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
     accuracyAuto: 0
@@ -484,34 +492,34 @@ items:
     tuAuto: 0
     tuSnap: 65
     tuAimed: 90
+    tuLoad: 13
     autoRange: 0
     snapRange: 35
     aimRange: 40
     dropoff: 1
-    bulletSpeed: 5
-    tuLoad: 13
     battleType: 1
+    armor: 135
     twoHanded: true
     arcingShot: true
     invWidth: 2
     invHeight: 3
-    armor: 135
     experienceTrainingMode: 0
+
   - type: STR_THERMONUCLEAR_PROJECTILE_LAUNCHER_MAGAZINE
-    requires:
-      - STR_ALIENS_ONLY
     listOrder: 111
-    size: 1
-    costSell: 10000
     categories: [STR_FUSION, STR_ARTILLERY, STR_ALIEN_TECH]
-    weight: 8
     bigSprite: 1111
     floorSprite: 1111
     explosionSpeed: 4
-    power: 130
     damageType: 10
     vaporColorSurface: 1
     vaporDensitySurface: 10
+    requires:
+      - STR_ALIENS_ONLY
+    costSell: 10000
+    size: 1
+    weight: 8
+    power: 130
     damageAlter:
       RadiusReduction: 50
       FixRadius: 2
@@ -522,70 +530,9 @@ items:
     clipSize: 6
     #blastRadius: 3
     battleType: 2
+    armor: 60
     invWidth: 2
     invHeight: 1
-    armor: 60
-
-
-
-#  - type: STR_FUSION_
-    # listOrder: 0
-    # size: 0
-    # costBuy: 0
-    # costSell: 0
-    # categories: [STR_PISTOLS, STR_ALIEN_TECH]
-    # weight: 8
-    # bigSprite: 1
-    # floorSprite: 1
-    # handSprite: 1
-    # fireSound: 1
-    # compatibleAmmo:
-      # - STR_FUSION_POWER_CELL_LIGHT
-    # accuracyAuto: 0
-    # accuracySnap: 65
-    # accuracyAimed: 90
-    # tuAuto: 0
-    # tuSnap: 38
-    # tuAimed: 66
-    # autoRange: 0
-    # snapRange: 14
-    # aimRange: 26
-    # dropoff: 1
-    # tuLoad: 12
-    # battleType: 1
-    # twoHanded: true
-    # invWidth: 1
-    # invHeight: 2
-    # armor: 135
-    # experienceTrainingMode: 0
-#  - type: STR_FUSION_
-    # listOrder: 0
-    # size: 0
-    # costBuy: 0
-    # costSell: 0
-    # categories: [STR_PISTOLS, STR_ALIEN_TECH]
-    # weight: 0
-    # bigSprite: 1
-    # floorSprite: 1
-    # handSprite: 1
-    # hitSound: 1
-    # hitAnimation: 1
-    # shotgunPellets: 1
-    # shotgunSpread: 20
-    # shotgunBehavior: 1
-    # shotgunChoke: 100
-    # power: 0
-    # damageType: 3
-    # damageAlter:
-      # ArmorEffectiveness: 1
-      # IgnoreOverKill: false
-      # ToArmor: 0
-      # ToArmorPre: 0.05
-      # ToTile: 0.75
-      # TileDamageMethod: 2
-    # clipSize: 1
-    # battleType: 2
-    # armor: 60
 
   - type: STR_ALIEN_CEPHALOPOD_TISSUE
     size: 0.3
@@ -600,7 +547,6 @@ manufacture:
     requiredItems:
       STR_ALIEN_CEPHALOPOD_TISSUE: 5
       STR_ALIEN_ALLOYS: 10
-
   - name: STR_DISASSEMBLE_FUSION_POWER_CELL_LIGHT
     time: 20
     space: 1
@@ -609,7 +555,6 @@ manufacture:
       STR_FUSION_POWER_CELL_LIGHT: 1
     producedItems:
       STR_ELERIUM_115: 5
-
   - name: STR_DISASSEMBLE_FUSION_POWER_CELL_HEAVY
     time: 20
     space: 1
@@ -618,7 +563,6 @@ manufacture:
       STR_FUSION_POWER_CELL_HEAVY: 1
     producedItems:
       STR_ELERIUM_115: 10
-
   - name: STR_DISASSEMBLE_FUSION_POWER_CELL_HUGE
     time: 20
     space: 1
@@ -627,7 +571,6 @@ manufacture:
       STR_FUSION_POWER_CELL_HUGE: 1
     producedItems:
       STR_ELERIUM_115: 15
-
   - name: STR_DISASSEMBLE_FUSION_HANDGUN
     time: 20
     space: 1
@@ -637,7 +580,6 @@ manufacture:
     producedItems:
       STR_ALIEN_CEPHALOPOD_TISSUE: 1
       STR_ALIEN_ALLOYS: 1
-
   - name: STR_DISASSEMBLE_FUSION_SMG
     time: 20
     space: 1
@@ -647,7 +589,6 @@ manufacture:
     producedItems:
       STR_ALIEN_CEPHALOPOD_TISSUE: 2
       STR_ALIEN_ALLOYS: 1
-
   - name: STR_DISASSEMBLE_FUSION_RIFLE
     time: 30
     space: 1
@@ -657,7 +598,6 @@ manufacture:
     producedItems:
       STR_ALIEN_CEPHALOPOD_TISSUE: 3
       STR_ALIEN_ALLOYS: 1
-
   - name: STR_DISASSEMBLE_FUSION_SNIPER
     time: 40
     space: 1
@@ -667,7 +607,6 @@ manufacture:
     producedItems:
       STR_ALIEN_CEPHALOPOD_TISSUE: 3
       STR_ALIEN_ALLOYS: 1
-
   - name: STR_DISASSEMBLE_FUSION_SPLITTER
     time: 40
     space: 1
@@ -677,7 +616,6 @@ manufacture:
     producedItems:
       STR_ALIEN_CEPHALOPOD_TISSUE: 2
       STR_ALIEN_ALLOYS: 2
-
   - name: STR_DISASSEMBLE_FUSION_LANCE
     time: 40
     space: 3
@@ -705,6 +643,7 @@ manufacture:
     producedItems:
       STR_ALIEN_CEPHALOPOD_TISSUE: 2
       STR_ALIEN_ALLOYS: 1
+
 extraSprites:
   - type: BIGOBS.PCK
     files:

@@ -48,16 +48,17 @@ items:
     costAuto:
       time: 45
       mana: 8
-    clipSize: -1
-    battleType: 1
-    twoHanded: true
     maxRange: 60
     aimRange: 30
     snapRange: 36
     autoRange: 25
     dropoff: 1
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
     invWidth: 1
     invHeight: 3
+
 ###################################
 ###### USA LASER WEAPONS #########
 #################################
@@ -95,13 +96,13 @@ items:
     costAuto:
       time: 25
       mana: 4
-    clipSize: -1
-    battleType: 1
     maxRange: 60
     aimRange: 15
     snapRange: 10
     autoRange: 10
     dropoff: 1
+    clipSize: -1
+    battleType: 1
     invWidth: 1
     invHeight: 2
 
@@ -139,14 +140,14 @@ items:
     costAuto:
       time: 32
       mana: 4
-    clipSize: -1
-    battleType: 1
     maxRange: 60
     aimRange: 15
     snapRange: 12
     autoRange: 10
     minRange: 1
     dropoff: 1
+    clipSize: -1
+    battleType: 1
     invWidth: 1
     invHeight: 2
 
@@ -187,17 +188,16 @@ items:
     costAuto:
       time: 45
       mana: 5
-    clipSize: -1
-    battleType: 1
-    twoHanded: true
     maxRange: 60
     aimRange: 30
     snapRange: 38
     autoRange: 27
     dropoff: 1
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
     invWidth: 1
     invHeight: 3
-
 
   - type: STR_M20_M203_LASER_CARBINE
     categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_US_TECH]
@@ -240,13 +240,13 @@ items:
       time: 28
       mana: 3
     tuAimed: 50
-    clipSize: -1
-    battleType: 1
-    twoHanded: true
     maxRange: 60
     aimRange: 30
     snapRange: 25
     autoRange: 20
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
     dropoff: 1
     invWidth: 2
     invHeight: 3
@@ -291,13 +291,13 @@ items:
     costAuto:
       time: 14
       mana: 9
-    clipSize: -1
-    battleType: 1
     maxRange: 60
     aimRange: 10
     snapRange: 15
     autoRange: 12
     sprayWaypoints: 2
+    clipSize: -1
+    battleType: 1
     twoHanded: true
     dropoff: 1
     invWidth: 1
@@ -338,14 +338,14 @@ items:
     costAuto:
       time: 85
       mana: 1
-    clipSize: -1
-    battleType: 1
     maxRange: 60
     aimRange: 50
     snapRange: 45
     autoRange: 50
     minRange: 5
     dropoff: 1
+    clipSize: -1
+    battleType: 1
     invWidth: 2
     invHeight: 3
 
@@ -364,17 +364,16 @@ items:
     fireSound: 2964
     hitSound: 19
     hitAnimation: 36
-    confAuto:
-      shots: 8
-      name: STR_RAGE_FIRE
-    clipSize: -1
-    accuracySnap: 60
-    accuracyAuto: 65
-    accuracyAimed: 75
     power: 60
     damageType: 4
     damageAlter:
       RandomType: 6
+    confAuto:
+      shots: 8
+      name: STR_RAGE_FIRE
+    accuracySnap: 60
+    accuracyAuto: 65
+    accuracyAimed: 75
     costSnap:
       time: 40
       mana: 4
@@ -392,6 +391,7 @@ items:
     shotgunSpread: 50
     invHeight: 3
     invWidth: 1
+    clipSize: -1
     battleType: 1
     twoHanded: true
     armor: 250
@@ -415,14 +415,14 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
-    accuracyAuto: 40
-    accuracySnap: 40
     confSnap:
       shots: 10
       name: STR_BURST
     confAuto:
       shots: 30
       name: STR_SUPPRESSION
+    accuracyAuto: 40
+    accuracySnap: 40
     costSnap:
       time: 28
       mana: 10
@@ -430,13 +430,13 @@ items:
       time: 34
       mana: 30
     twoHanded: true
-    clipSize: -1
-    battleType: 1
     maxRange: 60
     snapRange: 35
     autoRange: 30
     minRange: 3
     dropoff: 1
+    clipSize: -1
+    battleType: 1
     sprayWaypoints: 2
     invWidth: 2
     invHeight: 3
@@ -454,58 +454,54 @@ items:
     handSprite: 2064
     bulletSprite: 30
     fireSound: 2967
-#    compatibleAmmo:
-#      - STR_FLAMETHROWER_CLIP
-    accuracyCloseQuarters: 100
-    accuracyAuto: 75
-    costThrow:
-      energy: 20
-    battleType: 1
-    twoHanded: true
-    arcingShot: true
-    autoRange: 15
-    invWidth: 2
-    invHeight: 3
-    armor: 30
-#    explosionHitSound: 113
     hitAnimation: 0
     power: 120
-    costAuto:
-      time: 35
-      mana: 10
     damageType: 2
     damageAlter:
       RandomType: 6
       ToMorale: 1.5
       FireThreshold: 1
       SmokeThreshold: 1000
-    clipSize: -1
+      arcingShot: true
     autoShots: 5
+    accuracyCloseQuarters: 100
+    accuracyAuto: 75
+    costAuto:
+      time: 35
+      mana: 10
+    costThrow:
+      energy: 20
+    autoRange: 15
     sprayWaypoints: 2
-#    bulletSpeed: 8
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
     experienceTrainingMode: 7
     attraction: 7
     vaporColorSurface: 1
     vaporDensitySurface: 10
     vaporProbabilitySurface: 100
 
-  - type: STR_CHINA_LAKE_LASER_PROJECTOR
+  - type: STR_CHINA_LAKE_LASER_PROJECTOR #likely needs rebalancing
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_US_TECH]
     size: 0.2
     costSell: 22500 #Old clunker that has compatability problems
     weight: 20
-    bigSprite: 688
-    floorSprite: 688
-    handSprite: 688
+    bigSprite: 688 #Likely needs to be imported
+    floorSprite: 688 #Likely needs to be imported
+    handSprite: 688 #Likely needs to be imported
     bulletSpeed: 30
-    bulletSprite: 29
-    hitAnimation: 36
-    fireSound: 242
+    bulletSprite: 29 #Likely needs to be imported
+    hitAnimation: -1
+    fireSound: 242 #Likely needs to be imported
     power: 80
     damageType: 4
     damageAlter:
       cRandomType: 7
-      ToArmor: 0.5
+      ToArmor: 0.5 #Makes it far less dangerous
     confSnap:
       shots: 5
       name: STR_CONTROLLED_AUTO
@@ -529,13 +525,13 @@ items:
     snapRange: 30
     autoRange: 20
     dropoff: 1
+    sprayWaypoints: 2
     clipSize: -1
     battleType: 1
+    twoHanded: true
     kneelBonus: 200
     invWidth: 1
     invHeight: 3
-    twoHanded: true
-    sprayWaypoints: 2
     armor: 200
     listOrder: 236
 
@@ -577,13 +573,13 @@ items:
     costAuto:
       time: 30
       mana: 4
-    clipSize: -1
-    battleType: 1
     maxRange: 60
     aimRange: 15
     snapRange: 15
     autoRange: 13
     dropoff: 1
+    clipSize: -1
+    battleType: 1
     invWidth: 1
     invHeight: 2
 
@@ -624,14 +620,14 @@ items:
     costAuto:
       time: 30
       mana: 6
-    clipSize: -1
-    battleType: 1
-    twoHanded: true
     maxRange: 60
     aimRange: 40
     snapRange: 45
     autoRange: 35
     dropoff: 1
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
     invWidth: 1
     invHeight: 3
 
@@ -673,14 +669,14 @@ items:
     costAuto:
       time: 30
       mana: 12
-    clipSize: -1
-    battleType: 1
-    twoHanded: true
     maxRange: 60
     aimRange: 23
     snapRange: 25
     autoRange: 22
     dropoff: 1
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
     invWidth: 1
     invHeight: 3
 
@@ -721,14 +717,14 @@ items:
     costAuto:
       time: 30
       mana: 5
-    clipSize: -1
-    battleType: 1
-    twoHanded: true
     maxRange: 60
     aimRange: 30
     snapRange: 25
     autoRange: 20
     dropoff: 1
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
     invWidth: 2
     invHeight: 3
 
@@ -771,15 +767,15 @@ items:
     costAuto:
       time: 35
       mana: 8
-    clipSize: -1
-    battleType: 1
     maxRange: 60
     aimRange: 12
     snapRange: 15
     autoRange: 14
-    twoHanded: false
     dropoff: 1
     sprayWaypoints: 2
+    twoHanded: false
+    clipSize: -1
+    battleType: 1
     invWidth: 1
     invHeight: 2
 
@@ -806,7 +802,6 @@ items:
     confAuto:
       shots: 1
       name: STR_HEADSHOT
-    twoHanded: true
     accuracySnap: 100
     accuracyAimed: 150
     accuracyAuto: 200
@@ -819,14 +814,15 @@ items:
     costAuto:
       time: 75
       mana: 4
-    clipSize: -1
-    battleType: 1
     maxRange: 200
     aimRange: 55
     snapRange: 25
     autoRange: 55
     minRange: 15
     dropoff: 1
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
     invWidth: 2
     invHeight: 3
 
@@ -863,15 +859,15 @@ items:
     costAuto:
       time: 32
       mana: 17
-    twoHanded: true
-    clipSize: -1
-    battleType: 1
     maxRange: 60
     snapRange: 45
     autoRange: 40
     minRange: 3
     dropoff: 1
     sprayWaypoints: 2
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
     invWidth: 1
     invHeight: 3
 
@@ -929,18 +925,19 @@ items:
     hitSound: 0
     hitAnimation: 0
     power: 80
+    damageType: 5
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
       IgnoreSelfDestruct: true
       ToArmor: 0.5
-    damageType: 5
     clipSize: 6
     blastRadius: 4
     battleType: 2
     invWidth: 2
     invHeight: 2
     attraction: 9
+
   - type: STR_M72_ARR_HE_MAG
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
     requiresBuy:
@@ -953,6 +950,7 @@ items:
     hitSound: 0
     hitAnimation: 0
     power: 80
+    damageType: 3
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
@@ -960,13 +958,13 @@ items:
       ToWound: 0.5
       RandomWound: true
       ToTile: 1.8
-    damageType: 3
     clipSize: 6
     blastRadius: 4
     battleType: 2
     invWidth: 2
     invHeight: 2
     attraction: 9
+
   - type: STR_M72_ARR_SMOKE_MAG
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS]
     requiresBuy:
@@ -979,19 +977,20 @@ items:
     hitSound: 0
     hitAnimation: 0
     power: 95
+    damageType: 9
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
       RadiusReduction: 40
       IgnoreSelfDestruct: true
       ToTile: 0.66
-    damageType: 9
     clipSize: 6
     blastRadius: 1
     battleType: 2
     invWidth: 2
     invHeight: 2
     attraction: 9
+
   - type: STR_M72_ARR_ELERIUM_MAG
     categories: [STR_FIREARMS, STR_ARTILLERY, STR_NATO_TECH, STR_CLIPS, STR_FUSION]
     requiresBuy:
@@ -1004,6 +1003,7 @@ items:
     hitSound: 0
     hitAnimation: 0
     power: 130
+    damageType: 10
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
@@ -1012,13 +1012,13 @@ items:
       ToWound: 0.5
       RandomWound: true
       ToTile: 0.90
-    damageType: 10
     clipSize: 6
     blastRadius: 1
     battleType: 2
     invWidth: 2
     invHeight: 2
     attraction: 9
+
 ###################################
 ###### USSR LASER WEAPONS ########
 #################################
@@ -1056,13 +1056,13 @@ items:
     costAuto:
       time: 18
       mana: 6
-    clipSize: -1
-    battleType: 1
     maxRange: 60
     aimRange: 20
     snapRange: 15
     autoRange: 6
     dropoff: 2
+    clipSize: -1
+    battleType: 1
     invWidth: 1
     invHeight: 2
 
@@ -1106,14 +1106,14 @@ items:
     costAuto:
       time: 31
       mana: 12
-    clipSize: -1
-    battleType: 1
-    twoHanded: true
     maxRange: 80
     aimRange: 18
     snapRange: 12
     autoRange: 7
     dropoff: 3
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
     invWidth: 1
     invHeight: 3
 
@@ -1152,14 +1152,14 @@ items:
     costAuto:
       time: 45
       mana: 4
-    clipSize: -1
-    battleType: 1
-    twoHanded: true
     maxRange: 60
     aimRange: 25
     snapRange: 15
     autoRange: 10
     dropoff: 1
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
     invWidth: 1
     invHeight: 3
 
@@ -1203,14 +1203,14 @@ items:
     costAuto:
       time: 33
       mana: 10
-    clipSize: -1
-    battleType: 1
     maxRange: 50
     aimRange: 24
     snapRange: 15
     autoRange: 8
-    twoHanded: false
     dropoff: 2
+    clipSize: -1
+    battleType: 1
+    twoHanded: false
     invWidth: 1
     invHeight: 2
 
@@ -1237,7 +1237,6 @@ items:
     confAuto:
       shots: 1
       name: STR_RAPID_FIRE
-    twoHanded: true
     accuracyAimed: 130
     accuracySnap: 95
     accuracyAuto: 60
@@ -1250,14 +1249,15 @@ items:
     costAuto:
       time: 31
       mana: 3
-    clipSize: -1
-    battleType: 1
     maxRange: 200
     aimRange: 40
     snapRange: 25
     autoRange: 18
     minRange: 18
     dropoff: 1
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
     invWidth: 2
     invHeight: 3
 
@@ -1280,9 +1280,6 @@ items:
     damageType: 4
     damageAlter:
       RandomType: 6
-    accuracyAimed: 80
-    accuracySnap: 60
-    accuracyAuto: 50
     confAimed:
       shots: 4
       name: STR_CONTROL_AUTO
@@ -1298,6 +1295,9 @@ items:
       name: STR_SUPPRESSION
       ammoSlot: 0
       arcing: false
+    accuracyAimed: 80
+    accuracySnap: 60
+    accuracyAuto: 50
     costAimed:
       time: 37
       mana: 4
@@ -1307,15 +1307,15 @@ items:
     costAuto:
       time: 75
       mana: 15
-    twoHanded: true
-    clipSize: -1
-    battleType: 1
     maxRange: 60
     aimRange: 14
     snapRange: 10
     autoRange: 8
     minRange: 5
     dropoff: 2
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
     invWidth: 2
     invHeight: 3
 
@@ -1339,7 +1339,6 @@ items:
     damageAlter:
       RandomType: 6
       ArmorEffectiveness: 0.3
-    twoHanded: true
     accuracyAimed: 110
     accuracySnap: 70
     costAimed:
@@ -1348,15 +1347,18 @@ items:
     costSnap:
       time: 32
       mana: 4
-    clipSize: -1
-    battleType: 1
     maxRange: 120
     aimRange: 32
     snapRange: 20
     minRange: 14
     dropoff: 1
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
     invWidth: 2
     invHeight: 3
+
+####################################
 
   - type: STR_BATTERY
     categories: [STR_LIGHT_EQUIPMENT, STR_LASER]

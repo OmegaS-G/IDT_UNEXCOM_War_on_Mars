@@ -492,7 +492,7 @@ items:
   - type: STR_CHINA_LAKE_LASER_PROJECTOR
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_US_TECH]
     size: 0.2
-    costSell: 225000
+    costSell: 22500 #Old clunker that has compatability problems
     weight: 20
     bigSprite: 688
     floorSprite: 688

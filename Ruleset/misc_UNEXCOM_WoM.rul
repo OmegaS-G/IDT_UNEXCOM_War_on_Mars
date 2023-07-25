@@ -148,18 +148,6 @@ startingBase:
       fuel: 1500
       damage: 0
       weapons:
-        - type: STR_LASER_ARRAY_UC
-          ammo: 300
-        - type: STR_LONGSWORD_FUSION_MISSILE
-          ammo: 2
-        - type: STR_LONGSWORD_FUSION_MISSILE
-          ammo: 2
-        - type: STR_FUEL_TANK_UC
-    - type: STR_FORGER
-      id: 1
-      fuel: 1000
-      damage: 0
-      weapons:
         - type: STR_LASER_CANNON_UC
           ammo: 100
         - type: STR_LONGSWORD_FUSION_MISSILE
@@ -167,17 +155,29 @@ startingBase:
         - type: STR_GORGON_ROCKETS
           ammo: 6
         - type: STR_FUEL_TANK_UC
-    - type: STR_SABRE
+    - type: STR_FORGER
       id: 1
-      fuel: 950
+      fuel: 1000
       damage: 0
       weapons:
-        - type: STR_KONDOR
+        - type: STR_LASER_ARRAY_UC
+          ammo: 300
+        - type: STR_LONGSWORD_FUSION_MISSILE
+          ammo: 2
+        - type: STR_LONGSWORD_FUSION_MISSILE
+          ammo: 2
+        - type: STR_FUEL_TANK_UC
+    - type: STR_SABRE_II
+      id: 1
+      fuel: 1000
+      damage: 0
+      weapons:
+        - type: STR_CASABA_LANCE
           ammo: 1
         - type: STR_MJOLNIR
           ammo: 2
-        - type: STR_ZEUS
-          ammo: 200
+        - type: STR_VOSTOK_PLASMA_CANNON
+          ammo: 80
         - type: STR_LONGSWORD_FUSION_MISSILE
           ammo: 2
     - type: STR_SPACE_SHUTTLE
@@ -185,8 +185,8 @@ startingBase:
       fuel: 2732
       damage: 0
       weapons:
-        - type: STR_LASER_ARRAY_UC
-          ammo: 300
+        - type: STR_LASER_CANNON_UC
+          ammo: 100
         - type: STR_KRAKEN_ROCKETS
           ammo: 8
       items:
@@ -274,33 +274,15 @@ alienItemLevels:
   - [3, 3, 3, 3, 3, 3, 4, 4, 4, 4]
   - [3, 3, 3, 3, 3, 3, 4, 4, 4, 4]
 
-
 enviroEffects:
   - type: STR_MARS_ENVIRO
     mapBackgroundColor: 46
-    #armorTransformations: &Mars
-    #  STR_ASTRONAUT_A7L_SPACESUIT_UC: STR_ASTRONAUT_A7L_SPACESUIT_MARS_UC
-    #  STR_ASTRONAUT_A7LB_SPACESUIT_UC: STR_ASTRONAUT_A7LB_SPACESUIT_MARS_UC
-    #  STR_ASTRONAUT_KRECHET94_SPACESUIT_UC: STR_ASTRONAUT_KRECHET94_SPACESUIT_MARS_UC
-    #  STR_ASTRONAUT_KRECHET94B_SPACESUIT_UC: STR_ASTRONAUT_KRECHET94B_SPACESUIT_MARS_UC
 
   - type: STR_MOON_ENVIRO
     mapBackgroundColor: 7
-    #armorTransformations: &Moon
-    #  STR_ASTRONAUT_A7L_SPACESUIT_UC: STR_ASTRONAUT_A7L_SPACESUIT_MOON_UC
-    #  STR_ASTRONAUT_A7LB_SPACESUIT_UC: STR_ASTRONAUT_A7LB_SPACESUIT_MOON_UC
-    #  STR_ASTRONAUT_KRECHET94_SPACESUIT_UC: STR_ASTRONAUT_KRECHET94_SPACESUIT_MOON_UC
-    #  STR_ASTRONAUT_KRECHET94B_SPACESUIT_UC: STR_ASTRONAUT_KRECHET94B_SPACESUIT_MOON_UC
 
 startingConditions:
   - type: STR_MARS_CONDITION
-    #defaultArmor:
-    #  #STR_SOLDIER:
-      #  STR_ASTRONAUT_A7L_SPACESUIT_UC: 100
-#      STR_PILOT:
-#        STR_ASTRONAUT_A7LB_SPACESUIT_UC: 100
-#      STR_SPECIAL_FORCES_SOLDIER:
-#        STR_ASTRONAUT_A7L_SPACESUIT_UC: 100
     allowedArmors:
       - STR_ASTRONAUT_A7L_SPACESUIT_UC
       - STR_ASTRONAUT_A7_MMU_SPACESUIT_UC
@@ -312,12 +294,6 @@ startingConditions:
       - STR_UASCNAT_ESPATIER_SPACESUIT_UC
       - STR_COSMONAUT_SPACESUIT_UC
       - STR_VKS_OPERATOR_SPACESUIT_UC
-#    forbiddenSoldierTypes:
-#      - STR_MERCENARY
-    #allowedItemCategories:
-    #  - STR_SPACE
-    #allowedCraft:
-    #  - STR_SPACE_SHUTTLE
 
 
 extraSprites:
@@ -553,7 +529,6 @@ crafts:
   - delete: STR_INTERCEPTOR
   - delete: STR_FIRESTORM
 
-
 invs:
   - id: STR_GROUND
     costs:
@@ -681,7 +656,6 @@ invs:
       STR_RIGHT_SHOULDER: 10
 
 ufoTrajectories:
-
   - id: STATIC_TRAJECTORY
     groundTimer: 0
     waypoints:

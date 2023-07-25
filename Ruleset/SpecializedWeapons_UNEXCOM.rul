@@ -8,6 +8,7 @@ items:
 
 # Groza Electromagnetic Heavy Rifle
   - type: STR_GAUSS_HEAVY_RIFLE
+    #listOrder: 239
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES]
     bigSprite: 2424
     floorSprite: 2424
@@ -48,10 +49,10 @@ items:
     kneelBonus: 150
     invWidth: 1
     invHeight: 3
-    #listOrder: 239
 
 # Grad Electromagnetic Carbine
   - type: STR_GAUSS_CARBINE
+    #listOrder: 239
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_CARBINES, STR_SNIPER_RIFLES]
     bigSprite: 2408
     floorSprite: 2408
@@ -92,15 +93,18 @@ items:
     kneelBonus: 150
     invWidth: 1
     invHeight: 3
-    #listOrder: 239
 
   - type: STR_GAUSS_RIFLE_MAG
+    #listOrder: 240
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES, STR_CARBINES, STR_CLIPS]
     bigSprite: 2400
     floorSprite: 2400
     #handSprite: 2400
     hitSound: 13
     hitAnimation: 120
+    vaporColorSurface: 5
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
     costSell: 42000
     size: 0.1
     weight: 4
@@ -114,15 +118,12 @@ items:
     clipSize: 12
     battleType: 2
     armor: 200
-    #listOrder: 240
-    vaporColorSurface: 5
-    vaporDensitySurface: 10
-    vaporProbabilitySurface: 100
 
 ##############################
 
 # Taifun Heavy Electric Rifle
   - type: STR_ELECTRIC_HEAVY_RIFLE
+    #listOrder: 12390
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS]
     bigSprite: 2448
     floorSprite: 2448
@@ -160,14 +161,17 @@ items:
     invHeight: 3
     recoveryPoints: 3
     attraction: 12
-    #listOrder: 12390
 
   - type: STR_ELECTRIC_HEAVY_RIFLE_MAG
+    #listOrder: 12391
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SHOTGUNS, STR_CLIPS]
     bigSprite: 2456
     floorSprite: 2456
     hitSound: 0
     hitAnimation: 130
+    vaporColorSurface: 4
+    vaporDensitySurface: 8
+    vaporProbabilitySurface: 100
     costBuy: 3000
     costSell: 1200
     transferTime: 96
@@ -175,10 +179,6 @@ items:
     weight: 4
     power: 105
     damageType: 11
-    shotgunBehavior: 1
-    shotgunPellets: 8
-    shotgunSpread: 10
-    shotgunChoke: 10
     damageAlter:
       RandomType: 6
       ToHealth: 0.0
@@ -192,18 +192,20 @@ items:
       RandomStun: false
       IgnorePainImmunity: true
     clipSize: 5
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 10
+    shotgunChoke: 10
     costThrow:
       energy: 6
       time: 40
     battleType: 2
     armor: 30
-    #listOrder: 12391
-    vaporColorSurface: 4
-    vaporDensitySurface: 8
-    vaporProbabilitySurface: 100
+
 
 # Zyklon Electric Handgun
   - type: STR_ELECTRIC_PISTOL
+    #listOrder: 237
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_PISTOLS, STR_SHOTGUNS]
     bigSprite: 2464
     floorSprite: 2464
@@ -213,7 +215,7 @@ items:
     reloadSound: 3010
     costSell: 180000
     size: 0.2
-    weight: 22
+    weight: 4 #22 WTF
     compatibleAmmo:
       - STR_ELECTRIC_PISTOL_MAG
     confAuto:
@@ -236,22 +238,22 @@ items:
     twoHanded: false
     invWidth: 1
     invHeight: 3
-    #listOrder: 237
 
   - type: STR_ELECTRIC_PISTOL_MAG
+    #listOrder: 238
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_PISTOLS, STR_SHOTGUNS]
     bigSprite: 2472
     floorSprite: 2472
     #handSprite: 2472
     hitAnimation: 130
+    vaporColorSurface: 4
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
     costSell: 35000
     size: 0.1
     weight: 3
     power: 40
-    shotgunBehavior: 1
-    shotgunPellets: 8
-    shotgunSpread: 50
-    shotgunChoke: 60
+    damageType: 11
     damageAlter:
       RandomType: 6
       ToHealth: 0.0
@@ -264,18 +266,15 @@ items:
       RandomWound: false
       RandomStun: false
       IgnorePainImmunity: true
-    damageType: 11
     clipSize: 15
+    shotgunBehavior: 1
+    shotgunPellets: 8
+    shotgunSpread: 50
+    shotgunChoke: 60
     battleType: 2
     armor: 200
-    #listOrder: 238
-    vaporColorSurface: 4
-    vaporDensitySurface: 4
-    vaporProbabilitySurface: 100
 
 #########################################
-
-
 
 extraSprites:
   - type: BIGOBS.PCK

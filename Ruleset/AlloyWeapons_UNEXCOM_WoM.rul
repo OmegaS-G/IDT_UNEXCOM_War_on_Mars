@@ -9,18 +9,18 @@ items:
 ##### FLECHETTE WEAPONS #######
 ##############################
   - type: STR_FLECHETTE_RIFLE
-    requiresBuy:
-      - STR_ALLOY_RIFLES
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES]
-    size: 0.2
-    costSell: 37500
-    weight: 6
     bigSprite: 1211
     floorSprite: 1211
     handSprite: 2948
     fireSound: 169
     bulletSpeed: 50
     reloadSound: [186, 187, 188, 189]
+    requiresBuy:
+      - STR_ALLOY_RIFLES
+    costSell: 37500
+    size: 0.2
+    weight: 6
     ammo:
       0:
         tuLoad: 10
@@ -49,35 +49,36 @@ items:
     accuracySnap: 70
     accuracyAimed: 85
     accuracyAuto: 65
+    tuAuto: 60
+    tuSnap: 40
+    tuAimed: 40
+    tuMelee: 0
     maxRange: 60
     aimRange: 35
     snapRange: 32
     autoRange: 28
     dropoff: 1
-    tuAuto: 60
-    tuSnap: 40
-    tuAimed: 40
+    battleType: 1
+    armor: 250
+    twoHanded: true
     oneHandedPenalty: 60
     kneelBonus: 120
     invHeight: 3
     invWidth: 1
-    battleType: 1
-    twoHanded: true
-    armor: 250
-    tuMelee: 0
+
   - type: STR_FLECHETTE_CARBINE
-    requiresBuy:
-      - STR_ALLOY_RIFLES
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES]
-    size: 0.2
-    costSell: 37500
-    weight: 5
     bigSprite: 1204
     floorSprite: 1203
     handSprite: 2908
     fireSound: 169
     bulletSpeed: 50
     reloadSound: [186, 187, 188, 189]
+    requiresBuy:
+      - STR_ALLOY_RIFLES
+    costSell: 37500
+    size: 0.2
+    weight: 5
     ammo:
       0:
         tuLoad: 10
@@ -109,33 +110,37 @@ items:
     tuAuto: 55
     tuSnap: 30
     tuAimed: 30
-    oneHandedPenalty: 60
-    kneelBonus: 120
+    tuMelee: 0
     maxRange: 60
     aimRange: 22
     snapRange: 22
     autoRange: 20
     dropoff: 1
+    battleType: 1
+    armor: 250
+    twoHanded: true
+    oneHandedPenalty: 60
+    kneelBonus: 120
     invHeight: 3
     invWidth: 1
-    battleType: 1
-    twoHanded: true
-    armor: 250
-    tuMelee: 0
+
   - type: STR_ALLOY_RIFLE_AP
-    requiresBuy:
-      - STR_ALLOY_RIFLES
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
-    size: 0.1
-    costSell: 2250
-    weight: 4
     bigSprite: 1212
     floorSprite: 1211
     handSprite: 0
     hitAnimation: 26
-    bulletSprite: 2
-    power: 60
     hitSound: 22
+    bulletSprite: 2
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+    requiresBuy:
+      - STR_ALLOY_RIFLES
+    costSell: 2250
+    size: 0.1
+    weight: 4
+    power: 60
     damageType: 1
     damageAlter:
       RandomType: 6
@@ -146,24 +151,25 @@ items:
     clipSize: 20
     battleType: 2
     attraction: 8
-    vaporColorSurface: 0
-    vaporDensitySurface: 1
-    vaporProbabilitySurface: 33
+
   - type: STR_ALLOY_RIFLE_FL
-    requiresBuy:
-      - STR_ALLOY_RIFLES
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
-    size: 0.1
-    costSell: 2250
-    weight: 2
     bigSprite: 1220
     floorSprite: 1211
     handSprite: 0
-    damageType: 1
+    hitSound: 22
     hitAnimation: -1
     bulletSprite: 31
+    vaporColorSurface: 2
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+    damageType: 1
+    requiresBuy:
+      - STR_ALLOY_RIFLES
+    size: 0.1
+    costSell: 2250
+    weight: 2
     power: 35
-    hitSound: 22
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
@@ -175,23 +181,21 @@ items:
     clipSize: 60
     battleType: 2
     attraction: 8
-    vaporColorSurface: 2
-    vaporDensitySurface: 1
-    vaporProbabilitySurface: 33
+
 
   - type: STR_FLECHETTE_PISTOL
-    requiresBuy:
-      - STR_ALLOY_CLOSE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_PISTOLS]
-    size: 0.1
-    costSell: 25000
-    weight: 3
     bigSprite: 1209
     floorSprite: 1210
     handSprite: 2940
     bulletSprite: 1
     fireSound: 153
     reloadSound: [179, 180, 181, 182]
+    requiresBuy:
+      - STR_ALLOY_CLOSE
+    costSell: 25000
+    size: 0.1
+    weight: 3
     ammo:
       0:
         tuLoad: 10
@@ -218,30 +222,34 @@ items:
     tuSnap: 30
     costThrow:
       energy: 8
-    battleType: 1
     maxRange: 60
     snapRange: 10
     autoRange: 10
     dropoff: 1
+    battleType: 1
+    armor: 30
     kneelBonus: 105
     invWidth: 1
     invHeight: 2
-    armor: 30
     attraction: 10
+
   - type: STR_ALLOY_PISTOL_AP
-    requiresBuy:
-      - STR_ALLOY_CLOSE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
-    size: 0.1
-    costSell: 2250
-    weight: 2
     bigSprite: 1210
     floorSprite: 1209
     handSprite: 0
     hitAnimation: 26
-    bulletSprite: 2
-    power: 45
     hitSound: 22
+    bulletSprite: 2
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+    requiresBuy:
+      - STR_ALLOY_CLOSE
+    costSell: 2250
+    size: 0.1
+    weight: 2
+    power: 45
     damageType: 1
     damageAlter:
       RandomType: 6
@@ -252,25 +260,25 @@ items:
     clipSize: 10
     battleType: 2
     attraction: 8
-    vaporColorSurface: 0
-    vaporDensitySurface: 1
-    vaporProbabilitySurface: 33
 
   - type: STR_ALLOY_PISTOL_FL
-    requiresBuy:
-      - STR_ALLOY_CLOSE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
-    size: 0.1
-    costSell: 2250
-    weight: 1
     bigSprite: 1219
     floorSprite: 1209
     handSprite: 0
     damageType: 1
     hitAnimation: 26
-    bulletSprite: 31
-    power: 35
     hitSound: 22
+    bulletSprite: 31
+    vaporColorSurface: 2
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+    requiresBuy:
+      - STR_ALLOY_CLOSE
+    costSell: 2250
+    size: 0.1
+    weight: 1
+    power: 35
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
@@ -282,23 +290,21 @@ items:
     clipSize: 30
     battleType: 2
     attraction: 8
-    vaporColorSurface: 2
-    vaporDensitySurface: 1
-    vaporProbabilitySurface: 33
+
 
   - type: STR_FLECHETTE_AUTO_SHOTGUN
-    requiresBuy:
-      - STR_ALLOY_CLOSE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SHOTGUNS]
-    size: 0.3
-    costSell: 52000
-    weight: 6
     bigSprite: 1202
     floorSprite: 1202
     handSprite: 2900
     bulletSprite: 31
     fireSound: 141
     reloadSound: [183, 184, 185]
+    requiresBuy:
+      - STR_ALLOY_CLOSE
+    costSell: 52000
+    size: 0.3
+    weight: 6
     ammo:
       0:
         tuLoad: 10
@@ -325,22 +331,27 @@ items:
     shotgunBehavior: 1
     shotgunPellets: 8
     shotgunSpread: 65
+    battleType: 1
+    armor: 250
+    twoHanded: true
     invHeight: 3
     invWidth: 1
-    battleType: 1
-    twoHanded: true
-    armor: 250
 
   - type: STR_ALLOY_AUTO_SHOTGUN_FL
-    requiresBuy:
-      - STR_ALLOY_CLOSE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
-    size: 0.1
-    costSell: 2500
-    weight: 2
     bigSprite: 1203
     floorSprite: 1213
     handSprite: 0
+    hitSound: 22
+    hitAnimation: 26
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+    requiresBuy:
+      - STR_ALLOY_CLOSE
+    costSell: 2500
+    size: 0.1
+    weight: 2
     power: 35
     damageType: 1
     damageAlter:
@@ -351,8 +362,6 @@ items:
       IgnoreOverKill: true
       ToWound: 0.8
       RandomWound: true
-    hitSound: 22
-    hitAnimation: 26
     clipSize: 30
     invHeight: 1
     invWidth: 1
@@ -361,49 +370,52 @@ items:
     shotgunSpread: 60
     battleType: 2
     armor: 250
-    vaporColorSurface: 0
-    vaporDensitySurface: 1
-    vaporProbabilitySurface: 33
+
 
   - type: STR_ALLOY_SMART_RIFLE
-    requiresBuy:
-      - STR_ALLOY_HEAVY
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
-    size: 0.3
-    costSell: 5200
-    weight: 6
     bigSprite: 1213
     floorSprite: 1212
     handSprite: 2956
     bulletSprite: 31
     fireSound: 141
     reloadSound: [183, 184, 185]
+    requiresBuy:
+      - STR_ALLOY_HEAVY
+    costSell: 5200
+    size: 0.3
+    weight: 6
     ammo:
       0:
         tuLoad: 10
         tuUnload: 20
         compatibleAmmo: [ STR_ALLOY_SMART_RIFLE_MAG]
     accuracyAimed: 100
-    waypoints: 3
     tuAimed: 50
     maxRange: 60
     aimRange: 16
+    waypoints: 3
+    battleType: 1
+    armor: 250
+    twoHanded: true
     invHeight: 3
     invWidth: 2
-    battleType: 1
-    twoHanded: true
-    armor: 250
 
   - type: STR_ALLOY_SMART_RIFLE_MAG
-    requiresBuy:
-      - STR_ALLOY_HEAVY
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS]
-    size: 0.1
-    costSell: 3500
-    weight: 2
     bigSprite: 1214
     floorSprite: 1213
     handSprite: 0
+    hitSound: 0
+    hitAnimation: 0
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+    requiresBuy:
+      - STR_ALLOY_HEAVY
+    costSell: 3500
+    size: 0.1
+    weight: 2
     power: 150
     damageType: 3
     damageAlter:
@@ -416,28 +428,24 @@ items:
       RandomWound: true
       RadiusEffectiveness: 1.2
       FixRadius: -1
-    hitSound: 0
-    hitAnimation: 0
     clipSize: 15
-    invHeight: 1
-    invWidth: 1
     battleType: 2
     armor: 250
-    vaporColorSurface: 0
-    vaporDensitySurface: 1
-    vaporProbabilitySurface: 33
+    invHeight: 1
+    invWidth: 1
+
 
   - type: STR_FLECHETTE_GL
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_ARTILLERY]
-    requiresBuy:
-      - STR_ALLOY_EXPLOSIVE
-    size: 0.2
-    costSell: 42500
-    weight: 10
     bigSprite: 1206
     floorSprite: 1205
     handSprite: 2924
     fireSound: 142
+    requiresBuy:
+      - STR_ALLOY_EXPLOSIVE
+    size: 0.2
+    weight: 10
+    costSell: 42500
     compatibleAmmo:
       - STR_30MM_AAG
     accuracySnap: 70
@@ -452,25 +460,27 @@ items:
     autoRange: 30
     dropoff: 1
     battleType: 1
+    armor: 20
     twoHanded: true
     invWidth: 1
     invHeight: 3
-    armor: 20
     arcingShot: true
 
   - type: STR_30MM_AAG
-    requiresBuy:
-      - STR_ALLOY_EXPLOSIVE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_CLIPS, STR_ARTILLERY]
-    size: 0.1
-    costSell: 4700
-    weight: 3
     bigSprite: 1217
     floorSprite: 1208
     handSprite: 0
+    bulletSprite: 4
     hitSound: 0
     hitAnimation: 0
+    requiresBuy:
+      - STR_ALLOY_EXPLOSIVE
+    costSell: 4700
+    size: 0.1
+    weight: 3
     power: 75
+    damageType: 3
     damageAlter:
       RandomType: 6
       IgnoreSelfDestruct: true
@@ -480,26 +490,25 @@ items:
       ToWound: 0.7
       RandomWound: true
       FixRadius: 3
-    damageType: 3
+    clipSize: 9
     battleType: 2
+    armor: 20
+    blastRadius: 3
     invWidth: 2
     invHeight: 1
-    armor: 20
-    clipSize: 9
-    blastRadius: 3
-    bulletSprite: 4
-
 
   - type: STR_FLECHETTE_GRENADE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_LIGHT_EQUIPMENT, STR_EXPLOSIVES]
-    requiresBuy:
-      - STR_ALLOY_EXPLOSIVE
-    size: 0.1
-    costSell: 2400
-    weight: 2
     bigSprite: 1205
     floorSprite: 1204
     handSprite: 2916
+    requiresBuy:
+      - STR_ALLOY_EXPLOSIVE
+    costSell: 2400
+    size: 0.1
+    weight: 2
+    power: 75
+    damageType: 3
     damageAlter:
       RandomType: 6
       IgnoreSelfDestruct: true
@@ -509,24 +518,22 @@ items:
       ToHealth: 1.3
       RandomWound: true
       FixRadius: 4
-    power: 75
-    damageType: 3
     battleType: 4
     blastRadius: 4
 
   - type: STR_FLECHETTE_CANNON
-    requiresBuy:
-      - STR_ALLOY_HEAVY
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_ARTILLERY, STR_LMGS]
-    size: 0.4
-    costSell: 54000
-    weight: 14
     bigSprite: 1207
     floorSprite: 1206
     handSprite: 2932
     fireSound: 144
     bulletSpeed: 100
     reloadSound: [194, 195, 196]
+    requiresBuy:
+      - STR_ALLOY_HEAVY
+    costSell: 54000
+    size: 0.4
+    weight: 14
     ammo:
       0:
         compatibleAmmo: [ STR_ALLOY_HEAVY_AP]
@@ -552,32 +559,33 @@ items:
     autoRange: 38
     dropoff: 1
     minRange: 3
-    invHeight: 3
-    invWidth: 2
+    sprayWaypoints: 2
     battleType: 1
+    armor: 40
     twoHanded: true
     blockBothHands: true
     kneelBonus: 150
-    armor: 40
-    sprayWaypoints: 2
+    invHeight: 3
+    invWidth: 2
     attraction: 10
 
   - type: STR_ALLOY_HEAVY_AP
+    bigSprite: 1208
+    floorSprite: 1207
+    handSprite: 0
+    hitAnimation: 26
+    hitSound: 22
+    bulletSprite: 2
+    vaporColorSurface: 0
+    vaporDensitySurface: 3
+    vaporProbabilitySurface: 33
     requiresBuy:
       - STR_ALLOY_HEAVY
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_ARTILLERY, STR_LMGS, STR_CLIPS]
     size: 0.1
     costSell: 2250
     weight: 6
-    bigSprite: 1208
-    floorSprite: 1207
-    handSprite: 0
-    hitAnimation: 26
-    bulletSprite: 2
-    invHeight: 3
-    invWidth: 1
     power: 75
-    hitSound: 22
     damageType: 1
     damageAlter:
       RandomType: 6
@@ -587,29 +595,28 @@ items:
       RandomWound: false
     clipSize: 9
     battleType: 2
+    invHeight: 3
+    invWidth: 1
     attraction: 8
-    vaporColorSurface: 0
-    vaporDensitySurface: 3
-    vaporProbabilitySurface: 33
 
   - type: STR_ALLOY_HEAVY_FL
     requiresBuy:
       - STR_ALLOY_HEAVY
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_ARTILLERY, STR_LMGS, STR_CLIPS]
-    size: 0.1
-    costSell: 2250
-    weight: 4
     bigSprite: 1218
     floorSprite: 1207
     handSprite: 0
-    damageType: 1
-    hitAnimation: -1
-    invHeight: 3
-    invWidth: 1
     bulletSprite: 31
-    battleType: 2
-    power: 55
+    hitAnimation: -1
     hitSound: 22
+    vaporColorSurface: 2
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 33
+    costSell: 2250
+    size: 0.1
+    weight: 4
+    power: 55
+    damageType: 1
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
@@ -619,24 +626,25 @@ items:
       ToWound: 0.2
       RandomWound: false
     clipSize: 21
+    battleType: 2
+    invHeight: 3
+    invWidth: 1
     attraction: 8
-    vaporColorSurface: 2
-    vaporDensitySurface: 2
-    vaporProbabilitySurface: 33
+
 
   - type: STR_FLECHETTE_SNIPER
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
-    requiresBuy:
-      - STR_ALLOY_HEAVY
-    size: 0.3
-    costSell: 62600
-    weight: 10
     bigSprite: 1215
     floorSprite: 1214
     handSprite: 2964
     bulletSpeed: 20
     fireSound: 150
     reloadSound: [186, 187, 188, 189]
+    requiresBuy:
+      - STR_ALLOY_HEAVY
+    size: 0.3
+    costSell: 62600
+    weight: 10
     ammo:
       0:
         compatibleAmmo: [ STR_ALLOY_SNIPER_AP]
@@ -659,37 +667,38 @@ items:
     tuLoad: 20
     costThrow:
       energy: 20
-    battleType: 1
-    twoHanded: true
-    oneHandedPenalty: 25
-    invWidth: 1
-    invHeight: 3
-    armor: 200
     maxRange: 60
     aimRange: 50
     snapRange: 45
     autoRange: 50
     minRange: 5
     dropoff: 2
+    battleType: 1
+    armor: 200
+    twoHanded: true
+    oneHandedPenalty: 25
+    invWidth: 1
+    invHeight: 3
     attraction: 10
 
   - type: STR_ALLOY_SNIPER_AP
-    requiresBuy:
-      - STR_ALLOY_HEAVY
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
-    size: 0.1
-    costSell: 2250
-    weight: 2
     bigSprite: 1216
     floorSprite: 1207
     handSprite: 0
     hitAnimation: 26
-    bulletSprite: 4
-    power: 75
     hitSound: 22
+    bulletSprite: 4
+    vaporColorSurface: 0
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+    requiresBuy:
+      - STR_ALLOY_HEAVY
+    costSell: 2250
+    size: 0.1
+    weight: 2
+    power: 75
     damageType: 1
-    invWidth: 1
-    invHeight: 1
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
@@ -699,29 +708,28 @@ items:
       RandomWound: false
     clipSize: 5
     battleType: 2
+    invWidth: 1
+    invHeight: 1
     attraction: 8
-    vaporColorSurface: 0
-    vaporDensitySurface: 1
-    vaporProbabilitySurface: 33
 
   - type: STR_ALLOY_SNIPER_FL
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
-    requiresBuy:
-      - STR_ALLOY_HEAVY
-    size: 0.1
-    costSell: 2250
-    weight: 2
     bigSprite: 1221
     floorSprite: 1207
     handSprite: 0
-    damageType: 1
+    hitSound: 22
     hitAnimation: 26
     bulletSprite: 31
-    battleType: 2
+    vaporColorSurface: 2
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 33
+    requiresBuy:
+      - STR_ALLOY_HEAVY
+    costSell: 2250
+    size: 0.1
+    weight: 2
     power: 75
-    hitSound: 22
-    invWidth: 1
-    invHeight: 1
+    damageType: 1
     damageAlter:
       RandomType: 6
       IgnoreOverKill: true
@@ -731,10 +739,11 @@ items:
       ToWound: 0.2
       RandomWound: false
     clipSize: 5
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
     attraction: 8
-    vaporColorSurface: 2
-    vaporDensitySurface: 1
-    vaporProbabilitySurface: 33
+
 
 manufacture:
   - name: STR_FLECHETTE_PISTOL
@@ -943,7 +952,6 @@ extraSprites:
       1220: Resources/AlloyWeapons/Bigob_G_Rifle_Clip_AA.png
       1221: Resources/AlloyWeapons/Bigob_G_Sniper_Clip_AA.png
 
-
   - type: FLOOROB.PCK
     files:
       1202: Resources/AlloyWeapons/Floorob_G_Auto_Shotgun.png
@@ -959,8 +967,6 @@ extraSprites:
       1212: Resources/AlloyWeapons/Floorob_G_Smart_Rifle.png
       1213: Resources/AlloyWeapons/Floorob_G_Smart_Rifle_Clip.png
       1214: Resources/AlloyWeapons/Floorob_G_Sniper.png
-
-
 
   - type: HANDOB.PCK
     width: 256
@@ -978,8 +984,6 @@ extraSprites:
       2956: Resources/AlloyWeapons/Handob_G_Smart_Rifle.png
       2964: Resources/AlloyWeapons/Handob_G_Sniper.png
 
-
-
   - type: Projectiles
     height: 3
     width: 105
@@ -987,6 +991,4 @@ extraSprites:
     subY: 3
     files:
      1085: Resources/BulletSprites/Flechette_bullet.png #31
-
-
 #############################

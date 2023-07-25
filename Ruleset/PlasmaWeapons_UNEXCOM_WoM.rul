@@ -3,14 +3,15 @@ items:
 # Weapons
 # Changed existing Alien Only Weapons
   - type: STR_PLASMA_PISTOL
+    listOrder: 5000
     categories: [STR_PLASMA, STR_PISTOLS, STR_ALIEN_TECH, STR_FIREARMS]
-    requires:
-      - STR_ALIENS_ONLY
     bigSprite: 1962
     floorSprite: 1965
     fireSound: 1930
     handSprite: 1442 # ALL GOOD
     bulletSpeed: 6
+    requires:
+      - STR_ALIENS_ONLY
     costBuy: 0
     costSell: 13500
     weight: 3 # 3
@@ -26,19 +27,21 @@ items:
     aimRange: 15
     snapRange: 12
     autoRange: 10
-    invHeight: 2
-    invWidth: 1
     dropoff: 3
     battleType: 1
     armor: 70 # 20
-    listOrder: 5000
+    invHeight: 2
+    invWidth: 1
 
   - type: STR_PLASMA_PISTOL_CLIP
+    listOrder: 5010
     categories: [STR_PLASMA, STR_PISTOLS, STR_ALIEN_TECH, STR_CLIPS]
     bigSprite: 1964
     floorSprite: 1967
     hitSound: 1938
     handSprite: 120 # ALL GOOD
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
     weight: 1 # 3
     power: 70 # 52
     damageType: 5
@@ -47,11 +50,10 @@ items:
       IgnoreOverKill: false
     clipSize: 22 # 26
     armor: 30 # 20
-    vaporColorSurface: 3
-    vaporDensitySurface: 20
-    listOrder: 5010
+
 
   - type: STR_PLASMA_RIFLE
+    listOrder: 5020
     categories: [STR_PLASMA, STR_RIFLES, STR_ALIEN_TECH, STR_FIREARMS]
     requires:
       - STR_ALIENS_ONLY
@@ -59,8 +61,8 @@ items:
     floorSprite: 35
     handSprite: 1370 # ALL GOOD
     bulletSpeed: 6
+    bulletSprite: 8
     fireSound: 1933
-    costBuy: 0
     costSell: 20000
     weight: 11 # 5
     compatibleAmmo:
@@ -77,49 +79,48 @@ items:
     autoRange: 25
     dropoff: 3
     armor: 75 # 20
-    bulletSprite: 8
     battleType: 1
     twoHanded: true
     invWidth: 1
     invHeight: 3
     recoveryPoints: 4
-    listOrder: 5020
 
   - type: STR_PLASMA_RIFLE_CLIP
+    listOrder: 5040
     categories: [STR_PLASMA, STR_RIFLES, STR_ALIEN_TECH, STR_CLIPS]
     bigSprite: 1364
     floorSprite: 1367
     handSprite: 120 # ALL GOOD
     hitSound: 1938
     hitAnimation: 26 # FIX THIS
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
     costSell: 11000
     costBuy: 12000
     requiresBuyCountry: STR_UN_SECTOR_1
     size: 0.2
     weight: 3 # 3
     power: 80
+    damageType: 5
     damageAlter:
       RandomType: 6
       IgnoreOverKill: false
-    damageType: 5
     clipSize: 25
     battleType: 2
+    armor: 30 # 20
     invWidth: 1
     invHeight: 1
-    armor: 30 # 20
-    vaporColorSurface: 3
-    vaporDensitySurface: 20
-    listOrder: 5040
+
 
   - type: STR_HEAVY_PLASMA
+    listOrder: 5050
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_FIREARMS]
-    requires:
-      - STR_ALIENS_ONLY
     bigSprite: 1860
     floorSprite: 1865
     handSprite: 1418 # ALL GOOD
     bulletSpeed: 6
-    costBuy: 0
+    requires:
+      - STR_ALIENS_ONLY
     costSell: 40000
     weight: 19 # 8
     compatibleAmmo:
@@ -139,14 +140,16 @@ items:
     minRange: 5
     dropoff: 3
     armor: 80 # 20
-    listOrder: 5050
 
   - type: STR_HEAVY_PLASMA_CLIP
+    listOrder: 5060
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS]
     bigSprite: 1862
     floorSprite: 1867
     hitSound: 1938
     handSprite: 120 # ALL GOOD
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
     weight: 5 # 3
     power: 150 # 115
     damageAlter:
@@ -154,19 +157,18 @@ items:
       IgnoreOverKill: false
     clipSize: 14 # 35
     armor: 35 # 20
-    vaporColorSurface: 3
-    vaporDensitySurface: 20
-    listOrder: 5060
+
 
   - type: STR_SMALL_LAUNCHER
+    listOrder: 5070
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_EXPLOSIVES]
-    requires:
-      - STR_ALIENS_ONLY
     bigSprite: 37
     floorSprite: 36
     handSprite: 64
     bulletSprite: 9
     fireSound: 12
+    requires:
+      - STR_ALIENS_ONLY
     costSell: 120000
     size: 0.2
     weight: 10
@@ -185,17 +187,17 @@ items:
     invWidth: 2
     invHeight: 2
     recoveryPoints: 4
-    listOrder: 5070
 
   - type: STR_HUMAN_SMALL_LAUNCHER
+    listOrder: 5075
     categories: [STR_PLASMA, STR_FIREARMS, STR_ARTILLERY, STR_UNEXCOM_TECH]
-    requires:
-      - STR_SMALL_LAUNCHER
     bigSprite: 1330
     floorSprite: 36
     handSprite: 64 #
     bulletSprite: 9
     fireSound: 53
+    requires:
+      - STR_SMALL_LAUNCHER
     costSell: 120000
     size: 0.2
     weight: 10
@@ -212,16 +214,16 @@ items:
     invWidth: 2
     invHeight: 2
     recoveryPoints: 4
-    listOrder: 5075
 
   - type: STR_STUN_BOMB
+    listOrder: 5080
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
-    requires:
-      - STR_SMALL_LAUNCHER
     bigSprite: 38
     floorSprite: 37
     hitSound: 0
     hitAnimation: 0
+    requires:
+      - STR_SMALL_LAUNCHER
     costSell: 15200
     size: 0.1
     weight: 6
@@ -230,16 +232,16 @@ items:
     clipSize: 1
     battleType: 2
     recoveryPoints: 1
-    listOrder: 5080
 
   - type: STR_ACID_BOMB
+    listOrder: 5090
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
-    requires:
-      - STR_SMALL_LAUNCHER
     bigSprite: 38
     floorSprite: 37
     hitSound: 0
     hitAnimation: 0
+    requires:
+      - STR_SMALL_LAUNCHER
     costSell: 16500
     size: 0.1
     weight: 6
@@ -248,16 +250,16 @@ items:
     clipSize: 1
     battleType: 2
     recoveryPoints: 1
-    listOrder: 5090
 
   - type: STR_ELERIUM_BOMB
+    listOrder: 5100
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
-    requires:
-      - STR_SMALL_LAUNCHER
     bigSprite: 1008
     floorSprite: 1008
     hitSound: 0
     hitAnimation: 0
+    requires:
+      - STR_SMALL_LAUNCHER
     costSell: 13000
     size: 0.1
     weight: 3
@@ -266,17 +268,18 @@ items:
     clipSize: 1
     battleType: 2
     blastRadius: 4
-    listOrder: 5100
+
 
   - type: STR_TOXIGUN
+    listOrder: 5110
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_EXPLOSIVES]
-    requires:
-      - STR_TOXIGUN
     bigSprite: 1006
     floorSprite: 1006
     handSprite: 1482
     bulletSprite: 20
     fireSound: 55
+    requires:
+      - STR_TOXIGUN
     costSell: 91000
     size: 0.2
     weight: 3
@@ -285,45 +288,48 @@ items:
     accuracySnap: 35
     tuSnap: 40
     battleType: 1
+    armor: 20
     twoHanded: true
     invWidth: 1
     invHeight: 3
     recoveryPoints: 3
-    armor: 20
     attraction: 1
-    listOrder: 5110
 
   - type: STR_TOXIGUN_FLASK
+    listOrder: 5120
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS, STR_EXPLOSIVES]
-    requires:
-      - STR_TOXIGUN_FLASK
     bigSprite: 1007
     floorSprite: 1007
     hitSound: 19
     hitAnimation: 56
+    requires:
+      - STR_TOXIGUN_FLASK
     size: 0.1
     weight: 2
     costSell: 9000
     power: 45
     damageType: 8
     clipSize: 10
+    shotgunPellets: 5
     battleType: 2
     invWidth: 2
     invHeight: 1
     recoveryPoints: 1
     attraction: 1
-    shotgunPellets: 5
-    listOrder: 5120
+
 
   - type: STR_PLASMA_CASTER
+    listOrder: 5130
     categories: [STR_PLASMA, STR_SHOTGUNS, STR_ALIEN_TECH]
-    requires:
-      - STR_ALIENS_ONLY
     bigSprite: 1004
     floorSprite: 1004
     handSprite: 1474
     bulletSprite: 8
     fireSound: 18
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
+    requires:
+      - STR_ALIENS_ONLY
     costSell: 115000
     size: 0.2
     weight: 6 # 6
@@ -337,24 +343,22 @@ items:
     aimRange: 18 # 0
     dropoff: 2 # 2
     battleType: 1
+    armor: 70 # 50
+    twoHanded: false
     invWidth: 1
     invHeight: 2
-    twoHanded: false
-    armor: 70 # 50
     recoveryPoints: 3
     attraction: 1
-    vaporColorSurface: 3
-    vaporDensitySurface: 20
-    listOrder: 5130
 
   - type: STR_PLASMA_CASTER_CLIP
+    listOrder: 5140
     categories: [STR_PLASMA, STR_SHOTGUNS, STR_ALIEN_TECH, STR_CLIPS]
-    requires:
-      - STR_PLASMA_CASTER_CLIP
     bigSprite: 1005
     floorSprite: 1005
     hitSound: 19
     hitAnimation: 46
+    requires:
+      - STR_PLASMA_CASTER_CLIP
     costSell: 2400
     size: 0.1
     weight: 2 # 3
@@ -364,23 +368,26 @@ items:
       IgnoreOverKill: false
     damageType: 5
     clipSize: 8 # 8
-    battleType: 2
     shotgunPellets: 8 # 5
+    battleType: 2
     armor: 30 # 20
     recoveryPoints: 1
     attraction: 1
-    listOrder: 5140
+
 
   - type: STR_PLASMA_SNIPER_RIFLE
+    listOrder: 5150
     categories: [STR_PLASMA, STR_SNIPER_RIFLES, STR_ALIEN_TECH]
-    requires:
-      - STR_ALIENS_ONLY
     bigSprite: 1000
     floorSprite: 1000
     handSprite: 1458
     bulletSprite: 8
     bulletSpeed: 2
     fireSound: 18
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
+    requires:
+      - STR_ALIENS_ONLY
     costSell: 135000
     size: 0.2
     weight: 6 # 6
@@ -395,24 +402,24 @@ items:
     minRange: 15
     dropoff: 1 # 2
     battleType: 1
+    armor: 75 # 50
     twoHanded: true
     invWidth: 1
     invHeight: 3
     recoveryPoints: 4
-    armor: 75 # 50
     attraction: 1
-    vaporColorSurface: 3
-    vaporDensitySurface: 20
-    listOrder: 5150
 
   - type: STR_PLASMA_SNIPER_RIFLE_CLIP
+    listOrder: 5160
     categories: [STR_PLASMA, STR_SNIPER_RIFLES, STR_ALIEN_TECH, STR_CLIPS]
-    requires:
-      - STR_PLASMA_SNIPER_RIFLE_CLIP
     bigSprite: 1001
     floorSprite: 1001
     hitSound: 19
     hitAnimation: 46
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
+    requires:
+      - STR_PLASMA_SNIPER_RIFLE_CLIP
     costSell: 5400
     size: 0.1
     weight: 3 # 3
@@ -426,20 +433,21 @@ items:
     armor: 30 # 20
     recoveryPoints: 1
     attraction: 1
-    vaporColorSurface: 3
-    vaporDensitySurface: 20
-    listOrder: 5160
+
 
   - type: STR_PLASMA_BLASTER
-    categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH]
-    requires:
-      - STR_ALIENS_ONLY
+    listOrder: 5170
     bigSprite: 1002
     floorSprite: 1002
     handSprite: 1466
     bulletSprite: 8
     bulletSpeed: 2
     fireSound: 18
+    vaporColorSurface: 3
+    vaporDensitySurface: 20
+    categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH]
+    requires:
+      - STR_ALIENS_ONLY
     costSell: 241600
     size: 0.2
     weight: 14 # 12
@@ -454,22 +462,20 @@ items:
     minRange: 11 # 0
     dropoff: 2 # 2
     battleType: 1
+    armor: 80 # 50
     twoHanded: true
     invWidth: 2
     invHeight: 3
-    armor: 80 # 50
     recoveryPoints: 5
     attraction: 1
-    vaporColorSurface: 3
-    vaporDensitySurface: 20
-    listOrder: 5170
 
   - type: STR_PLASMA_BLASTER_CLIP
+    listOrder: 5180
     categories: [STR_PLASMA, STR_ARTILLERY, STR_ALIEN_TECH, STR_CLIPS]
-    requires:
-      - STR_PLASMA_BLASTER_CLIP
     bigSprite: 1003
     floorSprite: 1003
+    requires:
+      - STR_PLASMA_BLASTER_CLIP
     costSell: 12520
     size: 0.4
     weight: 4 # 4
@@ -481,25 +487,26 @@ items:
       IgnoreOverKill: false
     clipSize: 8
     battleType: 2
-    recoveryPoints: 1
-    blastRadius: 3
-    attraction: 1
     armor: 35 # 20
-    listOrder: 5180
+    blastRadius: 3
+    recoveryPoints: 1
+    attraction: 1
+
 
   - type: STR_ALIEN_GRENADE
+    listOrder: 5190
     categories: [STR_PLASMA, STR_EXPLOSIVES, STR_ALIEN_TECH]
     bigSprite: 39
     floorSprite: 38
     size: 0.1
     power: 90
     blastRadius: 5
-    listOrder: 5190
 
 ###################
 #### UNEXCOM #####
 ##################
   - type: STR_UN_PLASMA_RIFLE
+    listOrder: 5030
     categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_UNEXCOM_TECH]
     bigSprite: 3200
     floorSprite: 3200
@@ -546,12 +553,12 @@ items:
     kneelBonus: 125
     invWidth: 1
     invHeight: 3
-    listOrder: 5030
 
 ##############
 #### USA #####
 ##############
   - type: STR_US_PLASMA_RIFLE
+    listOrder: 5210
     categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_US_TECH]
     bigSprite: 3208
     floorSprite: 3208
@@ -592,15 +599,17 @@ items:
     kneelBonus: 125
     invWidth: 1
     invHeight: 3
-    listOrder: 5210
 
   - type: STR_US_PLASMA_RIFLE_MAG
+    listOrder: 5220
     categories: [STR_PLASMA, STR_RIFLES, STR_US_TECH, STR_CLIPS]
     bigSprite: 3280
     floorSprite: 3280
     handSprite: 3280 # ALL GOOD
     hitSound: 1938
     hitAnimation: 110
+    vaporColorSurface: 5
+    vaporDensitySurface: 5
     requiresBuyCountry: STR_NATO_SECTOR_A
     costBuy: 9000
     costSell: 3000
@@ -616,11 +625,10 @@ items:
     armor: 30 # 20
     invWidth: 1
     invHeight: 1
-    vaporColorSurface: 5
-    vaporDensitySurface: 5
-    listOrder: 5220
+
 
   - type: STR_US_PLASMA_RL
+    listOrder: 5230
     categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_ARTILLERY, STR_FUSION]
     bigSprite: 3216
     floorSprite: 3216
@@ -655,9 +663,9 @@ items:
     invWidth: 2
     invHeight: 3
     attraction: 8
-    listOrder: 5230
 
   - type: STR_US_PLASMA_RL_HEAT_ROCKET
+    listOrder: 5240
     categories: [STR_PLASMA, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
     bigSprite: 3288
     handSprite: 3288
@@ -683,9 +691,9 @@ items:
     invWidth: 1
     invHeight: 2
     attraction: 9
-    listOrder: 5240
 
   - type: STR_US_PLASMA_RL_ELERIUM_ROCKET
+    listOrder: 5250
     categories: [STR_PLASMA, STR_ARTILLERY, STR_US_TECH, STR_CLIPS]
     bigSprite: 3296
     handSprite: 3296
@@ -712,9 +720,10 @@ items:
     invWidth: 1
     invHeight: 2
     attraction: 9
-    listOrder: 5250
+
 
   - type: STR_US_PLASMA_SHOTGUN
+    listOrder: 5260
     categories: [STR_PLASMA, STR_FIREARMS, STR_US_TECH, STR_SHOTGUNS]
     bigSprite: 3224
     floorSprite: 3224
@@ -748,15 +757,17 @@ items:
     twoHanded: true
     blockBothHands: true
     kneelBonus: 115
-    listOrder: 5260
 
   - type: STR_US_PLASMA_SHOTGUN_MAG
+    listOrder: 5270
     categories: [STR_PLASMA, STR_SHOTGUNS, STR_US_TECH, STR_CLIPS]
     hitAnimation: 110
     bigSprite: 3304
     floorSprite: 3304
     handSprite: 3304 # ALL GOOD
     hitSound: 1938
+    vaporColorSurface: 5
+    vaporDensitySurface: 5
     requiresBuyCountry: STR_NATO_SECTOR_B
     costBuy: 14000
     costSell: 12000
@@ -775,14 +786,12 @@ items:
     shotgunChoke: 60
     battleType: 2
     armor: 30 # 20
-    vaporColorSurface: 5
-    vaporDensitySurface: 5
-    listOrder: 5270
 
 ###############
 #### NATO #####
 ###############
   - type: STR_NATO_PLASMA_CARBINE
+    listOrder: 5280
     categories: [STR_PLASMA, STR_FIREARMS, STR_CARBINES, STR_NATO_TECH]
     bigSprite: 3232
     floorSprite: 3232
@@ -842,15 +851,17 @@ items:
     kneelBonus: 120
     invWidth: 1
     invHeight: 3
-    listOrder: 5280
 
   - type: STR_NATO_PLASMA_CARBINE_MAG
+    listOrder: 5290
     categories: [STR_PLASMA, STR_CARBINES, STR_NATO_TECH, STR_CLIPS]
     bigSprite: 3312
     floorSprite: 3312
     handSprite: 3312 # ALL GOOD
     hitSound: 1938
     hitAnimation: 110 # FIX THIS
+    vaporColorSurface: 5
+    vaporDensitySurface: 8
     requiresBuyCountry: STR_NATO_SECTOR_D
     costSell: 3000
     costBuy: 5000
@@ -866,9 +877,7 @@ items:
     armor: 30 # 20
     invWidth: 1
     invHeight: 1
-    vaporColorSurface: 5
-    vaporDensitySurface: 8
-    listOrder: 5290
+
 
   - type: STR_NATO_PLASMA_PISTOL
     categories: [STR_PLASMA, STR_FIREARMS, STR_PISTOLS, STR_NATO_TECH]
@@ -906,12 +915,15 @@ items:
     listOrder: 5300
 
   - type: STR_NATO_PLASMA_PISTOL_MAG
+    listOrder: 5310
     categories: [STR_PLASMA, STR_PISTOLS, STR_NATO_TECH, STR_CLIPS]
     hitAnimation: 110
     bigSprite: 3320
     floorSprite: 3320
     handSprite: 3320 # ALL GOOD
     hitSound: 1938
+    vaporColorSurface: 5
+    vaporDensitySurface: 3
     requiresBuyCountry: STR_NATO_SECTOR_C
     costBuy: 6000
     costSell: 5500
@@ -924,11 +936,10 @@ items:
     clipSize: 12 # 26
     battleType: 2
     armor: 30 # 20
-    vaporColorSurface: 5
-    vaporDensitySurface: 3
-    listOrder: 5310
+
 
   - type: STR_NATO_SNIPER_PLASMA
+    listOrder: 5320
     categories: [STR_PLASMA, STR_FIREARMS, STR_SNIPER_RIFLES, STR_NATO_TECH]
     bigSprite: 3248
     floorSprite: 3248
@@ -969,15 +980,17 @@ items:
     noLOSAccuracyPenalty: 100
     invWidth: 2
     invHeight: 3
-    listOrder: 5320
 
   - type: STR_NATO_SNIPER_PLASMA_MAG
+    listOrder: 5330
     categories: [STR_PLASMA, STR_SNIPER_RIFLES, STR_NATO_TECH, STR_CLIPS]
     hitAnimation: 110
     bigSprite: 3328
     floorSprite: 3328
     handSprite: 3328
     hitSound: 1938
+    vaporColorSurface: 5
+    vaporDensitySurface: 20
     requiresBuyCountry: STR_NATO_SECTOR_E
     costBuy: 13000
     costSell: 11000
@@ -990,14 +1003,12 @@ items:
     clipSize: 6 # 35
     battleType: 2
     armor: 35 # 20
-    vaporColorSurface: 5
-    vaporDensitySurface: 20
-    listOrder: 5330
 
 ################
 #### USSR ######
 ################
   - type: STR_SOVIET_PLASMA_ASSAULT_RIFLE
+    listOrder: 5340
     categories: [STR_PLASMA, STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH]
     bigSprite: 3256
     floorSprite: 3256
@@ -1034,7 +1045,7 @@ items:
     snapRange: 26
     autoRange: 10
     dropoff: 5
-    #melee segment
+#melee segment
     meleeHitSound: 198
     meleeAnimation: 0
     meleeType: 7
@@ -1051,7 +1062,7 @@ items:
       energy: 10
     flatMelee:
       time: true
-    # melee segment end
+# melee segment end
     battleType: 1
     armor: 60
     twoHanded: true
@@ -1059,15 +1070,17 @@ items:
     kneelBonus: 125
     invWidth: 1
     invHeight: 3
-    listOrder: 5340
 
   - type: STR_SOVIET_PLASMA_ASSAULT_RIFLE_MAG
+    listOrder: 5350
     categories: [STR_PLASMA, STR_RIFLES, STR_SOVIET_TECH, STR_CLIPS]
     bigSprite: 3336
     floorSprite: 3336
     handSprite: 3336 # ALL GOOD
     hitSound: 1938
     hitAnimation: 110
+    vaporColorSurface: 5
+    vaporDensitySurface: 11
     requiresBuyCountry: STR_WARSAW_PACT_SECTOR_2
     costSell: 8000
     costBuy: 9000
@@ -1083,11 +1096,10 @@ items:
     armor: 30 # 20
     invWidth: 1
     invHeight: 1
-    vaporColorSurface: 5
-    vaporDensitySurface: 11
-    listOrder: 5350
+
 
   - type: STR_SOVIET_PLASMA_LMG
+    listOrder: 5360
     categories: [STR_PLASMA, STR_FIREARMS, STR_LMGS, STR_SOVIET_TECH]
     bigSprite: 3264
     floorSprite: 3264
@@ -1133,15 +1145,17 @@ items:
     kneelBonus: 200
     invWidth: 2
     invHeight: 3
-    listOrder: 5360
 
   - type: STR_SOVIET_PLASMA_LMG_MAG
+    listOrder: 5370
     categories: [STR_PLASMA, STR_LMGS, STR_SOVIET_TECH, STR_CLIPS]
     hitAnimation: 110
     bigSprite: 3344
     floorSprite: 3344
     handSprite: 3344
     hitSound: 1938
+    vaporColorSurface: 5
+    vaporDensitySurface: 16
     requiresBuyCountry: STR_WARSAW_PACT_SECTOR_4
     costBuy: 170000
     costSell: 150000
@@ -1155,11 +1169,10 @@ items:
     clipSize: 50 # 35
     battleType: 2
     armor: 35 # 20
-    vaporColorSurface: 5
-    vaporDensitySurface: 16
-    listOrder: 5370
+
 
   - type: STR_SOVIET_PLASMA_SMG
+    listOrder: 5380
     categories: [STR_PLASMA, STR_FIREARMS, STR_SMGS, STR_SOVIET_TECH]
     bigSprite: 3272
     floorSprite: 3272
@@ -1202,15 +1215,17 @@ items:
     kneelBonus: 115
     invWidth: 1
     invHeight: 3
-    listOrder: 5380
 
   - type: STR_SOVIET_PLASMA_SMG_MAG
+    listOrder: 5390
     categories: [STR_PLASMA, STR_SMGS, STR_SOVIET_TECH, STR_CLIPS]
     floorSprite: 3352
     handSprite: 3352 # ALL GOOD
     hitAnimation: 110
     bigSprite: 3352
     hitSound: 1938
+    vaporColorSurface: 5
+    vaporDensitySurface: 6
     requiresBuyCountry: STR_WARSAW_PACT_SECTOR_5
     costBuy: 12000
     costSell: 11000
@@ -1223,9 +1238,7 @@ items:
     clipSize: 25 # 26
     battleType: 2
     armor: 30 # 20
-    vaporColorSurface: 5
-    vaporDensitySurface: 6
-    listOrder: 5390
+
 
 research:
   - name: STR_ELERIUM_BOMB

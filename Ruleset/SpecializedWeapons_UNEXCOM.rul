@@ -9,10 +9,9 @@ items:
 # Groza Electromagnetic Heavy Rifle
   - type: STR_GAUSS_HEAVY_RIFLE
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES]
-
     size: 0.2
     costSell: 240000
-    weight: 38
+    weight: 38 #If you're issued this, you're in some form of PA
     bigSprite: 2424
     floorSprite: 2424
     handSprite: 2424
@@ -22,9 +21,9 @@ items:
     compatibleAmmo:
       - STR_GAUSS_RIFLE_MAG
     costAuto:
-      time: 85
-    autoRange: 60
-    accuracyAuto: 250
+      time: 85 #75
+    autoRange: 90 #60
+    accuracyAuto: 300 #250
     confAuto:
       shots: 1
       name: STR_HEADSHOT
@@ -32,19 +31,19 @@ items:
       ammoSlot: 0
       arcing: false
     costAimed:
-      time: 75
+      time: 75 #60
     confAimed:
       shots: 3
       name: STR_BURST
-    aimRange: 50
+    aimRange: 60 #50
     accuracyAimed: 150
     costSnap:
-      time: 60
-    snapRange: 55
-    accuracySnap: 110
+      time: 50 #60
+    snapRange: 90 #55
+    accuracySnap: 200 #110
     accuracyCloseQuarters: 10
     tuLoad: 30
-    maxRange: 60
+    maxRange: 200 #60
     dropoff: 1
     kneelBonus: 150
     battleType: 1
@@ -57,10 +56,9 @@ items:
 # Grad Electromagnetic Carbine
   - type: STR_GAUSS_CARBINE
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_CARBINES, STR_SNIPER_RIFLES]
-
     size: 0.2
     costSell: 240000
-    weight: 20
+    weight: 20 #Alternative to Plasma for anti-armor
     bigSprite: 2408
     floorSprite: 2408
     handSprite: 2408
@@ -71,8 +69,8 @@ items:
       - STR_GAUSS_RIFLE_MAG
     costAuto:
       time: 85
-    autoRange: 50
-    accuracyAuto: 250
+    autoRange: 40
+    accuracyAuto: 200 #250
     confAuto:
       shots: 1
       name: STR_HEADSHOT
@@ -81,18 +79,18 @@ items:
       arcing: false
     costAimed:
       time: 75
-    aimRange: 60
-    accuracyAimed: 150
+    aimRange: 20 #60?
+    accuracyAimed: 90 #150
     confAimed:
       shots: 2
       name: STR_DOUBLE_TAP
     costSnap:
       time: 60
-    snapRange: 20
-    accuracySnap: 110
+    snapRange: 20 #20
+    accuracySnap: 90 #110
     accuracyCloseQuarters: 10
     tuLoad: 30
-    maxRange: 60
+    maxRange: 40 #60
     dropoff: 1
     kneelBonus: 150
     battleType: 1
@@ -104,7 +102,6 @@ items:
 
   - type: STR_GAUSS_RIFLE_MAG
     categories: [STR_SPECIALIZED_WEAPONS, STR_UNEXCOM_TECH, STR_RIFLES, STR_SNIPER_RIFLES, STR_CARBINES, STR_CLIPS]
-
     size: 0.1
     costSell: 42000
     weight: 4

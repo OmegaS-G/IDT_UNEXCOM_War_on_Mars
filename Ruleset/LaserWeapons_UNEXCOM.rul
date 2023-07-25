@@ -498,9 +498,9 @@ items:
     requiresBuy:
       - STR_NATO_LASER_HANDGUNS
     size: 0.1
-    costBuy: 30000
-    costSell: 20000
-    weight: 3
+    costBuy: 27000
+    costSell: 19000
+    weight: 2.5
     bigSprite: 2009
     floorSprite: 2009
     handSprite: 2072
@@ -805,13 +805,13 @@ items:
     confAuto:
       shots: 15
       name: STR_SUPPRESSION
-    accuracyAuto: 70
-    accuracySnap: 80
+    accuracyAuto: 80
+    accuracySnap: 90
     costSnap:
-      time: 35
+      time: 30
       mana: 6
     costAuto:
-      time: 38
+      time: 32
       mana: 17
     twoHanded: true
     clipSize: -1
@@ -1023,7 +1023,7 @@ items:
     size: 0.3
     costBuy: 48000
     costSell: 42000
-    weight: 9
+    weight: 7
     bigSprite: 2022
     floorSprite: 2022
     handSprite: 2136
@@ -1074,7 +1074,7 @@ items:
     size: 0.3
     costBuy: 38000
     costSell: 32000
-    weight: 12
+    weight: 10
     bigSprite: 2023
     floorSprite: 2023
     handSprite: 2144
@@ -1293,10 +1293,10 @@ items:
     accuracyAimed: 110
     accuracySnap: 70
     costAimed:
-      time: 78
+      time: 58
       mana: 4
     costSnap:
-      time: 42
+      time: 32
       mana: 4
     clipSize: -1
     battleType: 1

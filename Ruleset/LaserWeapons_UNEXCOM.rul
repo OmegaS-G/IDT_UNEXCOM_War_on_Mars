@@ -490,7 +490,7 @@ items:
     vaporProbabilitySurface: 100
 
   - type: STR_CHINA_LAKE_LASER_PROJECTOR
-    categories: [STR_WEAPONS, STR_FIREARMS, STR_LMGS, STR_PROPRIETARY]
+    categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_US_TECH]
     size: 0.2
     costSell: 225000
     weight: 20
@@ -501,36 +501,37 @@ items:
     bulletSprite: 29
     hitAnimation: 36
     fireSound: 242
-    costSnap:
-      time: 40
-      mana: 3
+    power: 80
+    damageType: 4
+    damageAlter:
+      cRandomType: 7
+      ToArmor: 0.5
     confSnap:
       shots: 5
       name: STR_CONTROLLED_AUTO
       ammoSlot: 0
       arcing: false
-    snapRange: 30
-    accuracySnap: 70
-    costAuto:
-      time: 70
-      mana: 5
     confAuto:
       shots: 10
       name: STR_SUPPRESSION
       ammoSlot: 0
       arcing: false
-    autoRange: 20
+    accuracySnap: 70
     accuracyAuto: 50
     accuracyCloseQuarters: 90
-    damageType: 4
-    power: 80
-    clipSize: -1
-    damageAlter:
-      RandomType: 7
-      ToArmor: 0.5
+    costSnap:
+      time: 40
+      mana: 3
+    costAuto:
+      time: 70
+      mana: 5
     maxRange: 60
-    kneelBonus: 200
+    snapRange: 30
+    autoRange: 20
+    dropoff: 1
+    clipSize: -1
     battleType: 1
+    kneelBonus: 200
     invWidth: 1
     invHeight: 3
     twoHanded: true

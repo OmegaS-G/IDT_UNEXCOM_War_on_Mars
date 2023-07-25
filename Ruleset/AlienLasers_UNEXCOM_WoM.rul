@@ -15,9 +15,9 @@ items:
     accuracyAuto: 50
     accuracySnap: 75
     accuracyAimed: 110
-    tuAuto: 35
-    tuSnap: 30
-    tuAimed: 60
+    tuAuto: 35 #12 mana
+    tuSnap: 30 #4 mana
+    tuAimed: 60 #4 mana
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -40,6 +40,7 @@ items:
     clipSize: 35
     battleType: 2
     recoveryPoints: 1
+
   - type: STR_ALIEN_LASER_RIFLE
     size: 0.2
     costSell: 126500
@@ -52,12 +53,12 @@ items:
     fireSound: 11
     compatibleAmmo:
       - STR_ALIEN_LASER_RIFLE_BATTERY
-    accuracyAuto: 55
-    accuracySnap: 86
-    accuracyAimed: 100
-    tuAuto: 36
-    tuSnap: 30
-    tuAimed: 60
+    accuracyAuto: 60 #55
+    accuracySnap: 90 #86
+    accuracyAimed: 110 #100
+    tuAuto: 36 #6 mana?
+    tuSnap: 30 #2 mana?
+    tuAimed: 60 #2 mana?
     battleType: 1
     twoHanded: true
     invWidth: 1
@@ -80,6 +81,7 @@ items:
     clipSize: 28
     battleType: 2
     recoveryPoints: 1
+
   - type: STR_ALIEN_LASER_PISTOL
     size: 0.1
     costSell: 84000
@@ -95,9 +97,9 @@ items:
     accuracyAuto: 50
     accuracySnap: 65
     accuracyAimed: 85
-    tuAuto: 30
-    tuSnap: 30
-    tuAimed: 60
+    tuAuto: 30 #3 mana
+    tuSnap: 30 #1 mana
+    tuAimed: 60 #1 mana
     battleType: 1
     invWidth: 1
     invHeight: 2
@@ -119,6 +121,7 @@ items:
     clipSize: 26
     battleType: 2
     recoveryPoints: 1
+
   - type: STR_ALIEN_REACTIVE_GRENADE
     size: 0.1
     costBuy: 500
@@ -133,6 +136,7 @@ items:
     invWidth: 2
     invHeight: 1
     blastRadius: 2
+
   - type: STR_ALIEN_SIEGE_LAUNCHER
     size: 0.3
     costSell: 144000
@@ -179,6 +183,7 @@ items:
     invHeight: 2
     recoveryPoints: 1
     blastRadius: 5
+
   - type: STR_DEVIL_AXE
     size: 0.2
     weight: 10

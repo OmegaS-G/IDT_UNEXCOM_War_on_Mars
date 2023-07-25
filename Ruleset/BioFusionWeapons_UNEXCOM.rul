@@ -27,6 +27,7 @@ items:
     snapRange: 14
     aimRange: 26
     dropoff: 1
+#Melee Start
     meleeAnimation: 0
     meleeType: 7
     meleePower: 45
@@ -41,10 +42,11 @@ items:
       energy: 8
     flatMelee:
       time: true
+#Melee End
     battleType: 1
+    armor: 135
     invWidth: 1
     invHeight: 2
-    armor: 135
     experienceTrainingMode: 0
 
   - type: STR_FUSION_SMG
@@ -76,6 +78,7 @@ items:
     snapRange: 18
     aimRange: 0
     dropoff: 2
+#Melee Start
     meleeAnimation: 0
     meleeType: 7
     meleePower: 55
@@ -90,11 +93,12 @@ items:
       energy: 8
     flatMelee:
       time: true
+#Melee End
     battleType: 1
+    armor: 135
     twoHanded: true
     invWidth: 1
     invHeight: 3
-    armor: 135
     experienceTrainingMode: 0
 
   - type: STR_FUSION_POWER_CELL_LIGHT
@@ -121,9 +125,10 @@ items:
     clipSize: 8
     blastRadius: 2
     battleType: 2
+    armor: 60
     invWidth: 1
     invHeight: 1
-    armor: 60
+
 
   - type: STR_FUSION_RIFLE
     listOrder: 103
@@ -151,6 +156,7 @@ items:
     snapRange: 16
     aimRange: 32
     dropoff: 1
+#Melee Start
     meleeAnimation: 0
     meleeType: 7
     meleePower: 60
@@ -166,6 +172,7 @@ items:
     flatMelee:
       time: true
     battleType: 1
+#Melee End
     armor: 135
     twoHanded: true
     invWidth: 1
@@ -200,6 +207,7 @@ items:
     snapRange: 22
     aimRange: 40
     dropoff: 1
+#Melee Start
     meleeAnimation: 0
     meleeType: 7
     meleePower: 65
@@ -214,6 +222,7 @@ items:
       energy: 15
     flatMelee:
       time: true
+#Melee End
     battleType: 1
     armor: 135
     twoHanded: true
@@ -250,6 +259,7 @@ items:
     snapRange: 16
     aimRange: 32
     dropoff: 1
+#Melee Start
     meleeAnimation: 0
     meleeType: 7
     meleePower: 65
@@ -265,6 +275,7 @@ items:
       energy: 8
     flatMelee:
       time: true
+#Melee End
     battleType: 1
     armor: 135
     twoHanded: true
@@ -300,6 +311,7 @@ items:
     invWidth: 1
     invHeight: 1
 
+
   - type: STR_FUSION_SPLITTER
     listOrder: 107
     categories: [STR_FUSION, STR_SHOTGUNS, STR_ALIEN_TECH]
@@ -328,6 +340,7 @@ items:
     snapRange: 15
     aimRange: 20
     dropoff: 1
+#Melee Start
     meleeAnimation: 0
     meleeType: 7
     meleePower: 80
@@ -342,6 +355,7 @@ items:
       energy: 8
     flatMelee:
       time: true
+#Melee End
     battleType: 1
     armor: 135
     twoHanded: true
@@ -377,9 +391,10 @@ items:
     clipSize: 8
     #blastRadius: 3
     battleType: 2
+    armor: 60
     invWidth: 2
     invHeight: 1
-    armor: 60
+
 
   - type: STR_FUSION_LANCE
     listOrder: 109
@@ -397,6 +412,7 @@ items:
     costSell: 8000
     size: 1
     weight: 18
+    power: 120
     damageType: 10
     damageAlter:
       RadiusReduction: 50
@@ -424,7 +440,6 @@ items:
     invWidth: 2
     invHeight: 3
     experienceTrainingMode: 0
-    power: 120
 
   - type: STR_ETHEREAL_NOBLE_SWORD
     categories: [STR_FUSION, STR_MELEE, STR_ALIEN_TECH]
@@ -533,6 +548,7 @@ items:
     armor: 60
     invWidth: 2
     invHeight: 1
+
 
   - type: STR_ALIEN_CEPHALOPOD_TISSUE
     size: 0.3

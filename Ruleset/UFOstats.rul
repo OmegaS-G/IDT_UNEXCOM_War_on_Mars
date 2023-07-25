@@ -13,6 +13,7 @@ ufos:
     score: 50
     reload: 10
     breakOffTime: 200
+
   - type: STR_MEDIUM_SCOUT
     size: STR_SMALL
     sprite: 1
@@ -30,6 +31,7 @@ ufos:
     breakOffTime: 250
     radarRange: 20
     radarChance: 30
+
   - type: STR_LARGE_SCOUT
     size: STR_SMALL
     sprite: 2
@@ -47,6 +49,7 @@ ufos:
     breakOffTime: 300
     radarRange: 300
     radarChance: 45
+
 #Fighters
   - type: STR_SMALL_FIGHTER
     size: STR_VERY_SMALL
@@ -79,6 +82,7 @@ ufos:
         - name: SMALL_FIGHTER
           width: 10
           length: 10
+
   - type: STR_FIGHTER_SHIP
     size: STR_SMALL
     damageMax: 300
@@ -99,6 +103,7 @@ ufos:
     radarChance: 100
     sightRange: 0
     huntMode: 0
+
   - type: STR_SENTRY_SHIP
     modSprite: InterceptionSentry
     size: STR_SMALL
@@ -117,8 +122,8 @@ ufos:
     shieldBleedThrough: 100
     radarRange: 30
     sightRange: 30
-#Research ships
 
+#Research ships
   - type: STR_EXCAVATOR
     modSprite: InterceptionExcavator
     size: STR_SMALL
@@ -130,6 +135,7 @@ ufos:
     score: 100
     reload: 30
     breakOffTime: 220
+
   - type: STR_ABDUCTOR
     size: STR_MEDIUM_UC
     sprite: 4
@@ -144,6 +150,7 @@ ufos:
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
     breakOffTime: 500
+
   - type: STR_HARVESTER
     size: STR_MEDIUM_UC
     sprite: 3
@@ -172,6 +179,7 @@ ufos:
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
     breakOffTime: 500
+
 #Warships
   - type: STR_TERROR_SHIP
     size: STR_LARGE
@@ -187,10 +195,11 @@ ufos:
     score: 500
     reload: 20
     breakOffTime: 2000
+
   - type: STR_TROOP_LANDER
     size: STR_VERY_LARGE
-    damageMax: 1750
     modSprite: InterceptionTroopLander
+    damageMax: 1750
     speedMax: 400
     accel: 3
     power: 150
@@ -201,6 +210,7 @@ ufos:
     score: 600
     reload: 20
     breakOffTime: 3000
+
   - type: STR_BATTLESHIP
     size: STR_VERY_LARGE
     sprite: 6
@@ -216,6 +226,7 @@ ufos:
     score: 700
     reload: 30
     breakOffTime: 4000
+
   - type: STR_CARRIER
     size: STR_VERY_LARGE
     sprite: 6
@@ -245,8 +256,8 @@ ufos:
         - name: CARRIER
           width: 50
           length: 30
-#Logistical
 
+#Logistical
   - type: STR_SUPPLY_SHIP
     size: STR_LARGE
     sprite: 7
@@ -291,6 +302,7 @@ alienDeployments:
     length: 40
     height: 10
     missionBountyItem: STR_SMALL_FIGHTER_ANALYSIS
+
 items:
   - type: STR_SMALL_FIGHTER_ANALYSIS
     size: 0.1

@@ -1,46 +1,31 @@
-items:
-  #RIFLE AMMO
-  - &STR_5_56MM_NATO_RIFLE_AMMO
-    type: STR_5_56MM_NATO_RIFLE_AMMO
-    power: 32
-    battleType: 2
-
-  - &STR_7_62MM_SOVIET_RIFLE_AMMO
-    type: STR_7_62MM_SOVIET_RIFLE_AMMO
-    power: 38
-    battleType: 2
 
 ######################################
 ###### FACTION OLD WEAPONS ##########
 ####################################
-
   - type: STR_M17_CARBINE
-    categories:
-      [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_CARBINES]
+    listOrder: 200820
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_US_TECH, STR_CARBINES]
     bigSprite: 138
     floorSprite: 138
     handSprite: 404
     bulletSprite: 2
     fireSound: 138
     bulletSpeed: 25
-    reloadSound: [ 186, 187, 188, 189 ]
+    reloadSound: [186, 187, 188, 189]
     costBuy: 2500
     costSell: 1750
     size: 0.2
     weight: 9
-    ammo:
-      0:
-        compatibleAmmo: [ STR_5_56MM_NATO_RIFLE_X30 ]
+    compatibleAmmo:
+      - STR_5_56MM_NATO_RIFLE_X30
     confSnap:
       shots: 2
       name: STR_DOUBLE_TAP
       shortName: STR_DOUBLE_TAP_SHORT
-      ammoSlot: 0
       arcing: false
     confAuto:
       shots: 6
       name: STR_CONTROL_AUTO
-      ammoSlot: 0
       arcing: false
     accuracySnap: 95
     accuracyAimed: 150
@@ -55,11 +40,10 @@ items:
     invWidth: 1
     invHeight: 3
     attraction: 8
-    listOrder: 200820
 
   - type: STR_5_56MM_NATO_RIFLE_X30
-    refNode: *STR_5_56MM_NATO_RIFLE_AMMO
-    categories: [ STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS ]
+    listOrder: 200960
+    categories: [STR_FIREARMS, STR_RIFLES, STR_CARBINES, STR_CLIPS]
     bigSprite: 106
     floorSprite: 106
     hitAnimation: 26
@@ -69,6 +53,7 @@ items:
     costSell: 525
     size: 0.1
     weight: 3
+    power: 32
     damageType: 1
     damageAlter:
       RandomType: 6
@@ -80,11 +65,10 @@ items:
     clipSize: 30
     battleType: 2
     attraction: 8
-    listOrder: 200960
 
   - type: STR_AK79_RIFLE
-    categories:
-      [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_RIFLES]
+    listOrder: 201320
+    categories: [STR_BALLISTIC, STR_FIREARMS, STR_SOVIET_TECH, STR_RIFLES]
     bigSprite: 174
     floorSprite: 174
     handSprite: 692
@@ -96,12 +80,8 @@ items:
     costSell: 1500
     size: 0.2
     weight: 8
-    ammo:
-      0:
-        tuLoad: 10
-        tuUnload: 20
-        compatibleAmmo:
-          [STR_7_62MM_SOVIET_RIFLE_X40]
+    compatibleAmmo:
+      - STR_7_62MM_SOVIET_RIFLE_X40
     confAimed:
       shots: 3
       name: STR_BURST
@@ -119,6 +99,8 @@ items:
     tuAuto: 35
     tuSnap: 25
     tuAimed: 70
+    tuLoad: 10
+    tuUnload: 20
     costThrow:
       energy: 16
     battleType: 1
@@ -126,11 +108,10 @@ items:
     invWidth: 1
     invHeight: 3
     attraction: 8
-    listOrder: 201320
 
   - type: STR_7_62MM_SOVIET_RIFLE_X40
-    refNode: *STR_7_62MM_SOVIET_RIFLE_AMMO
-    categories: [ STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH, STR_CLIPS ]
+    listOrder: 201340
+    categories: [STR_FIREARMS, STR_RIFLES, STR_SOVIET_TECH, STR_CLIPS]
     bigSprite: 114
     floorSprite: 114
     hitAnimation: 26
@@ -139,6 +120,7 @@ items:
     costSell: 425
     size: 0.1
     weight: 4
+    power: 38
     damageType: 1
     damageAlter:
       RandomType: 6
@@ -150,10 +132,9 @@ items:
     clipSize: 40
     battleType: 2
     attraction: 8
-    listOrder: 201340
 
   - type: STR_40MM_FRAG
-    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
+    categories: [STR_FIREARMS, STR_ARTILLERY, STR_CLIPS]
     bigSprite: 123
     floorSprite: 123
     bulletSprite: 4
@@ -177,70 +158,6 @@ items:
     blastRadius: 3
     listOrder: 200630
 
-  - type: STR_40MM_INCENDIARY
-    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
-    bigSprite: 124
-    floorSprite: 124
-    hitSound: 0
-    bulletSprite: 4
-    hitAnimation: 0
-    costBuy: 600
-    costSell: 400
-    size: 0.1
-    weight: 2
-    power: 90
-    damageType: 2
-    clipSize: 1
-    battleType: 2
-    armor: 20
-    damageAlter:
-      FixRadius: 7
-    blastRadius: 7
-    listOrder: 200640
-
-  - type: STR_40MM_SMOKE
-    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
-    bigSprite: 125
-    floorSprite: 125
-    bulletSprite: 5
-    hitSound: 0
-    hitAnimation: 0
-    costBuy: 300
-    costSell: 200
-    size: 0.1
-    weight: 2
-    power: 85
-    damageType: 9
-    clipSize: 1
-    battleType: 2
-    armor: 20
-    blastRadius: 8
-    listOrder: 200660
-
-  - type: STR_40MM_NON_LETHAL
-    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
-    bigSprite: 126
-    floorSprite: 126
-    handSprite: 308
-    bulletSprite: 4
-    hitSound: 0
-    hitAnimation: 0
-    costBuy: 1500
-    costSell: 800
-    size: 0.1
-    weight: 2
-    power: 50
-    damageAlter:
-      RandomType: 6
-      ToStun: 1.2
-      ToEnergy: 1.1
-    damageType: 6
-    clipSize: 1
-    battleType: 2
-    armor: 20
-    blastRadius: 5
-    listOrder: 200650
-
   - type: STR_G11_CASELESS_RIFLE
     categories: [STR_SPACE, STR_FIREARMS, STR_NATO_TECH, STR_RIFLES]
     bigSprite: 1510
@@ -254,12 +171,8 @@ items:
     costSell: 4000
     size: 0.2
     weight: 5
-    ammo:
-      0:
-        tuLoad: 20
-        tuUnload: 25
-        compatibleAmmo:
-          [STR_G11_CASELESS_RIFLE_MAG]
+    compatibleAmmo:
+      - STR_G11_CASELESS_RIFLE_MAG
     confSnap:
       shots: 3
       name: STR_BURST
@@ -278,6 +191,8 @@ items:
     tuAuto: 65
     tuSnap: 50
     tuAimed: 85
+    tuLoad: 20
+    tuUnload: 25
     minRange: 10
     maxRange: 40
     autoRange: 35
@@ -321,12 +236,8 @@ items:
     costSell: 4000
     size: 0.2
     weight: 6
-    ammo:
-      0:
-        tuLoad: 10
-        tuUnload: 20
-        compatibleAmmo:
-          [STR_TKB1980_CASELESS_RIFLE_MAG]
+    compatibleAmmo:
+      - STR_TKB1980_CASELESS_RIFLE_MAG
     confSnap:
       shots: 5
       name: STR_BURST
@@ -346,6 +257,8 @@ items:
     tuAuto: 50
     tuSnap: 60
     tuAimed: 80
+    tuLoad: 10
+    tuUnload: 20
     autoRange: 15
     maxRange: 25
     dropoff: 10
@@ -376,167 +289,9 @@ items:
     invHeight: 1
     invWidth: 1
 
-######################################
-###### SPACE CAPABLE WEAPONS ########
-####################################
-  - type: STR_MK119_SPACE_RIFLE
-    categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_CARBINES]
-    bigSprite: 1500
-    floorSprite: 1500
-    handSprite: 2972
-    bulletSprite: 2
-    fireSound: 4
-#    reloadSound: [186, 187, 188, 189]
-    costBuy: 3200
-    costSell: 2000
-    size: 0.2
-    weight: 6
-    ammo:
-      0:
-        tuLoad: 10
-        tuUnload: 20
-        compatibleAmmo:
-          [
-            STR_MK119_SPACE_RIFLE_AP_CLIP
-          ]
-    confAimed:
-      shots: 3
-      name: STR_BURST
-      shortName: STR_BURST_SHORT
-      ammoSlot: 0
-      arcing: false
-    confAuto:
-      shots: 6
-      name: STR_CONTROL_AUTO
-      ammoSlot: 0
-      arcing: false
-    accuracyCloseQuarters: 140
-    accuracyAuto: 50
-    accuracySnap: 72
-    accuracyAimed: 85
-    bulletSpeed: 20
-    tuAuto: 25
-    tuSnap: 20
-    tuAimed: 50
-    autoRange: 16
-    maxRange: 20
-    costThrow:
-      energy: 8
-    battleType: 1
-    twoHanded: true
-    oneHandedPenalty: 80
-    invWidth: 1
-    invHeight: 3
-    attraction: 8
-    listOrder: 2052
-
-  - type: STR_MK119_SPACE_RIFLE_AP_CLIP
-    categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_PISTOLS]
-    bigSprite: 1501
-    hitSound: 16
-    hitAnimation: 26
-    costBuy: 500
-    costSell: 450
-    size: 0.1
-    weight: 2
-    power: 75
-    damageAlter:
-      RandomType: 2
-      IgnoreOverKill: true
-      ToArmor: 2.0
-      RandomWound: false
-    damageType: 1
-    clipSize: 36
-    battleType: 2
-    invHeight: 1
-    invWidth: 1
-
-  - type: STR_MK115_SPACE_PISTOL
-    categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_PISTOLS]
-    bigSprite: 1512
-    floorSprite: 1512
-    handSprite: 2996
-    bulletSprite: 2
-    fireSound: 4
-#    reloadSound: [179, 180, 181, 182]
-    costBuy: 2500
-    costSell: 900
-    size: 0.1
-    weight: 3
-    compatibleAmmo:
-      - STR_MK115_SPACE_PISTOL_CLIP
-    confAuto:
-      shots: 3
-      name: STR_RAPID_FIRE
-    accuracySnap: 65
-    accuracyAimed: 70
-    accuracyCloseQuarters: 100
-    tuSnap: 30
-    tuAimed: 35
-    maxRange: 24
-    battleType: 1
-    armor: 250
-    kneelBonus: 115
-    invHeight: 2
-    invWidth: 1
-#    listOrder: 2028
-
-  - type: STR_MK117_SPACE_PDW
-    categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_SMGS]
-    bigSprite: 1513
-    floorSprite: 1513
-    handSprite: 3004
-    bulletSprite: 2
-    fireSound: 4
-#    reloadSound: [179, 180, 181, 182]
-    costBuy: 2500
-    costSell: 900
-    size: 0.1
-    weight: 3
-    compatibleAmmo:
-      - STR_MK115_SPACE_PISTOL_CLIP
-    confAimed:
-      shots: 2
-      name: STR_DOUBLE_TAP
-    confAuto:
-      shots: 10
-      name: STR_FULL_AUTO      
-    accuracySnap: 45
-    accuracyAimed: 50
-    accuracyAuto: 45
-    accuracyCloseQuarters: 150
-    tuSnap: 20
-    tuAimed: 35
-    tuAuto: 25
-    invHeight: 3
-    invWidth: 1
-    maxRange: 20
-    battleType: 1
-    armor: 250
-    twoHanded: true
-    kneelBonus: 115
-#    listOrder: 2028
-
-  - type: STR_MK115_SPACE_PISTOL_CLIP
-    categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_PISTOLS, STR_CLIPS]
-    bigSprite: 1514
-    hitSound: 16
-    hitAnimation: 26
-    costBuy: 300
-    costSell: 450
-    size: 0.1
-    weight: 2
-    power: 65
-    damageType: 1
-    clipSize: 20
-    battleType: 2
-    invHeight: 1
-    invWidth: 1
-
-# OLD WEAPONS
-
 # China Lake Laser Projector likely needs rebalancing
   - type: STR_CHINA_LAKE_LASER_PROJECTOR
+    listOrder: 236
     categories: [STR_LASER, STR_FIREARMS, STR_LMGS, STR_US_TECH]
     bigSprite: 3012
     floorSprite: 3012
@@ -584,11 +339,228 @@ items:
     kneelBonus: 200
     invWidth: 1
     invHeight: 3
-    listOrder: 236
+
+######################################
+###### SPACE CAPABLE WEAPONS ########
+####################################
+  - type: STR_MK119_SPACE_RIFLE
+    listOrder: 2052
+    categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_CARBINES]
+    bigSprite: 1500
+    floorSprite: 1500
+    handSprite: 2972
+    bulletSprite: 2
+    fireSound: 4
+#    reloadSound: [186, 187, 188, 189]
+    costBuy: 3200
+    costSell: 2000
+    size: 0.2
+    weight: 6
+    compatibleAmmo:
+      - STR_MK119_SPACE_RIFLE_AP_CLIP
+    confAimed:
+      shots: 3
+      name: STR_BURST
+      shortName: STR_BURST_SHORT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 6
+      name: STR_CONTROL_AUTO
+      ammoSlot: 0
+      arcing: false
+    accuracyCloseQuarters: 140
+    accuracyAuto: 50
+    accuracySnap: 72
+    accuracyAimed: 85
+    bulletSpeed: 20
+    tuAuto: 25
+    tuSnap: 20
+    tuAimed: 50
+    tuLoad: 10
+    tuUnload: 20
+    autoRange: 16
+    maxRange: 20
+    costThrow:
+      energy: 8
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 80
+    invWidth: 1
+    invHeight: 3
+    attraction: 8
+
+  - type: STR_MK119_SPACE_RIFLE_AP_CLIP
+    categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_PISTOLS]
+    bigSprite: 1501
+    hitSound: 16
+    hitAnimation: 26
+    costBuy: 500
+    costSell: 450
+    size: 0.1
+    weight: 2
+    power: 75
+    damageAlter:
+      RandomType: 2
+      IgnoreOverKill: true
+      ToArmor: 2.0
+      RandomWound: false
+    damageType: 1
+    clipSize: 36
+    battleType: 2
+    invHeight: 1
+    invWidth: 1
+
+
+  - type: STR_MK115_SPACE_PISTOL
+#    listOrder: 2028
+    categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_PISTOLS]
+    bigSprite: 1512
+    floorSprite: 1512
+    handSprite: 2996
+    bulletSprite: 2
+    fireSound: 4
+#    reloadSound: [179, 180, 181, 182]
+    costBuy: 2500
+    costSell: 900
+    size: 0.1
+    weight: 3
+    compatibleAmmo:
+      - STR_MK115_SPACE_PISTOL_CLIP
+    confAuto:
+      shots: 3
+      name: STR_RAPID_FIRE
+    accuracySnap: 65
+    accuracyAimed: 70
+    accuracyCloseQuarters: 100
+    tuSnap: 30
+    tuAimed: 35
+    maxRange: 24
+    battleType: 1
+    armor: 250
+    kneelBonus: 115
+    invHeight: 2
+    invWidth: 1
+
+  - type: STR_MK117_SPACE_PDW
+#    listOrder: 2028
+    categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_SMGS]
+    bigSprite: 1513
+    floorSprite: 1513
+    handSprite: 3004
+    bulletSprite: 2
+    fireSound: 4
+#    reloadSound: [179, 180, 181, 182]
+    costBuy: 2500
+    costSell: 900
+    size: 0.1
+    weight: 3
+    compatibleAmmo:
+      - STR_MK115_SPACE_PISTOL_CLIP
+    confAimed:
+      shots: 2
+      name: STR_DOUBLE_TAP
+    confAuto:
+      shots: 10
+      name: STR_FULL_AUTO      
+    accuracySnap: 45
+    accuracyAimed: 50
+    accuracyAuto: 45
+    accuracyCloseQuarters: 150
+    tuSnap: 20
+    tuAimed: 35
+    tuAuto: 25
+    invHeight: 3
+    invWidth: 1
+    maxRange: 20
+    battleType: 1
+    armor: 250
+    twoHanded: true
+    kneelBonus: 115
+
+  - type: STR_MK115_SPACE_PISTOL_CLIP
+    categories: [STR_SPACE, STR_FIREARMS, STR_UNEXCOM_TECH, STR_PISTOLS, STR_CLIPS]
+    bigSprite: 1514
+    hitSound: 16
+    hitAnimation: 26
+    costBuy: 300
+    costSell: 450
+    size: 0.1
+    weight: 2
+    power: 65
+    damageType: 1
+    clipSize: 20
+    battleType: 2
+    invHeight: 1
+    invWidth: 1
 
 #######################################
   ########## EXPLOSIVES ################
   #####################################
+  - type: STR_40MM_INCENDIARY
+    listOrder: 200640
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
+    bigSprite: 124
+    floorSprite: 124
+    hitSound: 0
+    bulletSprite: 4
+    hitAnimation: 0
+    costBuy: 600
+    costSell: 400
+    size: 0.1
+    weight: 2
+    power: 90
+    damageType: 2
+    damageAlter:
+      FixRadius: 7
+    clipSize: 1
+    battleType: 2
+    armor: 20
+    blastRadius: 7
+
+  - type: STR_40MM_SMOKE
+    listOrder: 200660
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
+    bigSprite: 125
+    floorSprite: 125
+    bulletSprite: 5
+    hitSound: 0
+    hitAnimation: 0
+    costBuy: 300
+    costSell: 200
+    size: 0.1
+    weight: 2
+    power: 85
+    damageType: 9
+    clipSize: 1
+    battleType: 2
+    armor: 20
+    blastRadius: 8
+
+  - type: STR_40MM_NON_LETHAL
+    listOrder: 200650
+    categories: [ STR_FIREARMS, STR_ARTILLERY, STR_CLIPS ]
+    bigSprite: 126
+    floorSprite: 126
+    handSprite: 308
+    bulletSprite: 4
+    hitSound: 0
+    hitAnimation: 0
+    costBuy: 1500
+    costSell: 800
+    size: 0.1
+    weight: 2
+    power: 50
+    damageAlter:
+      RandomType: 6
+      ToStun: 1.2
+      ToEnergy: 1.1
+    damageType: 6
+    clipSize: 1
+    battleType: 2
+    armor: 20
+    blastRadius: 5
+
   - type: STR_GRENADE
     categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
     bigSprite: 19
@@ -598,6 +570,7 @@ items:
     size: 0.1
     weight: 3
     power: 50
+   damageType: 3
     damageAlter:
       RandomType: 6
       IgnoreSelfDestruct: true
@@ -608,7 +581,6 @@ items:
     tuUnprime: 50
     costThrow:
       energy: 6
-    damageType: 3
     battleType: 4
     blastRadius: 5
 
@@ -653,9 +625,9 @@ items:
       ToWound: 1.8
       RandomWound: true
     battleType: 4
+    blastRadius: 5
     invWidth: 2
     invHeight: 1
-    blastRadius: 5
 
   - type: STR_SMOKE_GRENADE
     categories: [ STR_EXPLOSIVES, STR_LIGHT_EQUIPMENT ]
@@ -701,11 +673,25 @@ items:
       energy: 8
     tuPrime: 25
     battleType: 4
-    blastRadius: 3
     armor: 20
+    blastRadius: 3
     attraction: 6
 
+  - type: STR_ELECTRO_FLARE
+    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
+    bigSprite: 888
+    handSprite: 888
+    floorSprite: 888
+    tuPrime: 15
+    battleType: 10
+    primeActionName: STR_PRIME_FLARE
+    fuseType: -2
+
+#######################################
+  ########## MEDICAL ################
+  #####################################
   - type: STR_MEDI_KIT
+    listOrder: 2137
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     bigSprite: 24
     floorSprite: 24
@@ -725,9 +711,9 @@ items:
     tuUse: 10
     flatRate: true
     medikitActionName: STR_ACTIVATE_MEDIKIT
-    listOrder: 2137
 
   - type: STR_MEDICAL_BAG
+    listOrder: 2138
     medikitBackground: MEDIKIT_BACKGROUND
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     bigSprite: 195
@@ -754,9 +740,9 @@ items:
     attraction: 5
     experienceTrainingMode: 19
     medikitActionName: STR_DEPLOY_MEDICAL_BAG
-    listOrder: 2138
 
   - type: STR_FIELD_DRESSING
+    listOrder: 2139
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     bigSprite: 196
     floorSprite: 196
@@ -780,9 +766,9 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_USE_FIELD_DRESSING
-    listOrder: 2139
 
   - type: STR_MEDICAL_POUCH
+    listOrder: 2140
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT ]
     bigSprite: 197
     floorSprite: 197
@@ -805,9 +791,9 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_USE_MEDICAL_POUCH
-    listOrder: 2140
 
   - type: STR_DUCT_TAPE
+    listOrder: 2141
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     bigSprite: 202
     floorSprite: 202
@@ -830,9 +816,9 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_TAPE_IT
-    listOrder: 2141
 
   - type: STR_DUCT_GUN
+    listOrder: 2142
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     bigSprite: 203
     floorSprite: 203
@@ -856,9 +842,9 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_TAPE_IT
-    listOrder: 2142
 
   - type: STR_BIO_FOAM
+    listOrder: 2143
     categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     bigSprite: 204
     floorSprite: 204
@@ -884,22 +870,16 @@ items:
     attraction: 6
     experienceTrainingMode: 19
     medikitActionName: STR_APPLY_FOAM
-    listOrder: 2143
 
-  - type: STR_ELECTRO_FLARE
-    categories: [ STR_MEDICAL, STR_LIGHT_EQUIPMENT, STR_SPACE ]
-    bigSprite: 888
-    handSprite: 888
-    floorSprite: 888
-    tuPrime: 15
-    battleType: 10
-    primeActionName: STR_PRIME_FLARE
-    fuseType: -2
 
+#######################################
+  ########## OTHER ITEM ################
+  #####################################
   - type: STR_PSI_AMP
     categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
 
   - type: STR_STUN_ROD
+    listOrder: 2121
     categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     bigSprite: 26
     floorSprite: 26
@@ -913,15 +893,15 @@ items:
     damageType: 6
     accuracyMelee: 100
     tuMelee: 30
+    clipSize: -1
     battleType: 3
     twoHanded: true
     invWidth: 1
     invHeight: 3
     skillApplied: false
-    clipSize: -1
-    listOrder: 2121
 
   - type: STR_SPACE_KNIFE
+    listOrder: 2119
     categories: [ STR_MELEE, STR_SPACE, STR_LIGHT_EQUIPMENT ]
     bigSprite: 1144
     floorSprite: 1144
@@ -949,16 +929,16 @@ items:
     costThrow:
       energy: 10
     flatRate: true
-    battleType: 3
     clipSize: -1
+    battleType: 3
+    armor: 60
     invWidth: 1
     invHeight: 2
-    armor: 60
     experienceTrainingMode: 13
     attraction: 7
-    listOrder: 2119
 
   - type: STR_GENERATOR_STICK
+    listOrder: 2122
     categories: [ STR_MELEE, STR_LIGHT_EQUIPMENT, STR_SPACE ]
     bigSprite: 1152
     floorSprite: 1152
@@ -978,7 +958,6 @@ items:
     invWidth: 1
     invHeight: 3
     skillApplied: false
-    listOrder: 2122
 
 ########################################
 ######## AMMO CLIPS & MAGAZINES ########

@@ -1,0 +1,201 @@
+(Pistol also for original)
+STR_UN_LASER_PISTOL: “XL-4 ‘----’ Hybrid Laser Pistol”
+STR_UN_LASER_PISTOL_UFOPEDIA: "UNEXCOM would take surprisingly long to produce their own pistol sized energy weapon, holding that anything larger than a Sectoid was better handled by a proper long arm.  Eventually however, they would feel the need to field a capable offhand weapon for their Psionic Operatives, and none were available without becoming unacceptably tied to one of the Great Powers.  The resulting ---- is competitive with Alien Plasma Pistols, if far less ‘snappy’ on the trigger, and is issued to pilots and field specialists.”
+
+- type: STR_UN_LASER_PISTOL
+size: 0.2
+costBuy: 60000
+costSell: 45000
+weight: 4
+power: 70
+damageType: 4
+damageAlter: 
+  RandomType: 6
+confAimed: 
+  shots: 3
+  name: STR_BURST
+confAuto: 
+  shots: 5
+  name: STR_CONTROL_AUTO
+accuracySnap: 85
+accuracyAimed: 75
+accuracyAuto: 70
+costSnap:
+  time: 30
+  mana: 2
+costAimed:
+  time: 35
+  mana: 5
+costAuto:
+  time: 40
+  mana: 7
+maxRange: 60
+snapRange: 15
+aimRange: 12
+autoRange: 14
+dropoff: 1
+twoHanded: false
+invWidth: 1
+invHeight: 2
+armor: 45
+
+- name: UNEXCOM_LASER_PISTOL
+space: 1
+time: 40
+cost: 7500
+requiredItems:
+  STR_ALIEN_LASER_PISTOL: 1
+  STR_ALIEN_ALLOYS: 3
+  STR_ALIEN_CRYSTAL: 3
+
+
+(As I made this, I realized that it was basically the classic Heavy Plasma, so I upped some of the downsides.)
+STR_UN_HEAVY_LASER: “UNL-5 'Longinus’ Hybrid Heavy Laser”
+STR_UN_HEAVY_LASER_UFOPEDIA: "While UNEXCOM researchers were unable to finish it until 1977, the Longinus represents the pinnacle of what humanity can achieve in the field of hand held laser weaponry.  More than a third lighter than the Soviet ANIFA, its far greater fire rate grants it burst capability.  Additionally, its beam continues to be able to punch through most forms of armor, and the weapon also features more usable targeting sights.  Its greatest drawback is that it is simply overkill against anything smaller than a Cyberdisk, and its sheer power results in it only having at best 18 shots from a standard Elerium battery, with 16 being more typical.”
+
+- type: STR_UN_HEAVY_LASER
+size: 0.4
+costSell: 80000
+weight: 12
+power: 115
+damageType: 4
+damageAlter: 
+  RandomType: 6
+  ArmorEffectiveness: 0.5
+accuracySnap: 75
+accuracyAimed: 110
+accuracyAuto: 50
+costSnap:
+  time: 30
+  mana: 5
+costAimed:
+  time: 60
+  mana: 5
+costAuto:
+  time: 40
+  mana: 13
+maxRange: 120
+snapRange: 40
+aimRange: 54
+autoRange: 30
+dropoff: 1
+twoHanded: true
+invWidth: 2
+invHeight: 3
+armor: 90
+
+- name: UNEXCOM_HEAVY_LASER
+space: 1
+time: 60
+cost: 15000
+requiredItems:
+  STR_ALIEN_HEAVY_LASER: 1
+  STR_ALIEN_ALLOYS: 6
+  STR_ALIEN_CRYSTAL: 6
+
+
+STR_HUMAN_PLASMA_GRENADE: “Plasma Grenade”
+STR_HUMAN_PLASMA_GRENADE_UFOPEDIA: "While methods of manufacturing equivalents to the alien’s plasma grenades were developed during the war, it was widely considered to be a waste of valuable Elerium.  UNEXCOM was the only human party that made a regular habit of reusing salvaged examples, with the Great Powers breaking them apart to make more useful munitions.  Still, the assembly procedure is on the books, and the Elerium deposits on Mars may make them useful.”
+
+
+
+
+STR_TANKS_OVERVIEW_UFOPEDIA: “
+Easy electric-hybrids due to super batteries and motors
+Focus on thermal resistant armor compositions (laser, plasma, and fusion all heat based damage)
+Atmospheric diffusions causes man portable lasers to need to be relatively close
+Modern AP rounds have lost ground to Alien Alloys, but compensated by faster velocities due to mag weapons
+
+STR_MARS_TANKS_UFOPEDIA: “A number of modern MBTs were shipped to Mars as part of Operation Cleansweep, but not as combat vehicles.  Instead they were fitted to serve as engineering platforms, with their turret rings hosting hydraulic arms and the powerful engines allowing them to serve as tractors or bulldozers.  The actual turrets were also shipped to Mars as a contingency, but only to be used in the event of an Alien Uprising.”
+
+STR_ABRAMS_TANK_UFOPEDIA: “Entering production in 1980, the M1 Abrams is the most powerful known MBT.  Built from the group up from Alien Alloys and powered by electric hybrid-turbine, it is fast and extremely durable.  Its primary armament is a 120mm Mass Driver, chosen over an energy weapon for munition flexibility and maximum effective range.  Supporting this is a co-axial M250 Gatling Laser and a choice of pintle mount, with smoke dischargers scattered across the vehicle.”
+
+STR_BRADLY_TANK_UFOPEDIA: “
+As a side effect of the anti-thermal protection systems, the vehicle was unexpectedly equipped with an AC unit.
+
+STR_LEOPARD_II_TANK_UFOPEDIA: “The Leopard was by far the most effective western tank during the war thanks to its maneuverability, and the succeeding Leopard II combines it with a strong Alien Alloy hull.  Power is provided by an electric hybrid-diesel, and it is equipped with the same 120mm Mass Driver as on the Abrams.  The coaxial and pintle mounts are FN Minimi Machine Lasers, and smoke discharges are festooned across the hull.”
+
+STR_T80_TANK_UFOPEDIA: “Debuting in 1979, the T-80 is the most advanced armored combat vehicle of the Soviet Union.  Broadly similar to the preceding T-64, its low hull is forged from Alien Alloys and is propelled by an electric hybrid turbine.  The switch of the primary weapon to a 125mm Gauss Cannon was widely celebrated by its crews, with the autoloader of the D-91TM proving to be horrifically vulnerable to plasma weapons and Blaster guided missiles.  Additional features include coaxial and pintle mounted LUAO-81 Machine Lasers and smoke launchers.”
+
+(honestly, they would be as durable as UFO hulls exteriors, but game mechanics)
+- type: STR_X_TANK
+race: STR_ALLIED_FORCES
+stats:
+  tu: 150
+  stamina: 150
+  health: 150
+  bravery: 110
+  reactions: 60
+  firing: 100
+  throwing: 0
+  strength: 100
+  psiStrength: 150
+  psiSkill: 0
+  melee: 70
+armor: X_TANK_ARMOR
+intelligence: 6
+aggression: 6
+builtInWeaponSets:  
+- x
+
+- type: X_TANK_ARMOR
+allowInv: true
+frontArmor: 160
+sideArmor: 130
+rearArmor: 115
+underArmor: 90
+drawingRoutine: 2
+size: 2
+damageModifier:
+ - 1.0 # None
+ - 0.3 # AP
+ - 0.4 # Incendiary
+ - 0.5 # HE
+ - 0.5 # Laser
+ - 0.6 # Plasma
+ - 0.0 # Stun
+ - 0.1 # Melee
+ - 0.4 # Acid
+ - 0.0 # Smoke	
+ - 0.6 # Elerium-F
+
+
+- type: STR_T80_TANK
+race: STR_ALLIED_FORCES
+stats:
+  tu: 100
+  stamina: 100
+  health: 135
+  bravery: 110
+  reactions: 45
+  firing: 100
+  throwing: 0
+  strength: 100
+  psiStrength: 100
+  psiSkill: 0
+  melee: 70
+armor: T80_TANK_ARMOR
+aggression: 4
+builtInWeaponSets:  
+- x
+
+- type: T80_TANK_ARMOR
+allowInv: true
+frontArmor: 130
+sideArmor: 90
+rearArmor: 70
+underArmor: 50
+drawingRoutine: 2
+size: 2
+damageModifier:
+ - 1.0 # None
+ - 0.3 # AP
+ - 0.4 # Incendiary
+ - 0.5 # HE
+ - 0.5 # Laser
+ - 0.6 # Plasma
+ - 0.0 # Stun
+ - 0.1 # Melee
+ - 0.4 # Acid
+ - 0.0 # Smoke	
+ - 0.6 # Elerium-F

@@ -126,48 +126,49 @@ items:
     recoveryPoints: 1
 
   - type: STR_ALIEN_REACTIVE_GRENADE
-    size: 0.1
-    costBuy: 500
-    costSell: 400
-    weight: 3
     bigSprite: 307
     floorSprite: 307
     handSprite: 324
-    power: 150
+    costBuy: 500
+    costSell: 400
+    size: 0.1
+    weight: 3
     damageType: 3
+    power: 150
     battleType: 5
+    blastRadius: 2
     invWidth: 2
     invHeight: 1
-    blastRadius: 2
 
   - type: STR_ALIEN_SIEGE_LAUNCHER
-    size: 0.3
-    costSell: 144000
-    weight: 16
     bigSprite: 308
     floorSprite: 308
     handSprite: 332
     bulletSprite: 4
     fireSound: 53
+    costSell: 144000
+    size: 0.3
+    weight: 16
     compatibleAmmo:
       - STR_ALIEN_SIEGE_LAUNCHER_SHELL
     accuracyAimed: 120
     tuAimed: 66
     battleType: 1
+    armor: 40
     twoHanded: true
     arcingShot: true
     invWidth: 1
     invHeight: 3
     recoveryPoints: 5
-    armor: 40
+
   - type: STR_ALIEN_SIEGE_LAUNCHER_SHELL
-    size: 0.2
-    costSell: 17028
-    weight: 3
     bigSprite: 309
     floorSprite: 309
     hitSound: 0
     hitAnimation: 0
+    costSell: 17028
+    size: 0.2
+    weight: 3
     power: 180
     damageType: 3
     damageAlter:

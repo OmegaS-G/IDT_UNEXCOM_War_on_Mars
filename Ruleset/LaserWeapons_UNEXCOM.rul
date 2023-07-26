@@ -5,7 +5,6 @@
 #Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
 #Extra long range combat: 46-60 # Snipers
 
-
 items:
   - delete: STR_LASER_PISTOL
   - delete: STR_LASER_RIFLE
@@ -244,10 +243,10 @@ items:
     aimRange: 30
     snapRange: 25
     autoRange: 20
+    dropoff: 1
     clipSize: -1
     battleType: 1
     twoHanded: true
-    dropoff: 1
     invWidth: 2
     invHeight: 3
 
@@ -295,11 +294,11 @@ items:
     aimRange: 10
     snapRange: 15
     autoRange: 12
+    dropoff: 1
     sprayWaypoints: 2
     clipSize: -1
     battleType: 1
     twoHanded: true
-    dropoff: 1
     invWidth: 1
     invHeight: 3
 
@@ -343,9 +342,9 @@ items:
     autoRange: 50
     minRange: 5
     dropoff: 1
-    twoHanded: true
     clipSize: -1
     battleType: 1
+    twoHanded: true
     invWidth: 2
     invHeight: 3
 
@@ -429,7 +428,6 @@ items:
     costAuto:
       time: 34
       mana: 30
-    twoHanded: true
     maxRange: 60
     snapRange: 35
     autoRange: 30
@@ -438,6 +436,7 @@ items:
     sprayWaypoints: 2
     clipSize: -1
     battleType: 1
+    twoHanded: true
     invWidth: 2
     invHeight: 3
 
@@ -449,6 +448,9 @@ items:
     bulletSprite: 30
     fireSound: 2967
     hitAnimation: 0
+    vaporColorSurface: 1
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 100
     requiresBuy:
       - STR_USA_LASER_HEAVY_WEAPONS
     costBuy: 42000
@@ -475,20 +477,16 @@ items:
     sprayWaypoints: 2
     clipSize: -1
     battleType: 1
+    armor: 30
     twoHanded: true
     invWidth: 2
     invHeight: 3
-    armor: 30
     experienceTrainingMode: 7
     attraction: 7
-    vaporColorSurface: 1
-    vaporDensitySurface: 10
-    vaporProbabilitySurface: 100
 
 ###################################
 ###### NATO LASER WEAPONS #########
 #################################
-
   - type: STR_P71_LASER_PISTOL
     categories: [STR_LASER, STR_FIREARMS, STR_PISTOLS, STR_NATO_TECH]
     bigSprite: 2009
@@ -580,7 +578,6 @@ items:
     twoHanded: true
     invWidth: 1
     invHeight: 3
-
 
   - type: STR_FN_FLA_LASER_CARBINE
     categories: [STR_LASER, STR_FIREARMS, STR_CARBINES, STR_NATO_TECH]
@@ -723,9 +720,9 @@ items:
     autoRange: 14
     dropoff: 1
     sprayWaypoints: 2
-    twoHanded: false
     clipSize: -1
     battleType: 1
+    twoHanded: false
     invWidth: 1
     invHeight: 2
 
@@ -882,8 +879,8 @@ items:
       IgnoreSelfDestruct: true
       ToArmor: 0.5
     clipSize: 6
-    blastRadius: 4
     battleType: 2
+    blastRadius: 4
     invWidth: 2
     invHeight: 2
     attraction: 9
@@ -935,8 +932,8 @@ items:
       IgnoreSelfDestruct: true
       ToTile: 0.66
     clipSize: 6
-    blastRadius: 1
     battleType: 2
+    blastRadius: 1
     invWidth: 2
     invHeight: 2
     attraction: 9
@@ -963,8 +960,8 @@ items:
       RandomWound: true
       ToTile: 0.90
     clipSize: 6
-    blastRadius: 1
     battleType: 2
+    blastRadius: 1
     invWidth: 2
     invHeight: 2
     attraction: 9
@@ -1309,7 +1306,6 @@ items:
     invHeight: 3
 
 ####################################
-
   - type: STR_BATTERY
     categories: [STR_LIGHT_EQUIPMENT, STR_LASER]
     bigSprite: 2028
@@ -1375,7 +1371,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 5
       STR_ALIEN_CRYSTAL: 5
 
-
+####################################
 extraSprites:
   - type: BIGOBS.PCK
     files:

@@ -29,6 +29,7 @@ crafts:
 ###### FIGHTERS ######
 ######################
   - type: STR_HARRIER
+    listOrder: 117
     sprite: 398
     skinSprites: [399]
     maxSkinIndex: 1
@@ -62,9 +63,9 @@ crafts:
     radarRange: 100
     radarChance: 25
     score: 400
-    listOrder: 117
 
   - type: STR_FORGER
+    listOrder: 117
     sprite: 823
     skinSprites: [824]
     maxSkinIndex: 1
@@ -98,12 +99,12 @@ crafts:
     radarRange: 100
     radarChance: 25
     score: 400
-    listOrder: 117
 
 ####################
 #### TIER IV ######
 ##################
   - type: STR_SABRE
+    listOrder: 117
     sprite: 912
     fuelMax: 950
     damageMax: 550
@@ -134,9 +135,9 @@ crafts:
     radarRange: 100
     radarChance: 25
     score: 400
-    listOrder: 117
 
   - type: STR_SABRE_II
+    listOrder: 117
     sprite: 912
     fuelMax: 1000 #950
     damageMax: 550
@@ -167,9 +168,9 @@ crafts:
     radarRange: 125 #100
     radarChance: 50 #25
     score: 400
-    listOrder: 117
 
   - type: STR_DYNASOAR # X-21 DynaMOWS
+    listOrder: 117
     sprite: 913
     requires:
       - STR_USA_SUPPORT_RESEARCH
@@ -201,9 +202,9 @@ crafts:
     radarRange: 100
     radarChance: 25
     score: 400
-    listOrder: 117
 
   - type: STR_MIG_105
+    listOrder: 117
     sprite: 915
     requires:
       - STR_USSR_SUPPORT_RESEARCH
@@ -235,9 +236,9 @@ crafts:
     radarRange: 125 #100
     radarChance: 50 #25
     score: 400
-    listOrder: 117
 
   - type: STR_HERMES
+    listOrder: 117
     sprite: 914
     requires:
       - STR_NATO_SUPPORT_RESEARCH
@@ -269,7 +270,6 @@ crafts:
     radarRange: 100
     radarChance: 25
     score: 400
-    listOrder: 117
 
 ######################
 ##### TRANSPORTS #####
@@ -387,6 +387,7 @@ crafts:
 ##### RECON SATELLITES #####
 ############################
   - type: STR_BASTION
+    listOrder: 150
     sprite: 911
     fuelMax: 1500
     damageMax: 20
@@ -400,7 +401,6 @@ crafts:
     radarChance: 60
     transferTime: 96
     score: 250
-    listOrder: 150
 
 ################################
 ####### VANILLA CRAFTS ########
@@ -1070,6 +1070,7 @@ crafts:
     producedItems:
       STR_LASER_LANCE: 1
 
+####################################
 extraSprites:
 #{
 # "Crafts : The corresponding extrasprite file id for BASEBITS.PCK is sprite+33 INTICON.PCK contains a minimized icon id=sprite the file id for the dogfight image is sprite+11"
@@ -1098,15 +1099,7 @@ extraSprites:
       947: Resources/Aircraft/Hermes_base.png
       948: Resources/Aircraft/Spiral_base.png
       978: Resources/Aircraft/Space_Shuttle_base.png
-
 #Craft weapons
-      259: Resources/AircraftWeapons/Shortsword_basebits.png
-      260: Resources/AircraftWeapons/Hammer_basebits.png
-      261: Resources/AircraftWeapons/Athena_basebits.png
-      262: Resources/AircraftWeapons/Mauser_basebits.png
-      263: Resources/AircraftWeapons/Hydra_basebits.png
-      264: Resources/AircraftWeapons/Phoenix_basebits.png
-
       267: Resources/AircraftWeapons/Apollo_basebits.png # 219
       268: Resources/AircraftWeapons/Kodiak_basebits.png # 220
 
@@ -1114,6 +1107,7 @@ extraSprites:
       280: Resources/AircraftWeapons/Afterburner_basebits.png
       281: Resources/AircraftWeapons/Targeting_Pod_basebits.png
       282: Resources/AircraftWeapons/Alloy_Craft_Armor_basebits.png
+
   - type: INTICON.PCK
     files:
       409: Resources/Aircraft/Harrier_dogfight.png
@@ -1140,7 +1134,6 @@ extraSprites:
       945: Resources/Aircraft/Space_Shuttle_minimised.png
       956: Resources/Aircraft/Space_Shuttle_dogfight.png
 
-###################################################
       398: Resources/Aircraft/Harrier_minimised.png
       399: Resources/Aircraft/Harrier_minimised.png
       804: Resources/Aircraft/Harrier_minimised.png
@@ -1150,18 +1143,6 @@ extraSprites:
       825: Resources/Aircraft/Forger_minimised.png
       826: Resources/Aircraft/Forger_minimised.png
 
-      205: Resources/AircraftWeapons/Sidewinder_dogfight.png
-      206: Resources/AircraftWeapons/Sparrow_dogfight.png
-      207: Resources/AircraftWeapons/Vulcan_dogfight.png
-      208: Resources/AircraftWeapons/Red_Top_dogfight.png
-      209: Resources/AircraftWeapons/Matra_dogfight.png
-      210: Resources/AircraftWeapons/ADEN_dogfight.png
-      211: Resources/AircraftWeapons/Atoll_dogfight.png
-      212: Resources/AircraftWeapons/Acrid_dogfight.png
-      213: Resources/AircraftWeapons/GSh-23_dogfight.png
-      214: Resources/AircraftWeapons/Falcon_dogfight.png
-      215: Resources/AircraftWeapons/MightyMouse_dogfight.png
-
       224: Resources/AircraftWeapons/Apollo_dogfight.png # 219
       225: Resources/AircraftWeapons/Kodiak_dogfight.png # 220
 
@@ -1169,6 +1150,7 @@ extraSprites:
       237: Resources/AircraftWeapons/Afterburner_dogfight.png
       238: Resources/AircraftWeapons/Targeting_Pod_dogfight.png
       239: Resources/AircraftWeapons/Alloy_Craft_Armor_dogfight.png
+
 ##################################
 #### AIRCRAFT UFOPEDIA IMAGES ####
 ##################################
@@ -1318,10 +1300,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/AircraftWeapons/ALLOY_CRAFT_ARMOR.png
-
-####################################
-###### TIER III LASER WEAPONS #####
-##################################
   - type: APOLLO
     singleImage: true
     width: 320

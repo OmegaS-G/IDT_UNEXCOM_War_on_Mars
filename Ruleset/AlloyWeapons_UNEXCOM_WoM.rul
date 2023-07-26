@@ -5,9 +5,6 @@
 #Long range combat: 25-45 tiles # LMGs, Artillery, Battle Rifles, Snipers (min snapRange: 35)
 #Extra long range combat: 46-60 # Snipers
 items:
-################################
-##### FLECHETTE WEAPONS #######
-##############################
   - type: STR_FLECHETTE_RIFLE
     categories: [STR_ALLOY, STR_UNEXCOM_TECH, STR_FIREARMS, STR_RIFLES]
     bigSprite: 1211
@@ -744,7 +741,7 @@ items:
     invHeight: 1
     attraction: 8
 
-
+#########################################
 manufacture:
   - name: STR_FLECHETTE_PISTOL
     category: STR_WEAPON
@@ -924,11 +921,8 @@ manufacture:
     cost: 3000
     listOrder: 1102
 
-
+#########################################
 extraSprites:
-#########################################
-######### PHLOGISTON WEAPONS ############
-#########################################
   - type: BIGOBS.PCK
     files:
       1202: Resources/AlloyWeapons/Bigob_G_Auto_Shotgun.png
@@ -991,4 +985,3 @@ extraSprites:
     subY: 3
     files:
      1085: Resources/BulletSprites/Flechette_bullet.png #31
-#############################

@@ -29,6 +29,7 @@ units:
       -
         - STR_M1972_LASER_PISTOL
         - STR_BATTERY
+
   - type: FEMALE_CIVILIAN
     race: STR_CIVILIAN
     stats: *CIVILIAN_STATS
@@ -50,7 +51,6 @@ units:
 ###################
 ###### USA #######
 #################
-
   - type: STR_AMERICAN_ASTRONAUT
     race: STR_ALLIED
     stats: &AstronautStats
@@ -85,17 +85,17 @@ units:
   - type: STR_AMERICAN_RIFLEMAN
     race: STR_ALLIED
     stats: &RiflemanStats
-      tu: 50
-      stamina: 90
-      health: 40
-      bravery: 100
-      reactions: 40
-      firing: 65
-      throwing: 50
-      strength: 45
-      psiStrength: 35
+      tu: 50 #60
+      stamina: 90 #70
+      health: 40 #50
+      bravery: 100 #80
+      reactions: 40 #60
+      firing: 65 #40
+      throwing: 50 #30
+      strength: 45 #45
+      psiStrength: 35 #50
       psiSkill: 0
-      melee: 25
+      melee: 25 #50
     armor: STR_USSF_RANGER_SPACESUIT_UC
     standHeight: 21
     kneelHeight: 16
@@ -122,17 +122,17 @@ units:
   - type: STR_AMERICAN_ASSAULT
     race: STR_ALLIED
     stats: &AssaultStats
-      tu: 65
-      stamina: 100
-      health: 30
-      bravery: 100
-      reactions: 46
-      firing: 45
-      throwing: 80
-      strength: 25
-      psiStrength: 35
+      tu: 65 #60
+      stamina: 100 #70
+      health: 30 #50
+      bravery: 100 #80
+      reactions: 46 #60
+      firing: 45 #40
+      throwing: 80 #30
+      strength: 25 #45
+      psiStrength: 35 #50
       psiSkill: 0
-      melee: 25
+      melee: 25 #50
     armor: STR_USSF_RANGER_SPACESUIT_UC
     standHeight: 21
     kneelHeight: 16
@@ -159,17 +159,17 @@ units:
   - type: STR_AMERICAN_SUPPORT
     race: STR_ALLIED
     stats: &SupportStats
-      tu: 50
-      stamina: 70
-      health: 55
-      bravery: 100
-      reactions: 50
-      firing: 65
-      throwing: 40
-      strength: 55
-      psiStrength: 35
+      tu: 50 #60
+      stamina: 70 #70
+      health: 55 #50
+      bravery: 100 #80
+      reactions: 50 #60
+      firing: 65 #40
+      throwing: 40 #30
+      strength: 55 #45
+      psiStrength: 35 #50
       psiSkill: 0
-      melee: 25
+      melee: 25 #50
     armor: STR_USSF_RANGER_SPACESUIT_UC
     standHeight: 21
     kneelHeight: 16
@@ -196,17 +196,17 @@ units:
   - type: STR_AMERICAN_ELITE
     race: STR_ALLIED_FORCES
     stats: &EliteStats
-      tu: 65
-      stamina: 70
-      health: 70
-      bravery: 100
-      reactions: 66
-      firing: 75
-      throwing: 40
-      strength: 55
-      psiStrength: 35
+      tu: 65 #60
+      stamina: 70 #70
+      health: 70 #50
+      bravery: 100 #80
+      reactions: 66 #60
+      firing: 75 #40
+      throwing: 40 #30
+      strength: 55 #45
+      psiStrength: 35 #50
       psiSkill: 0
-      melee: 25
+      melee: 25 #50
       mana: 40
     armor: STR_USSF_RANGER_SPACESUIT_UC
     standHeight: 22
@@ -241,7 +241,6 @@ units:
 ###################
 ###### NATO ######
 #################
-
   - type: STR_EUROPEAN_EURONAUT
     race: STR_ALLIED
     stats:
@@ -389,14 +388,14 @@ units:
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 70
-      stamina: 100
-      health: 60
-      bravery: 100
-      reactions: 75
-      firing: 80
-      throwing: 80
-      strength: 50
-      psiStrength: 35
+      stamina: 100 #70
+      health: 60 #50
+      bravery: 100 #80
+      reactions: 75 #64
+      firing: 80 #64
+      throwing: 80 #52
+      strength: 50 #70
+      psiStrength: 35 #50
       psiSkill: 0
       melee: 25
       mana: 40
@@ -450,7 +449,7 @@ units:
       strength: 70
       psiStrength: 50
       psiSkill: 0
-      melee: 50
+      melee: 50  #50
     armor: STR_COSMONAUT_SPACESUIT_UC
     standHeight: 21
     kneelHeight: 16
@@ -471,17 +470,17 @@ units:
   - type: STR_SOVIET_RIFLEMAN
     race: STR_ALLIED
     stats:
-      tu: 70
-      stamina: 70
-      health: 50
-      bravery: 80
-      reactions: 64
-      firing: 64
-      throwing: 52
-      strength: 70
-      psiStrength: 50
+      tu: 70 #70
+      stamina: 70 #70
+      health: 50 #50
+      bravery: 80 #80
+      reactions: 64 #64
+      firing: 64 #64
+      throwing: 52 #52
+      strength: 70 #70
+      psiStrength: 50 #50
       psiSkill: 0
-      melee: 50
+      melee: 50  #50
     armor: STR_VKS_OPERATOR_SPACESUIT_UC
     standHeight: 21
     kneelHeight: 16
@@ -507,17 +506,17 @@ units:
   - type: STR_SOVIET_ASSAULT
     race: STR_ALLIED
     stats:
-      tu: 70
-      stamina: 70
-      health: 50
-      bravery: 80
-      reactions: 64
-      firing: 64
-      throwing: 52
-      strength: 70
-      psiStrength: 50
+      tu: 70 #70
+      stamina: 70 #70
+      health: 50 #50
+      bravery: 80 #80
+      reactions: 64 #64
+      firing: 64 #64
+      throwing: 52 #52
+      strength: 70 #70
+      psiStrength: 50 #50
       psiSkill: 0
-      melee: 50
+      melee: 50  #50
     armor: STR_VKS_OPERATOR_SPACESUIT_UC
     standHeight: 21
     kneelHeight: 16
@@ -545,17 +544,17 @@ units:
   - type: STR_SOVIET_SUPPORT
     race: STR_ALLIED
     stats:
-      tu: 70
-      stamina: 70
-      health: 50
-      bravery: 80
-      reactions: 64
-      firing: 64
-      throwing: 52
-      strength: 70
-      psiStrength: 50
+      tu: 70 #70
+      stamina: 70 #70
+      health: 50 #50
+      bravery: 80 #80
+      reactions: 64 #64
+      firing: 64 #64
+      throwing: 52 #52
+      strength: 70 #70
+      psiStrength: 50 #50
       psiSkill: 0
-      melee: 50
+      melee: 50  #50
     armor: STR_VKS_OPERATOR_SPACESUIT_UC
     standHeight: 21
     kneelHeight: 16
@@ -582,18 +581,18 @@ units:
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER
     stats:
-      tu: 65
-      stamina: 100
-      health: 65
-      bravery: 100
-      reactions: 70
-      firing: 75
-      throwing: 90
-      strength: 60
-      psiStrength: 35
+      tu: 65 #70
+      stamina: 100 #70
+      health: 65 #50
+      bravery: 100 #80
+      reactions: 70 #64
+      firing: 75 #64
+      throwing: 90 #52
+      strength: 70 #70
+      psiStrength: 35 #50
       psiSkill: 0
-      melee: 25
-      mana: 40
+      melee: 25  #50
+      mana: 40 
     armor: STR_VKS_OPERATOR_SPACESUIT_UC
     standHeight: 22
     kneelHeight: 14
@@ -630,7 +629,6 @@ units:
 ####################
 ##### ALIENS ######
 ##################
-
   - type: STR_ALLIED_MUTON
     race: STR_ALLIED_FORCES
     rank: STR_LIVE_SOLDIER

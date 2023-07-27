@@ -4,49 +4,49 @@ ufos:
   - type: STR_SMALL_SCOUT
     size: STR_VERY_SMALL
     sprite: 0
-    damageMax: 50
+    score: 50
+    breakOffTime: 200
     speedMax: 1800
     accel: 12
-    avoidBonus: 10
+    damageMax: 50
     power: 15
     range: 20
-    score: 50
     reload: 10
-    breakOffTime: 200
+    avoidBonus: 10
 
   - type: STR_MEDIUM_SCOUT
     size: STR_SMALL
     sprite: 1
-    damageMax: 200
+    score: 75
+    breakOffTime: 250
     speedMax: 1200
     accel: 9
-    power: 40
-    range: 30
-    score: 75
-    reload: 15
-    avoidBonus: 10
+    damageMax: 200
     shieldCapacity: 50
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
-    breakOffTime: 250
+    power: 40
+    range: 30
+    reload: 15
+    avoidBonus: 10
     radarRange: 20
     radarChance: 30
 
   - type: STR_LARGE_SCOUT
     size: STR_SMALL
     sprite: 2
-    damageMax: 250
+    score: 125
+    breakOffTime: 300
     speedMax: 1000
     accel: 9
-    power: 50
-    hitBonus: 10
-    range: 30
-    score: 125
-    reload: 15
+    damageMax: 250
     shieldCapacity: 100
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
-    breakOffTime: 300
+    power: 50
+    hitBonus: 10
+    range: 30
+    reload: 15
     radarRange: 300
     radarChance: 45
 
@@ -54,16 +54,16 @@ ufos:
   - type: STR_SMALL_FIGHTER
     size: STR_VERY_SMALL
     modSprite: InterceptionNoFeed
-    damageMax: 150
-    speedMax: 2000
-    accel: 6
-    power: 25
-    range: 30
     score: 100
-    reload: 10
-    avoidBonus: 10
     hunterKillerPercentage: 100
     breakOffTime: 220
+    speedMax: 2000
+    accel: 6
+    damageMax: 150
+    power: 25
+    range: 30
+    reload: 10
+    avoidBonus: 10
     radarRange: 600
     radarChance: 100
     sightRange: 0
@@ -85,20 +85,20 @@ ufos:
 
   - type: STR_FIGHTER_SHIP
     size: STR_SMALL
-    damageMax: 300
+    score: 175
+    breakOffTime: 110
     speedMax: 3000
     accel: 9
-    power: 55
-    hitBonus: 20
-    range: 40
-    score: 175
-    reload: 10
-    avoidBonus: 15
+    damageMax: 300
     shieldCapacity: 250
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
-    breakOffTime: 110
     hunterKillerPercentage: 100
+    power: 55
+    hitBonus: 20
+    range: 40
+    reload: 10
+    avoidBonus: 15
     radarRange: 600
     radarChance: 100
     sightRange: 0
@@ -106,154 +106,154 @@ ufos:
 
   - type: STR_SENTRY_SHIP
     modSprite: InterceptionSentry
+    score: 125
     size: STR_SMALL
-    damageMax: 200
+    breakOffTime: 170
     speedMax: 1400
     accel: 8
-    power: 35
-    hitBonus: 10
-    range: 35
-    score: 125
-    reload: 15
-    breakOffTime: 170
+    damageMax: 200
     avoidBonus: 10
     shieldCapacity: 100
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
+    power: 35
+    hitBonus: 10
+    range: 35
+    reload: 15
     radarRange: 30
     sightRange: 30
 
 #Research ships
   - type: STR_EXCAVATOR
-    modSprite: InterceptionExcavator
     size: STR_SMALL
-    damageMax: 270
+    modSprite: InterceptionExcavator
+    score: 100
+    breakOffTime: 220
     speedMax: 600
     accel: 6
+    damageMax: 270
     power: 25
     range: 30
-    score: 100
     reload: 30
-    breakOffTime: 220
 
   - type: STR_ABDUCTOR
     size: STR_MEDIUM_UC
     sprite: 4
-    damageMax: 500
-    speedMax: 800
-    power: 120
-    hitBonus: 10
-    range: 50
     score: 250
-    reload: 20
+    breakOffTime: 500
+    speedMax: 800
+    damageMax: 500
     shieldCapacity: 200
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
-    breakOffTime: 500
+    power: 120
+    hitBonus: 10
+    range: 50
+    reload: 20
 
   - type: STR_HARVESTER
     size: STR_MEDIUM_UC
     sprite: 3
-    damageMax: 500
+    score: 250
+    breakOffTime: 500
     speedMax: 600
+    damageMax: 500
+    shieldCapacity: 150
+    shieldRechargeInGeoscape: 5
+    shieldBleedThrough: 100
     power: 100
     range: 45
-    score: 250
     reload: 25
-    shieldCapacity: 150
-    shieldRechargeInGeoscape: 5
-    shieldBleedThrough: 100
-    breakOffTime: 500
 
   - type: STR_LAB_SHIP
-    modSprite: InterceptionLabShip
     size: STR_LARGE
-    damageMax: 2200
+    modSprite: InterceptionLabShip
+    score: 500
+    breakOffTime: 500
     speedMax: 800
     accel: 5
-    power: 70
-    range: 50
-    score: 500
-    reload: 30
+    damageMax: 2200
     shieldCapacity: 150
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
-    breakOffTime: 500
+    power: 70
+    range: 50
+    reload: 30
 
 #Logistical
   - type: STR_SUPPLY_SHIP
     size: STR_LARGE
     sprite: 7
-    damageMax: 2200
+    score: 400
+    breakOffTime: 3000
     speedMax: 600
+    damageMax: 2200
     power: 60
     range: 40
-    score: 400
     reload: 50
-    breakOffTime: 3000
 
 #Warships
   - type: STR_TERROR_SHIP
     size: STR_LARGE
     sprite: 5
-    damageMax: 1200
+    score: 500
+    breakOffTime: 2000
+    accel: 3
     speedMax: 500
+    damageMax: 1200
     shieldCapacity: 300
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
-    accel: 3
     power: 120
     range: 45
-    score: 500
     reload: 20
-    breakOffTime: 2000
 
   - type: STR_TROOP_LANDER
     size: STR_VERY_LARGE
     modSprite: InterceptionTroopLander
-    damageMax: 1750
-    speedMax: 400
+    score: 600
+    breakOffTime: 3000
     accel: 3
-    power: 150
-    range: 55
+    speedMax: 400
+    damageMax: 1750
     shieldBleedThrough: 100
     shieldCapacity: 400
     shieldRechargeInGeoscape: 5
-    score: 600
+    power: 150
+    range: 55
     reload: 20
-    breakOffTime: 3000
 
   - type: STR_BATTLESHIP
     size: STR_VERY_LARGE
     sprite: 6
-    damageMax: 3000
+    score: 700
+    breakOffTime: 4000
+    accel: 2
     speedMax: 400
+    damageMax: 3000
     shieldCapacity: 500
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
-    accel: 2
     power: 250
     hitBonus: 40
     range: 60
-    score: 700
     reload: 30
-    breakOffTime: 4000
 
   - type: STR_CARRIER
     size: STR_VERY_LARGE
     sprite: 6
-    damageMax: 3000
+    score: 700
+    breakOffTime: 4000
+    accel: 2
     speedMax: 400
+    damageMax: 3000
     shieldCapacity: 500
     shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
-    accel: 2
     power: 250
     hitBonus: 40
     range: 60
-    score: 700
     reload: 30
-    breakOffTime: 4000
     battlescapeTerrainData:
       name: CARRIER
       mapDataSets:
